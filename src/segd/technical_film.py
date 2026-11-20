@@ -320,7 +320,7 @@ def analysis_frame(t, design):
     required = 0.85 * 0.604
     # Large readable spatial ruler rather than a dense paper screenshot.
     text(d, (540, 286), "Complete-label travel", 39, INK, True, anchor="mm")
-    x0, scale = 130, 1500
+    x0, scale = 130, 1200
     d.rounded_rectangle(
         (x0, 376, x0 + int(safe * scale), 466),
         8,
@@ -348,7 +348,7 @@ def analysis_frame(t, design):
     text(
         d,
         (540, 672),
-        "250 × 40 mm worked label / 3.04 pixels per module",
+        "100 × 44 mm short code / 2.56 pixels per module",
         28,
         GREY,
         anchor="mm",
@@ -357,8 +357,14 @@ def analysis_frame(t, design):
     for j, (number, label) in enumerate(
         [
             ("2.902 kg", "Installed-mass estimate"),
-            ("73.14 Wh", "Adverse case / two local recoveries"),
-            ("91.43 Wh", "Delivered pack energy needed incl. reserve"),
+            (
+                f"{design['cases'][0]['adverse_wh']:.2f} Wh",
+                "Adverse case / two local recoveries",
+            ),
+            (
+                f"{design['cases'][0]['required_delivered_wh_adverse']:.2f} Wh",
+                "Delivered pack energy needed incl. reserve",
+            ),
         ]
     ):
         yy = 280 + j * 195
@@ -367,7 +373,7 @@ def analysis_frame(t, design):
     text(
         d,
         (960, 930),
-        "Energy feasibility requires pack discharge qualification above the loaded 19.8 V cutoff.",
+        "18.0 V candidate: modelled reserve ~27% / two recoveries; pack qualification remains.",
         29,
         GREY,
         anchor="mm",

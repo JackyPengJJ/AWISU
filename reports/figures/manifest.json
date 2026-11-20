@@ -73,10 +73,10 @@
     },
     {
       "figure": "07_energy",
-      "description": "Stacked phase budgets and a continuous model surface in recovery count and propulsion loss. White contour: conditional 100 Wh delivered-energy limit with 20% reserve.",
+      "description": "Digitised typical cell curves and coupled pack/load reserve sensitivity. The voltage shift is 40 mV/cell and capacity-axis scale is 3000/3120; no measured pack discharge is claimed.",
       "size_inches": [
         6.8,
-        5.0
+        5.4
       ],
       "font_pt": 12.2,
       "formats": [

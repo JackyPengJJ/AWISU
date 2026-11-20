@@ -1,0 +1,77 @@
+[
+  {
+    "seed": 0,
+    "duration_s": 31.999999999997918,
+    "position_rmse_m": 0.020885620744796694,
+    "max_position_error_m": 0.07800505953465021,
+    "max_current_a": 25.470195605681976,
+    "max_tilt_deg": 5.589431855448578,
+    "minimum_z_m": 1.9980336868312762,
+    "braking_stop_time_s": 1.2000000000001778,
+    "braking_stop_distance_m": 0.529493367371968,
+    "final_yaw_error_deg": 0.0001349725444477028,
+    "allocation_limited_control_steps": 0,
+    "control_steps": 3200,
+    "pass_current": true,
+    "pass_tracking_015m": true,
+    "pass_tilt_12deg": true,
+    "assumptions": [
+      "18 V fixed worst-endpoint bus, not coupled depletion",
+      "known trajectory and 100 ms position/velocity proxy with constant-velocity prediction",
+      "true attitude estimate; full physical rotational dynamics",
+      "quasi-static manufacturer power interpolation and voltage-squared thrust ceiling",
+      "0.018 m reaction-torque ratio is an assumed yaw map",
+      "no aerodynamics, external disturbance, SLAM or image decoding"
+    ]
+  },
+  {
+    "seed": 1,
+    "duration_s": 31.999999999997918,
+    "position_rmse_m": 0.021024347488137998,
+    "max_position_error_m": 0.07873273046905269,
+    "max_current_a": 25.478724283805754,
+    "max_tilt_deg": 5.6440682346410815,
+    "minimum_z_m": 1.998269796521187,
+    "braking_stop_time_s": 1.2000000000001778,
+    "braking_stop_distance_m": 0.5314440818454944,
+    "final_yaw_error_deg": 0.00012803230874726678,
+    "allocation_limited_control_steps": 0,
+    "control_steps": 3200,
+    "pass_current": true,
+    "pass_tracking_015m": true,
+    "pass_tilt_12deg": true,
+    "assumptions": [
+      "18 V fixed worst-endpoint bus, not coupled depletion",
+      "known trajectory and 100 ms position/velocity proxy with constant-velocity prediction",
+      "true attitude estimate; full physical rotational dynamics",
+      "quasi-static manufacturer power interpolation and voltage-squared thrust ceiling",
+      "0.018 m reaction-torque ratio is an assumed yaw map",
+      "no aerodynamics, external disturbance, SLAM or image decoding"
+    ]
+  },
+  {
+    "seed": 2,
+    "duration_s": 31.999999999997918,
+    "position_rmse_m": 0.020878102282076778,
+    "max_position_error_m": 0.07870920339616569,
+    "max_current_a": 25.456773471783627,
+    "max_tilt_deg": 5.597348649648087,
+    "minimum_z_m": 1.9977215298307252,
+    "braking_stop_time_s": 1.2000000000001778,
+    "braking_stop_distance_m": 0.5273213568431139,
+    "final_yaw_error_deg": 5.003516467873623e-05,
+    "allocation_limited_control_steps": 0,
+    "control_steps": 3200,
+    "pass_current": true,
+    "pass_tracking_015m": true,
+    "pass_tilt_12deg": true,
+    "assumptions": [
+      "18 V fixed worst-endpoint bus, not coupled depletion",
+      "known trajectory and 100 ms position/velocity proxy with constant-velocity prediction",
+      "true attitude estimate; full physical rotational dynamics",
+      "quasi-static manufacturer power interpolation and voltage-squared thrust ceiling",
+      "0.018 m reaction-torque ratio is an assumed yaw map",
+      "no aerodynamics, external disturbance, SLAM or image decoding"
+    ]
+  }
+]

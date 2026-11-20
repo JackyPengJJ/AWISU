@@ -1,0 +1,30 @@
+{
+  "seed": 703,
+  "duration_s": 670.5049999994627,
+  "position_rmse_m": 0.013785668908731204,
+  "max_position_error_m": 0.100725227722849,
+  "max_current_a": 25.83519246297373,
+  "max_tilt_deg": 7.640023742871216,
+  "minimum_z_m": 0.2499947961842108,
+  "allocation_limited_control_steps": 25,
+  "control_steps": 67050,
+  "pass_current": true,
+  "pass_tracking_015m": true,
+  "pass_tilt_12deg": true,
+  "assumptions": [
+    "18 V fixed worst-endpoint bus, not coupled depletion",
+    "known trajectory and 100 ms position/velocity proxy with constant-velocity prediction",
+    "true attitude estimate; full physical rotational dynamics",
+    "quasi-static manufacturer power interpolation and voltage-squared thrust ceiling",
+    "0.018 m reaction-torque ratio is an assumed yaw map",
+    "no aerodynamics, external disturbance, SLAM or image decoding"
+  ],
+  "test": "Full known-route matched warehouse rigid-body test",
+  "mission_duration_s": 669.5067542446426,
+  "injected_recoveries": 2,
+  "unknown_navigation": false,
+  "image_decode_during_flight": false,
+  "energy_model": "Current is evaluated at a fixed 18 V endpoint; loaded depletion/reserve is a separate forecast",
+  "end_space": "Observed-free open staging regions beyond rack ends; no end wall is assumed in this flight scene",
+  "minimum_nominal_wall_ceiling_clearance_m": 0.48710558066993814
+}

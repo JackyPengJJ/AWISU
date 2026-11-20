@@ -1,0 +1,30 @@
+{
+  "source_url": "https://www.murata.com/-/media/webrenewal/products/batteries/cylindrical/datasheet/us18650vtc6-product-datasheet.ashx?cvid=20250324010000000000&la=en-sg",
+  "source_sha256": "ff42082f0d94c311bfd9a8b24211c5d522aeee161adb7473731e9fe94fcc9f08",
+  "page": 1,
+  "figure": "Discharge characteristics by discharge rate",
+  "conditions": "23 deg C, charged 4.2 V/3 A/150 mA cutoff; constant-current cell discharge; manufacturer typical curves, not assembled pack measurements",
+  "method": "Colour sampling of manufacturer PDF raster rendered at 450 dpi; plot calibration recorded below. First upper colour cluster, no synthetic smoothing; 0 mAh repeats 100 mAh value. Coarse 0.04 V digitisation uncertainty is analysed.",
+  "render_crop_fractions_of_page": [
+    0.145,
+    0.389,
+    0.43,
+    0.56
+  ],
+  "cropped_plot_axes_xy": [
+    27,
+    28,
+    955,
+    829
+  ],
+  "x_axis_mah": [
+    0,
+    3300
+  ],
+  "y_axis_v": [
+    4.5,
+    0.5
+  ],
+  "digitization_voltage_uncertainty_v": 0.04,
+  "not_a_certified_lower_bound": true
+}

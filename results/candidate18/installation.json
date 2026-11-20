@@ -1,0 +1,1182 @@
+{
+  "mass_kg": 2.9015999999999997,
+  "centre_of_mass_m": [
+    0.0025227460711331677,
+    0.0,
+    0.00497311827956989
+  ],
+  "inertia_kgm2": [
+    [
+      0.10257510245322576,
+      0.0,
+      -0.00010999677419354808
+    ],
+    [
+      0.0,
+      0.0534355733319851,
+      0.0
+    ],
+    [
+      -0.00010999677419354808,
+      0.0,
+      0.13296877514542596
+    ]
+  ],
+  "parts": [
+    {
+      "name": "Frame arm allocation 0",
+      "mass_kg": 0.068,
+      "position_m": [
+        0.10606601717798211,
+        0.10606601717798211,
+        0
+      ],
+      "dimensions_m": [
+        0.22,
+        0.05,
+        0.015
+      ],
+      "local_inertia": [
+        [
+          1.5441666666666668e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0002755416666666667,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00028843333333333337
+        ]
+      ],
+      "basis": "Installation mass distribution allocation"
+    },
+    {
+      "name": "Frame arm allocation 1",
+      "mass_kg": 0.068,
+      "position_m": [
+        -0.10606601717798211,
+        0.10606601717798211,
+        0
+      ],
+      "dimensions_m": [
+        0.22,
+        0.05,
+        0.015
+      ],
+      "local_inertia": [
+        [
+          1.5441666666666668e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0002755416666666667,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00028843333333333337
+        ]
+      ],
+      "basis": "Installation mass distribution allocation"
+    },
+    {
+      "name": "Frame arm allocation 2",
+      "mass_kg": 0.068,
+      "position_m": [
+        -0.10606601717798211,
+        -0.10606601717798211,
+        0
+      ],
+      "dimensions_m": [
+        0.22,
+        0.05,
+        0.015
+      ],
+      "local_inertia": [
+        [
+          1.5441666666666668e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0002755416666666667,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00028843333333333337
+        ]
+      ],
+      "basis": "Installation mass distribution allocation"
+    },
+    {
+      "name": "Frame arm allocation 3",
+      "mass_kg": 0.068,
+      "position_m": [
+        0.10606601717798211,
+        -0.10606601717798211,
+        0
+      ],
+      "dimensions_m": [
+        0.22,
+        0.05,
+        0.015
+      ],
+      "local_inertia": [
+        [
+          1.5441666666666668e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0002755416666666667,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00028843333333333337
+        ]
+      ],
+      "basis": "Installation mass distribution allocation"
+    },
+    {
+      "name": "Central frame / landing allocation",
+      "mass_kg": 0.068,
+      "position_m": [
+        0,
+        0,
+        -0.02
+      ],
+      "dimensions_m": [
+        0.18,
+        0.12,
+        0.18
+      ],
+      "local_inertia": [
+        [
+          0.0002652,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00036720000000000004,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0002652
+        ]
+      ],
+      "basis": "Engineering geometry estimate"
+    },
+    {
+      "name": "4 x MN3508 KV380, with leads / 0",
+      "mass_kg": 0.103,
+      "position_m": [
+        0.21213203435596423,
+        0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.04,
+        0.04,
+        0.03
+      ],
+      "local_inertia": [
+        [
+          2.145833333333333e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.145833333333333e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.7466666666666666e-05
+        ]
+      ],
+      "basis": "Manufacturer [6]; rotor-station placement allocation"
+    },
+    {
+      "name": "4 x MN3508 KV380, with leads / 1",
+      "mass_kg": 0.103,
+      "position_m": [
+        -0.21213203435596423,
+        0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.04,
+        0.04,
+        0.03
+      ],
+      "local_inertia": [
+        [
+          2.145833333333333e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.145833333333333e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.7466666666666666e-05
+        ]
+      ],
+      "basis": "Manufacturer [6]; rotor-station placement allocation"
+    },
+    {
+      "name": "4 x MN3508 KV380, with leads / 2",
+      "mass_kg": 0.103,
+      "position_m": [
+        -0.21213203435596423,
+        -0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.04,
+        0.04,
+        0.03
+      ],
+      "local_inertia": [
+        [
+          2.145833333333333e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.145833333333333e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.7466666666666666e-05
+        ]
+      ],
+      "basis": "Manufacturer [6]; rotor-station placement allocation"
+    },
+    {
+      "name": "4 x MN3508 KV380, with leads / 3",
+      "mass_kg": 0.103,
+      "position_m": [
+        0.21213203435596423,
+        -0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.04,
+        0.04,
+        0.03
+      ],
+      "local_inertia": [
+        [
+          2.145833333333333e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.145833333333333e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.7466666666666666e-05
+        ]
+      ],
+      "basis": "Manufacturer [6]; rotor-station placement allocation"
+    },
+    {
+      "name": "4 x AIR40A ESC, installed allowance / 0",
+      "mass_kg": 0.026,
+      "position_m": [
+        0.21213203435596423,
+        0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.08,
+        0.025,
+        0.012
+      ],
+      "local_inertia": [
+        [
+          1.6661666666666668e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.4178666666666667e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.5220833333333333e-05
+        ]
+      ],
+      "basis": "Installation allocation [7]; rotor-station placement allocation"
+    },
+    {
+      "name": "4 x AIR40A ESC, installed allowance / 1",
+      "mass_kg": 0.026,
+      "position_m": [
+        -0.21213203435596423,
+        0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.08,
+        0.025,
+        0.012
+      ],
+      "local_inertia": [
+        [
+          1.6661666666666668e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.4178666666666667e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.5220833333333333e-05
+        ]
+      ],
+      "basis": "Installation allocation [7]; rotor-station placement allocation"
+    },
+    {
+      "name": "4 x AIR40A ESC, installed allowance / 2",
+      "mass_kg": 0.026,
+      "position_m": [
+        -0.21213203435596423,
+        -0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.08,
+        0.025,
+        0.012
+      ],
+      "local_inertia": [
+        [
+          1.6661666666666668e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.4178666666666667e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.5220833333333333e-05
+        ]
+      ],
+      "basis": "Installation allocation [7]; rotor-station placement allocation"
+    },
+    {
+      "name": "4 x AIR40A ESC, installed allowance / 3",
+      "mass_kg": 0.026,
+      "position_m": [
+        0.21213203435596423,
+        -0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.08,
+        0.025,
+        0.012
+      ],
+      "local_inertia": [
+        [
+          1.6661666666666668e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.4178666666666667e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.5220833333333333e-05
+        ]
+      ],
+      "basis": "Installation allocation [7]; rotor-station placement allocation"
+    },
+    {
+      "name": "4 x P14x4.8, upper mass tolerance / 0",
+      "mass_kg": 0.0165,
+      "position_m": [
+        0.21213203435596423,
+        0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.3556,
+        0.03,
+        0.003
+      ],
+      "local_inertia": [
+        [
+          1.249875e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00017388299500000002,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00017510812000000005
+        ]
+      ],
+      "basis": "Manufacturer [8]; rotor-station placement allocation"
+    },
+    {
+      "name": "4 x P14x4.8, upper mass tolerance / 1",
+      "mass_kg": 0.0165,
+      "position_m": [
+        -0.21213203435596423,
+        0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.3556,
+        0.03,
+        0.003
+      ],
+      "local_inertia": [
+        [
+          1.249875e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00017388299500000002,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00017510812000000005
+        ]
+      ],
+      "basis": "Manufacturer [8]; rotor-station placement allocation"
+    },
+    {
+      "name": "4 x P14x4.8, upper mass tolerance / 2",
+      "mass_kg": 0.0165,
+      "position_m": [
+        -0.21213203435596423,
+        -0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.3556,
+        0.03,
+        0.003
+      ],
+      "local_inertia": [
+        [
+          1.249875e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00017388299500000002,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00017510812000000005
+        ]
+      ],
+      "basis": "Manufacturer [8]; rotor-station placement allocation"
+    },
+    {
+      "name": "4 x P14x4.8, upper mass tolerance / 3",
+      "mass_kg": 0.0165,
+      "position_m": [
+        0.21213203435596423,
+        -0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.3556,
+        0.03,
+        0.003
+      ],
+      "local_inertia": [
+        [
+          1.249875e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00017388299500000002,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00017510812000000005
+        ]
+      ],
+      "basis": "Manufacturer [8]; rotor-station placement allocation"
+    },
+    {
+      "name": "Guard distribution 0",
+      "mass_kg": 0.035,
+      "position_m": [
+        0.21213203435596423,
+        0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.3956,
+        0.3956,
+        0.02
+      ],
+      "local_inertia": [
+        [
+          0.0004576231333333334,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0004576231333333334,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0009129129333333335
+        ]
+      ],
+      "basis": "Custom-part allocation; bounding-box mass distribution"
+    },
+    {
+      "name": "Guard distribution 1",
+      "mass_kg": 0.035,
+      "position_m": [
+        -0.21213203435596423,
+        0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.3956,
+        0.3956,
+        0.02
+      ],
+      "local_inertia": [
+        [
+          0.0004576231333333334,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0004576231333333334,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0009129129333333335
+        ]
+      ],
+      "basis": "Custom-part allocation; bounding-box mass distribution"
+    },
+    {
+      "name": "Guard distribution 2",
+      "mass_kg": 0.035,
+      "position_m": [
+        -0.21213203435596423,
+        -0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.3956,
+        0.3956,
+        0.02
+      ],
+      "local_inertia": [
+        [
+          0.0004576231333333334,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0004576231333333334,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0009129129333333335
+        ]
+      ],
+      "basis": "Custom-part allocation; bounding-box mass distribution"
+    },
+    {
+      "name": "Guard distribution 3",
+      "mass_kg": 0.035,
+      "position_m": [
+        0.21213203435596423,
+        -0.21213203435596423,
+        0.05
+      ],
+      "dimensions_m": [
+        0.3956,
+        0.3956,
+        0.02
+      ],
+      "local_inertia": [
+        [
+          0.0004576231333333334,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0004576231333333334,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0009129129333333335
+        ]
+      ],
+      "basis": "Custom-part allocation; bounding-box mass distribution"
+    },
+    {
+      "name": "Pixhawk 6C, plastic case",
+      "mass_kg": 0.0346,
+      "position_m": [
+        0,
+        0,
+        0
+      ],
+      "dimensions_m": [
+        0.15,
+        0.1,
+        0.05
+      ],
+      "local_inertia": [
+        [
+          3.604166666666667e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          7.208333333333333e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          9.370833333333334e-05
+        ]
+      ],
+      "basis": "Manufacturer [10]; central allocation, refine at CAD stage"
+    },
+    {
+      "name": "PM02 V3 analog module",
+      "mass_kg": 0.02,
+      "position_m": [
+        0,
+        0,
+        0
+      ],
+      "dimensions_m": [
+        0.15,
+        0.1,
+        0.05
+      ],
+      "local_inertia": [
+        [
+          2.083333333333334e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          4.1666666666666665e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          5.416666666666667e-05
+        ]
+      ],
+      "basis": "Manufacturer [11]; central allocation, refine at CAD stage"
+    },
+    {
+      "name": "MID-360",
+      "mass_kg": 0.265,
+      "position_m": [
+        0,
+        0,
+        0.12
+      ],
+      "dimensions_m": [
+        0.07,
+        0.07,
+        0.06
+      ],
+      "local_inertia": [
+        [
+          0.00018770833333333335,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00018770833333333335,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0002164166666666667
+        ]
+      ],
+      "basis": "Manufacturer [12]; bounding installation envelope"
+    },
+    {
+      "name": "OAK-D Lite fixed-focus",
+      "mass_kg": 0.061,
+      "position_m": [
+        0.12,
+        0,
+        0.02
+      ],
+      "dimensions_m": [
+        0.025,
+        0.1,
+        0.03
+      ],
+      "local_inertia": [
+        [
+          5.5408333333333336e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          7.752083333333333e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          5.401041666666668e-05
+        ]
+      ],
+      "basis": "Product installation reference [13]; installation envelope"
+    },
+    {
+      "name": "Orin Nano compute assembly",
+      "mass_kg": 0.18,
+      "position_m": [
+        0,
+        0,
+        0.025
+      ],
+      "dimensions_m": [
+        0.1,
+        0.08,
+        0.04
+      ],
+      "local_inertia": [
+        [
+          0.00011999999999999999,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00017400000000000003,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.000246
+        ]
+      ],
+      "basis": "77g carrier + module/cooling/storage allocation [14,15]"
+    },
+    {
+      "name": "Camera body -1",
+      "mass_kg": 0.036,
+      "position_m": [
+        0,
+        -0.365,
+        0
+      ],
+      "dimensions_m": [
+        0.029,
+        0.03,
+        0.029
+      ],
+      "local_inertia": [
+        [
+          5.223e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          5.046e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          5.223e-06
+        ]
+      ],
+      "basis": "FLIR dimensions; optical flange placement allocation"
+    },
+    {
+      "name": "Camera body 1",
+      "mass_kg": 0.036,
+      "position_m": [
+        0,
+        0.365,
+        0
+      ],
+      "dimensions_m": [
+        0.029,
+        0.03,
+        0.029
+      ],
+      "local_inertia": [
+        [
+          5.223e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          5.046e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          5.223e-06
+        ]
+      ],
+      "basis": "FLIR dimensions; optical flange placement allocation"
+    },
+    {
+      "name": "Lens and installation -1",
+      "mass_kg": 0.11,
+      "position_m": [
+        0,
+        -0.3981,
+        0
+      ],
+      "dimensions_m": [
+        0.042,
+        0.0362,
+        0.042
+      ],
+      "local_inertia": [
+        [
+          2.818236666666667e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          3.234e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.818236666666667e-05
+        ]
+      ],
+      "basis": "Opto Engineering dimensions; 110 g installed allocation"
+    },
+    {
+      "name": "Lens and installation 1",
+      "mass_kg": 0.11,
+      "position_m": [
+        0,
+        0.3981,
+        0
+      ],
+      "dimensions_m": [
+        0.042,
+        0.0362,
+        0.042
+      ],
+      "local_inertia": [
+        [
+          2.818236666666667e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          3.234e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.818236666666667e-05
+        ]
+      ],
+      "basis": "Opto Engineering dimensions; 110 g installed allocation"
+    },
+    {
+      "name": "Pitch support -1",
+      "mass_kg": 0.035,
+      "position_m": [
+        0,
+        -0.345,
+        -0.02
+      ],
+      "dimensions_m": [
+        0.025,
+        0.08,
+        0.04
+      ],
+      "local_inertia": [
+        [
+          2.3333333333333336e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          6.4895833333333355e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.0489583333333334e-05
+        ]
+      ],
+      "basis": "70 g paired installed allocation [18]"
+    },
+    {
+      "name": "Pitch support 1",
+      "mass_kg": 0.035,
+      "position_m": [
+        0,
+        0.345,
+        -0.02
+      ],
+      "dimensions_m": [
+        0.025,
+        0.08,
+        0.04
+      ],
+      "local_inertia": [
+        [
+          2.3333333333333336e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          6.4895833333333355e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.0489583333333334e-05
+        ]
+      ],
+      "basis": "70 g paired installed allocation [18]"
+    },
+    {
+      "name": "GEPRC VTC6 6S2P 6 Ah, installed",
+      "mass_kg": 0.627,
+      "position_m": [
+        0,
+        0,
+        -0.09
+      ],
+      "dimensions_m": [
+        0.111,
+        0.038,
+        0.069
+      ],
+      "local_inertia": [
+        [
+          0.00032421125,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0008925345,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0007192212499999999
+        ]
+      ],
+      "basis": "607 g product + 20 g allowance [37]"
+    },
+    {
+      "name": "Regulators, distribution, LEDs, harness",
+      "mass_kg": 0.15,
+      "position_m": [
+        0,
+        0,
+        0
+      ],
+      "dimensions_m": [
+        0.15,
+        0.1,
+        0.05
+      ],
+      "local_inertia": [
+        [
+          0.00015625000000000003,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0003125,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00040625
+        ]
+      ],
+      "basis": "Installation allocation [11,33,34]; central allocation, refine at CAD stage"
+    },
+    {
+      "name": "Sensor mounts and isolators",
+      "mass_kg": 0.04,
+      "position_m": [
+        0,
+        0,
+        0
+      ],
+      "dimensions_m": [
+        0.15,
+        0.1,
+        0.05
+      ],
+      "local_inertia": [
+        [
+          4.166666666666668e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.333333333333333e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00010833333333333334
+        ]
+      ],
+      "basis": "Custom-part allocation; central allocation, refine at CAD stage"
+    },
+    {
+      "name": "Integration contingency",
+      "mass_kg": 0.1,
+      "position_m": [
+        0,
+        0,
+        0
+      ],
+      "dimensions_m": [
+        0.15,
+        0.1,
+        0.05
+      ],
+      "local_inertia": [
+        [
+          0.00010416666666666669,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00020833333333333337,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0002708333333333334
+        ]
+      ],
+      "basis": "Explicit design allowance; central allocation, refine at CAD stage"
+    }
+  ],
+  "status": "dimensioned mass-allocation model; not weighed hardware or manufacturer CAD",
+  "camera_body_source": "https://softwareservices.flir.com/BFS-U3-122S6/latest/Model/spec.html",
+  "lens_source": "https://www.opto-e.com/en/products/en-12rt-series/RT-V1228-MPY2"
+}

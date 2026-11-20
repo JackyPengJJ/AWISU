@@ -345,20 +345,22 @@
     "url": "https://softwareservices.flir.com/BFS-U3-122S6/latest/Model/spec.html",
     "kind": "manufacturer",
     "facts": "Selected 4096×3000 global-shutter camera, 36 g, maximum 3 W; complete lens/mount mass accounted separately.",
-    "accessed": "2026-11-07",
-    "image_credit": "Manufacturer copyright; credited academic illustration"
+    "accessed": "2026-11-20",
+    "image_credit": "Manufacturer copyright; credited academic illustration",
+    "specification_conditions": "4096x3000, 3.45 um, 23 fps Mono8, global shutter; 29x29x30 mm and 36 g; 3 W maximum. Installed optics/supports counted separately."
   },
   {
     "id": 36,
     "title": "Opto Engineering RT-V1228-MPY2 catalogue",
     "url": "https://www.opto-e.com/en/products/en-12rt-series/RT-V1228-MPY2",
     "facts": "Current supplier catalogue:12mm,1.1 inch,12MP,C mount,97g,42x36.2mm; original manufacturer-declared technical data,last updated2024-11-05. Listing is not confirmation of stock.",
-    "accessed": "2026-11-09",
+    "accessed": "2026-11-20",
     "evidence_type": "primary manufacturer publication; archive host identified where applicable",
     "retrieved_url": "https://www.opto-e.com/en/products/en-12rt-series/RT-V1228-MPY2",
     "file": "docs/review/followup_sources/S11.html",
     "sha256": "c2255f1d57af591d23d0709b14732fe7d139c410992f65bd118a2d2341c21f00",
-    "bytes": 110135
+    "bytes": 110135,
+    "specification_conditions": "RT-V1228-MPY2: 12 mm, 1.1 inch coverage, C mount, 42 mm maximum diameter, 36.2 mm flange-to-front length, 97 g current catalogue. 110 g installed allocation retains margin; principal-plane placement requires calibration."
   },
   {
     "id": 37,
@@ -376,11 +378,13 @@
     "title": "Murata VTC6 cell datasheet",
     "url": "https://www.murata.com/-/media/webrenewal/products/batteries/cylindrical/datasheet/us18650vtc6-product-datasheet.ashx",
     "facts": "3.6V,3Ah minimum at low-current2V cutoff. Discharge curves at23C for3..30A. Cutoff-aware delivered energy is required, not6000mAh times a marketing nominal voltage.",
-    "accessed": "2026-11-09",
+    "accessed": "2026-11-20",
     "evidence_type": "primary manufacturer publication; archive host identified where applicable",
     "file": "docs/review/followup_sources/S7.pdf",
     "sha256": "ff42082f0d94c311bfd9a8b24211c5d522aeee161adb7473731e9fe94fcc9f08",
-    "bytes": 275509
+    "bytes": 275509,
+    "specification_conditions": "Murata US18650VTC6 Product Datasheet Version 001: typical loaded 10/15 A rate curves at 23 C; capacity rating 600 mA to 2.0 V differs from the pack cutoff. Curve source SHA256 and axis calibration in docs/audit/vtc6_source.json.",
+    "local_evidence": "docs/audit/vtc6_source.json"
   },
   {
     "id": 39,

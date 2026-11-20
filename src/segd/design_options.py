@@ -80,7 +80,9 @@ def results():
         <= c["minimum_safe_width_m"]
     )
     return {
-        "status": "research candidate; installation and battery discharge qualification pending",
+        "status": "research comparison; installed configuration and 18 V shared-current screen are exported by final_design",
+        "thrust_screen_voltage_v": 19.8,
+        "thrust_screen_excludes_shared_current": True,
         "coverage": c,
         "sampling": sample,
         "capture_schedule_geometry_pass": valid,

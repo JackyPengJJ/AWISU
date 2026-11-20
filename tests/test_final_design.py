@@ -48,8 +48,10 @@ class FinalDesignTests(unittest.TestCase):
         )
         self.assertTrue(all(ord(c) >= 32 or c == "\n" for c in content))
         self.assertNotIn("{{", source)
-        self.assertIn("91.43", source)
-        self.assertIn("73.14", source)
+        self.assertIn(
+            f"{self.d['cases'][0]['required_delivered_wh_adverse']:.2f}", source
+        )
+        self.assertIn(f"{self.d['cases'][0]['adverse_wh']:.2f}", source)
         self.assertIn(r"\begin{equation}", source)
         self.assertEqual(source.count(r"\label{fig:"), 7)
         self.assertGreaterEqual(n, 35)
@@ -62,5 +64,5 @@ class FinalDesignTests(unittest.TestCase):
         self.assertIn("Controller", content)
         self.assertIn("0.1364", content)
         self.assertIn("0.1233", content)
-        self.assertIn("99.82", content)
-        self.assertIn("116.61", content)
+        self.assertIn(f"{self.d['cases'][1]['adverse_wh']:.2f}", content)
+        self.assertIn(f"{self.d['cases'][2]['adverse_wh']:.2f}", content)

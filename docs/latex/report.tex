@@ -32,6 +32,7 @@
 \renewenvironment{abstract}{\vskip.075in\centerline{\fontsize{14}{17}\selectfont\reportabstracttitle}\vspace{.5ex}\begin{quote}}{\par\end{quote}\vskip1ex}
 \AtBeginDocument{\setlength{\abovedisplayskip}{7pt plus2pt minus5pt}\setlength{\belowdisplayskip}{7pt plus2pt minus5pt}\setlength{\abovedisplayshortskip}{0pt plus3pt}\setlength{\belowdisplayshortskip}{4pt plus3pt minus3pt}}
 \raggedbottom
+\newcommand{\reportneedspace}[1]{\par\begingroup\dimen0=\pagegoal\advance\dimen0 by-\pagetotal\ifdim\dimen0<#1\newpage\fi\endgroup}
 \begin{document}
 @@CONTENT@@
 \end{document}

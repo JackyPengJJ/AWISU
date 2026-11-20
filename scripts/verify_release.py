@@ -11,8 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     manifest = json.loads((ROOT / "docs/artifacts.json").read_text())
-    for group in ["experiment_sha256", "submission_sha256"]:
-        for name, expected in manifest[group].items():
+    for group in ["experiment_sha256", "candidate_sha256", "submission_sha256"]:
+        for name, expected in manifest.get(group, {}).items():
             path = ROOT / name
             actual = hashlib.sha256(path.read_bytes()).hexdigest()
             if actual != expected:
@@ -47,6 +47,21 @@ def main():
     for item in inventory:
         if not (ROOT / "results/final/inference/evidence" / item["evidence"]).is_file():
             raise FileNotFoundError(item["evidence"])
+    candidate = ROOT / "results/candidate18"
+    if candidate.exists():
+        route = json.loads((candidate / "full_route/metrics.json").read_text())
+        assert (
+            route["pass_current"]
+            and route["pass_tracking_015m"]
+            and route["pass_tilt_12deg"]
+        )
+        optical = json.loads(
+            (candidate / "optical_render/render_validation.json").read_text()
+        )
+        assert optical["double_confirmed"] == optical["test_pairs"] == 14
+        assert optical["label_size_mm"] == [100, 44]
+        scene = json.loads((candidate / "scene_audit.json").read_text())
+        assert scene["passed"] and scene["labels"] == 400
     metadata = json.loads((ROOT / "docs/report_metadata.json").read_text())
     if metadata["video"] != "https://youtu.be/ZQHlchVMqs8":
         raise ValueError("Unexpected video URL")

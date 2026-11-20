@@ -9,11 +9,13 @@ AWISU is a small-UAV design for barcode inventory in an unknown, GPS-denied ware
 
 ## System and results
 
-The proposed system uses bilateral cameras, lidar–inertial–visual navigation, a five-level continuous scan and immediate local recovery for missed labels. Its estimated installed mass is 2.9016 kg. The two-recovery scenario requires 73.14 Wh under the adverse power model; maintaining a 20% reserve requires 91.43 Wh delivered before the specified battery cutoff. Pack qualification remains an installation test.
+The proposed system uses bilateral global-shutter cameras, LiDAR–inertial–visual navigation, a five-level continuous scan and immediate local recovery. Estimated installed mass is 2.9016 kg. The selected optical case retains the original 100×44 mm, 99-module labels; dense 100 mm labels are outside the guaranteed sampling envelope. At an 18.0 V loaded cutoff, the coupled battery/load model gives approximately 26.7% reserve for the 669.5 s, two-recovery adverse case (73.63 Wh). Eight recoveries lie at the reserve boundary. These are declared 23°C model results with explicit capacity and connection-loss sensitivities.
+
+`results/candidate18/` contains the matched mass/inertia control tests, a complete matched known-route execution, native warehouse exposure pairs, pixel perturbations, 72-case battery screen and compiled-scene audit. [Design closure notes](docs/audit/README.md) and [requirement traceability](docs/requirements_traceability.json) identify assignment inputs, engineering assumptions and verification scope. Unknown-layout estimation and coverage are system designs; no integrated unknown-warehouse success or physical aircraft is claimed.
 
 The preserved experiment uses a separate 2.65 kg reference plant, fixed side cameras and a prescribed route. The selected residual controller reduced full-route position RMSE from 0.1148 m to 0.1038 m. Saved-image consistency checks retained 400 correct IDs from 1420 processed images. These records evaluate tracking and decoding; the report separately develops the proposed unknown-environment navigation and hardware design.
 
-The final film introduces the hardware and method, then replays the continuous flight with external, bilateral and forward views. English narration and an optional subtitle track are included in the local submission video.
+The film introduces the hardware and method, then replays the reference flight with external, bilateral and forward views. The local submission updates its 48–56 s design-analysis card to match this revision. English narration and subtitles are preserved. The existing YouTube upload is the earlier presentation of the same reference run; its replacement is pending author review/upload.
 
 ## Repository layout
 
@@ -24,6 +26,7 @@ configs/                Reference plant, collision and training configurations
 models/                 Released residual-controller checkpoint
 assets/                 Scene assets, report inputs and attribution
 results/final/          Preserved full-route and selection records
+results/candidate18/    Revised plant, optics and loaded-battery verification
 results/training/       Recorded learning and validation curves
 results/barcode_study/  Synthetic imaging-study measurements
 reports/                Resolved LaTeX, Markdown, Word and final figure exports

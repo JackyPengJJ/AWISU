@@ -50,7 +50,7 @@
       "local_planes": 3,
       "health_and_route_admission": 2
     },
-    "endpoint_count": 4,
+    "endpoint_count": 5,
     "endpoint_confirmation_s": 0.5,
     "yaw_per_endpoint_s": 4.0,
     "retry_actions_s": {
@@ -69,7 +69,8 @@
     "propulsion_loss_nominal": 1.1,
     "propulsion_loss_adverse": 1.25,
     "maneuver_induced_factor_adverse": 1.1,
-    "transit_speed_mps": 1.0
+    "transit_speed_mps": 1.0,
+    "endpoint_count_basis": "Four inter-level turns plus one turn before forward return; each includes end observation and odometry reacquisition."
   },
   "battery": {
     "model": "RDQ6000-22.2-100-XT150",

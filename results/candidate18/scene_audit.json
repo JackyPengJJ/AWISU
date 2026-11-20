@@ -1,0 +1,53 @@
+{
+  "aircraft_mass_kg": 2.9015999999999997,
+  "envelope_radius_and_halfheight_m": [
+    0.5,
+    0.25
+  ],
+  "ceiling_underside_m": 8,
+  "aisle_m": [
+    80,
+    2.5,
+    8
+  ],
+  "labels": 400,
+  "labels_per_side": 200,
+  "label_centres_m": [
+    0.8,
+    2.4,
+    4.0,
+    5.6,
+    7.2
+  ],
+  "label_size_mm": [
+    100,
+    44
+  ],
+  "camera_resolution": [
+    4096,
+    3000
+  ],
+  "cameras": {
+    "left": {
+      "body_position_m": [
+        0.0,
+        0.4,
+        0.0
+      ],
+      "fovy_deg": 46.65624213612069,
+      "focal_pixels": 3478.2608695652175
+    },
+    "right": {
+      "body_position_m": [
+        0.0,
+        -0.4,
+        0.0
+      ],
+      "fovy_deg": 46.65624213612069,
+      "focal_pixels": 3478.2608695652175
+    }
+  },
+  "passed": true,
+  "scope": "Compiled dimensions and optical extrinsics; no claim of integrated unknown-layout navigation",
+  "end_condition": "Candidate adds end planes and ceiling for static geometry checks; reference flight uses observed end staging volumes as an installation condition."
+}

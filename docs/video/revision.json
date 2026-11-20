@@ -1,0 +1,16 @@
+{
+  "source_sha256": "ae53b3261c0ed807ed62bcfe06ee368ddd12b494d2cf6f16efbc81f3aeb6d886",
+  "output_sha256": "1631869c5a595b9c6a1cb58967912e527caeb2221ddd602a2e6533a6011c5beb",
+  "updated_interval_s": [
+    48,
+    56
+  ],
+  "updated_content": "100 x 44 mm short-code label; matched optical bound; 18 V pack; five turn events in mission budget",
+  "audio_packets_unchanged": true,
+  "audio_packet_sha256": "SHA256=dcfe1142a47a3e35d4463fa510e87f58c3fa4920e9b5eafbb6f934c09988f378",
+  "new_training_or_flight": false,
+  "reference_replay_preserved_in_content": true,
+  "original_youtube_upload_replaced": false,
+  "adverse_wh": 73.63241399802838,
+  "required_delivered_wh": 92.04051749753548
+}

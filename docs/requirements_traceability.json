@@ -1,0 +1,36 @@
+{
+  "assignment": "docs/assignment/Segement_D_CA.pdf in the original workspace; report requirements transcribed in docs/audit/README.md",
+  "required_delivery": "Technical design report, not a mandatory physical prototype or simulation",
+  "report_sections": {
+    "platform_components": "2.1, 3.1, 3.2, 4.2, 4.3",
+    "autonomous_control": "2.3, 3.3, 4.2, 5.2, 5.4",
+    "gpsless_unknown_navigation": "2.2, 3.4, 3.5",
+    "one_flight": "3.5, 4.3",
+    "barcode_inventory": "3.5, 4.1, 5.3, 5.4"
+  },
+  "fixed_requirements": {
+    "mass_less_than_kg": 3,
+    "aisle_m": [
+      80,
+      2.5,
+      8
+    ],
+    "levels": 5,
+    "sides": 2,
+    "gps_available": false,
+    "environment_known": false,
+    "battery_changes_allowed": 0
+  },
+  "unspecified_by_assignment": [
+    "label size and payload",
+    "cargo count",
+    "temperature",
+    "reserve fraction",
+    "cutoff voltage",
+    "available end-staging space"
+  ],
+  "design_assumptions": "docs/design/candidate.json; docs/design/followup_candidate.json; configs/candidate18.json",
+  "evidence": "results/candidate18; original results/final",
+  "unknown_layout_end_to_end_experiment": false,
+  "physical_aircraft_built": false
+}

@@ -64,7 +64,12 @@ def calculate():
         r["total_seconds"] += lateral["seconds"]
         r["required_delivered_wh_nominal"] = r["nominal_wh"] / 0.8
         r["required_delivered_wh_adverse"] = r["adverse_wh"] / 0.8
-        for key in ["allowed_wh", "energy_headroom_wh", "passes_mass_thrust_energy"]:
+        for key in [
+            "allowed_wh",
+            "energy_headroom_wh",
+            "passes_mass_thrust_energy",
+            "low_voltage_twr",
+        ]:
             r.pop(key)
         r["battery_cutoff_energy_qualified"] = False
         cases.append(r)
@@ -88,7 +93,15 @@ def calculate():
         for row in base["mass_items"]
         if "MN3508" in row[0] or "ESC" in row[0] or "P14" in row[0]
     )
+    from .requirements_audit import current_audit
+
+    current = current_audit({"mass_g": mass, "base": base})
+    selected = next(x for x in current["results"] if x["bus_voltage_v"] == 18)
+    for case in cases:
+        case["bus_cutoff_v"] = 18.0
+        case["shared_current_screen_twr"] = selected["maximum_collective_twr_model"]
     return {
+        "current_screen": current,
         "base": base,
         "candidate": candidate,
         "settings": settings,
@@ -102,5 +115,5 @@ def calculate():
         "offset_m": offset,
         "lateral_recovery_seconds_each": lateral_s,
         "motor_prop_inertia_lower_bound_kgm2": inertia_x,
-        "battery_qualification": "delivered energy above 19.8 V under mission load remains an admission condition",
+        "battery_qualification": "18.0 V loaded-pack screening is recorded in results/candidate18; physical pack qualification remains outstanding",
     }

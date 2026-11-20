@@ -1,0 +1,85 @@
+{
+  "status": "validation candidate; not substituted into retained experiments",
+  "battery": {
+    "series": 6,
+    "parallel": 2,
+    "loaded_cutoff_v": 18.0,
+    "pack_current_limit_a": 30.0,
+    "temperature_c": 23.0,
+    "curve_voltage_shift_v": 0.04,
+    "capacity_scale": 0.9615384615384616,
+    "interconnect_resistance_ohm": 0.01,
+    "reserve_fraction": 0.2,
+    "integration_step_s": 0.1
+  },
+  "flight": {
+    "mass_kg": 2.9016,
+    "motor_diagonal_m": 0.6,
+    "propeller_diameter_m": 0.3556,
+    "guard_radial_allowance_m": 0.02,
+    "envelope_radius_m": 0.5,
+    "envelope_half_height_m": 0.25,
+    "motor_tau_s": 0.04,
+    "tilt_limit_deg": 12.0,
+    "scan_speed_mps": 0.85,
+    "braking_acceleration_mps2": 0.6,
+    "state_latency_s": 0.1,
+    "attitude_bandwidth_hz": 2.0,
+    "attitude_damping": 0.9,
+    "reaction_torque_ratio_m": 0.018
+  },
+  "optics": {
+    "pixels": [
+      4096,
+      3000
+    ],
+    "pixel_pitch_mm": 0.00345,
+    "focal_length_mm": 12.0,
+    "optical_centres_body_m": [
+      [
+        0,
+        0.4,
+        0
+      ],
+      [
+        0,
+        -0.4,
+        0
+      ]
+    ],
+    "pitch_positions_deg": [
+      -28,
+      0,
+      28
+    ],
+    "camera_body_mm": [
+      29,
+      29,
+      30
+    ],
+    "lens_diameter_mm": 42,
+    "lens_length_from_flange_mm": 36.2,
+    "mechanical_principal_plane_offset_mm": 20,
+    "label_widths_mm": [
+      100,
+      200,
+      250
+    ],
+    "label_height_mm": 44,
+    "payloads": [
+      "W0000",
+      "INVENTORYABC"
+    ],
+    "selected_label_width_mm": 100,
+    "selected_payload": "W0000",
+    "selected_modules_including_quiet_zones": 99
+  },
+  "basis": {
+    "capacity_scale": "Murata minimum/nominal capacity ratio 3000/3120; horizontal capacity sensitivity, not a guarantee on the shape of a minimum cell curve",
+    "interconnect_resistance_ohm": "Unmeasured assembly requirement; vary 0..0.03 ohm. Excludes cell resistance already represented by loaded cell curves.",
+    "curve_voltage_shift_v": "Digitisation/curve sensitivity; not a statistical confidence bound",
+    "temperature_c": "Manufacturer curve test temperature only; other temperatures not validated",
+    "reaction_torque_ratio_m": "Reference-model assumption; yaw authority needs a measured propeller torque/RPM map",
+    "mechanical_principal_plane_offset_mm": "Geometric placement allocation inside the lens; calibration required. Camera/lens external dimensions are manufacturer specifications."
+  }
+}

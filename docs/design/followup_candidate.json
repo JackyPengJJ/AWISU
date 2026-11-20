@@ -14,9 +14,9 @@
       0,
       28
     ],
-    "label_outer_width_m": 0.25,
-    "label_outer_height_m": 0.04,
-    "module_width_m": 0.0012,
+    "label_outer_width_m": 0.1,
+    "label_outer_height_m": 0.044,
+    "module_width_m": 0.00101010101010101,
     "scan_speed_mps": 0.85,
     "height_grid_step_m": 0.001
   },
@@ -46,7 +46,7 @@
       "capacity_ah": 6,
       "pack_continuous_limit_a": 30,
       "source": "S6",
-      "cutoff_voltage_v": 19.8
+      "cutoff_voltage_v": 18.0
     },
     {
       "name": "Flywoo P30B 6S2P 6000",
@@ -60,7 +60,7 @@
     }
   ],
   "notes": [
-    "Larger labels are an installation assumption, not an original assignment requirement or a change to the historical experiment.",
+    "Selected validation labels retain the original 100 x 44 mm short-code case; 200/250 mm and longer encodings are comparison cases, not mandated warehouse relabelling.",
     "110 g lens allocation exceeds the archived manufacturer datasheet's 102.8 g; 97 g later brochure mass is not used.",
     "20 g battery uplift and 20 g extra pitch-support mass are engineering allocations, not manufacturer masses.",
     "Nameplate Li-ion energy is not accepted as delivered energy above the loaded cutoff. Nominal cell voltage is 3.6 V, even if the pack marketing says 22.2 V.",

@@ -1,0 +1,201 @@
+{
+  "scene": {
+    "checks": {
+      "rack_length_80m": true,
+      "clear_aisle_2_5m": true,
+      "rack_top_8m": true,
+      "five_levels_1_6m_apart": true,
+      "both_sides_200_each": true,
+      "reference_mass_below_3kg": true,
+      "recorded_route_completed": true
+    },
+    "reference_geometry_pass": true,
+    "label_count": 400,
+    "cargo_count": 400,
+    "labels_per_side": {
+      "-1": 200,
+      "1": 200
+    },
+    "label_centre_levels_m": [
+      0.8,
+      2.4,
+      4.0,
+      5.6,
+      7.2
+    ],
+    "label_dimensions_m": [
+      [
+        0.1,
+        0.044
+      ]
+    ],
+    "nearest_cargo_edge_abs_y_m": 1.2654109281099981,
+    "barcode_example": "W0000",
+    "encoded_modules_including_quiet_zones": 99,
+    "side_cameras": [
+      {
+        "name": "left",
+        "position_body_m": [
+          0.0,
+          0.1,
+          0.0
+        ],
+        "fovy_deg": 24.65
+      },
+      {
+        "name": "right",
+        "position_body_m": [
+          0.0,
+          -0.1,
+          0.0
+        ],
+        "fovy_deg": 24.65
+      }
+    ],
+    "recorded_sensor_image_size_px": [
+      4096,
+      2160
+    ],
+    "recorded_state_source": "proxy",
+    "known_prescribed_route": true,
+    "unknown_environment_end_to_end_validated": false,
+    "matches_final_hardware_optics": false,
+    "matches_final_hardware_mass": false,
+    "assignment_label_size_specified": false,
+    "assignment_cargo_count_specified": false,
+    "end_zone_assumption": "Launch/landing and turning space outside the 80 m aisle must be allocated; not specified by assignment",
+    "generated_scene_xml_sha256": "d0edf0be1865851da78801ad725f5d1855f60a7775d403ffd8f0a6b3dd3f704b"
+  },
+  "battery": {
+    "source": "docs/audit/vtc6_source.json",
+    "series_cells": 6,
+    "parallel_cells": 2,
+    "temperature_c": 23,
+    "results": [
+      {
+        "pack_cutoff_v": 19.8,
+        "cell_current_a": 10,
+        "curve_voltage_shift_v": 0.0,
+        "cell_capacity_to_cutoff_ah": 2.035714285714285,
+        "typical_curve_pack_wh": 87.66102857142855,
+        "after_20_percent_reserve_wh": 70.12882285714284,
+        "required_delivered_wh": 92.04051749753548,
+        "two_recovery_adverse_comparison_pass": false
+      },
+      {
+        "pack_cutoff_v": 19.8,
+        "cell_current_a": 10,
+        "curve_voltage_shift_v": 0.04,
+        "cell_capacity_to_cutoff_ah": 1.8928571428571421,
+        "typical_curve_pack_wh": 81.06102857142855,
+        "after_20_percent_reserve_wh": 64.84882285714285,
+        "required_delivered_wh": 92.04051749753548,
+        "two_recovery_adverse_comparison_pass": false
+      },
+      {
+        "pack_cutoff_v": 19.8,
+        "cell_current_a": 15,
+        "curve_voltage_shift_v": 0.0,
+        "cell_capacity_to_cutoff_ah": 1.7766233766233759,
+        "typical_curve_pack_wh": 75.15572727272725,
+        "after_20_percent_reserve_wh": 60.1245818181818,
+        "required_delivered_wh": 92.04051749753548,
+        "two_recovery_adverse_comparison_pass": false
+      },
+      {
+        "pack_cutoff_v": 19.8,
+        "cell_current_a": 15,
+        "curve_voltage_shift_v": 0.04,
+        "cell_capacity_to_cutoff_ah": 1.6207792207792198,
+        "typical_curve_pack_wh": 68.16892207792205,
+        "after_20_percent_reserve_wh": 54.53513766233764,
+        "required_delivered_wh": 92.04051749753548,
+        "two_recovery_adverse_comparison_pass": false
+      },
+      {
+        "pack_cutoff_v": 18.0,
+        "cell_current_a": 10,
+        "curve_voltage_shift_v": 0.0,
+        "cell_capacity_to_cutoff_ah": 2.6775,
+        "typical_curve_pack_wh": 112.15053,
+        "after_20_percent_reserve_wh": 89.72042400000001,
+        "required_delivered_wh": 92.04051749753548,
+        "two_recovery_adverse_comparison_pass": true
+      },
+      {
+        "pack_cutoff_v": 18.0,
+        "cell_current_a": 10,
+        "curve_voltage_shift_v": 0.04,
+        "cell_capacity_to_cutoff_ah": 2.6275,
+        "typical_curve_pack_wh": 109.07733,
+        "after_20_percent_reserve_wh": 87.261864,
+        "required_delivered_wh": 92.04051749753548,
+        "two_recovery_adverse_comparison_pass": true
+      },
+      {
+        "pack_cutoff_v": 18.0,
+        "cell_current_a": 15,
+        "curve_voltage_shift_v": 0.0,
+        "cell_capacity_to_cutoff_ah": 2.595535714285714,
+        "typical_curve_pack_wh": 106.37527500000002,
+        "after_20_percent_reserve_wh": 85.10022000000002,
+        "required_delivered_wh": 92.04051749753548,
+        "two_recovery_adverse_comparison_pass": true
+      },
+      {
+        "pack_cutoff_v": 18.0,
+        "cell_current_a": 15,
+        "curve_voltage_shift_v": 0.04,
+        "cell_capacity_to_cutoff_ah": 2.5391566265060237,
+        "typical_curve_pack_wh": 103.11272891566263,
+        "after_20_percent_reserve_wh": 82.4901831325301,
+        "required_delivered_wh": 92.04051749753548,
+        "two_recovery_adverse_comparison_pass": true
+      }
+    ],
+    "status": "screening from typical constant-current cell curves; no pack guarantee",
+    "selection_warning": "19.8 V reserve closure must not be inferred from 129.6 Wh nameplate energy or an assumed 100 Wh delivery"
+  },
+  "current": {
+    "manufacturer_map_voltage_v": 22.2,
+    "shared_limit_a": 30,
+    "installation_power_multiplier": 1.25,
+    "aux_w": 60.0,
+    "voltage_ceiling_model": "maximum thrust scales with (V/22.2)^2 and 0.85 thrust derating; not low-voltage bench data",
+    "low_thrust_power_bound": "Power <= first measured point for 0..710 g, assuming monotonicity; no claimed measured low-load curve",
+    "roll_pitch_only": true,
+    "combined_yaw_authority_not_established": true,
+    "results": [
+      {
+        "bus_voltage_v": 22.2,
+        "maximum_collective_twr_model": 1.5413846059007346,
+        "constant_collective_roll_pitch_torque_bound_nm": 5.629236818085118,
+        "20_percent_differential_torque_nm": 1.2072423740125209,
+        "20_percent_differential_current_a": 19.671625779625778,
+        "20_percent_differential_admitted": true,
+        "12_deg_tilt_collective_admitted": true,
+        "12_deg_horizontal_acceleration_mps2": 2.084467805501322
+      },
+      {
+        "bus_voltage_v": 19.8,
+        "maximum_collective_twr_model": 1.4068193503677378,
+        "constant_collective_roll_pitch_torque_bound_nm": 3.6974528844735364,
+        "20_percent_differential_torque_nm": 1.2072423740125209,
+        "20_percent_differential_current_a": 22.056065268065264,
+        "20_percent_differential_admitted": true,
+        "12_deg_tilt_collective_admitted": true,
+        "12_deg_horizontal_acceleration_mps2": 2.084467805501322
+      },
+      {
+        "bus_voltage_v": 18.0,
+        "maximum_collective_twr_model": 1.2978394026781126,
+        "constant_collective_roll_pitch_torque_bound_nm": 2.0081391667441237,
+        "20_percent_differential_torque_nm": 1.2072423740125209,
+        "20_percent_differential_current_a": 24.26167179487179,
+        "20_percent_differential_admitted": true,
+        "12_deg_tilt_collective_admitted": true,
+        "12_deg_horizontal_acceleration_mps2": 2.084467805501322
+      }
+    ]
+  }
+}

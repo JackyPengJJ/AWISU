@@ -331,16 +331,16 @@ def _draw(results, out, d, plt, patches, Image, version):
         )
         ax.add_patch(
             patches.Rectangle(
-                (-0.125, zi - 0.020),
-                0.25,
-                0.040,
+                (-0.05, zi - 0.022),
+                0.1,
+                0.044,
                 fc="white",
                 ec=color,
                 lw=0.8,
                 zorder=5,
             )
         )
-        for xx in np.linspace(-0.10, 0.10, 18):
+        for xx in np.linspace(-0.045, 0.045, 18):
             ax.plot(
                 [xx, xx], [zi - 0.014, zi + 0.014], color="#252C33", lw=0.5, zorder=6
             )
@@ -385,7 +385,7 @@ def _draw(results, out, d, plt, patches, Image, version):
     ax.text(
         0.50, 0.97, "Clipped label: reject", ha="center", color=ORANGE, fontsize=11.5
     )
-    ax.text(0.5, 0.18, "250 × 40 mm incl. quiet zones", ha="center", fontsize=11.5)
+    ax.text(0.5, 0.18, "100 × 44 mm incl. quiet zones", ha="center", fontsize=11.5)
     ax.text(
         0.5,
         0.07,
@@ -396,7 +396,7 @@ def _draw(results, out, d, plt, patches, Image, version):
     )
     ax = fig.add_subplot(gs[1, :])
     title(ax, "c", "Worst-height travel budget")
-    ax.set(xlim=(-0.30, 0.30), ylim=(-0.1, 1.2))
+    ax.set(xlim=(-0.42, 0.42), ylim=(-0.1, 1.2))
     ax.axis("off")
     safe = float(envelope.min())
     half = safe / 2
@@ -453,152 +453,96 @@ def _draw(results, out, d, plt, patches, Image, version):
             "minimum_interval_m": safe,
             "limiting_height_m": float(zc),
             "inset": "schematic corner containment; drawn barcode bars carry no encoded evidence",
-            "label_width_m": 0.25,
-            "label_height_m": 0.04,
+            "label_width_m": 0.1,
+            "label_height_m": 0.044,
             "exposure_times_s": [0.14, 0.19, 0.34, 0.39, 0.54, 0.59],
             "cycle_s": 0.60,
             "confirmation_horizon_s": 0.604,
         },
     )
 
-    fig = plt.figure(figsize=(6.8, 5.0))
-    ax = fig.add_axes([0.13, 0.65, 0.83, 0.23])
-    title(ax, "a", "Mission energy composition")
-    r = d["cases"][0]
-    groups = {
-        "Scan": [],
-        "Transit": [],
-        "Vertical": [],
-        "Admission": [],
-        "Recovery": [],
-    }
-    for phase in r["phases"]:
-        key = (
-            "Scan"
-            if phase["phase"] == "scan"
-            else "Transit"
-            if phase["phase"] in ["approach", "return"]
-            else "Vertical"
-            if phase["phase"] in ["takeoff", "climb", "descend", "land"]
-            else "Recovery"
-            if "retr" in phase["phase"] or phase["phase"] == "lateral_recovery"
-            else "Admission"
-        )
-        groups[key].append(phase)
-    values = {
-        k: [sum(phase[k] for phase in v) for v in groups.values()]
-        for k in ["nominal_wh", "adverse_wh"]
-    }
-    palette = [BLUE, "#79A5BF", "#687883", "#CBD3D8", ORANGE]
-    for y, key in [(1, "nominal_wh"), (0, "adverse_wh")]:
-        left = 0
-        for name, value, color in zip(groups, values[key], palette):
-            ax.barh(
-                y,
-                value,
-                left=left,
-                height=0.45,
-                color=color,
-                edgecolor="white",
-                lw=0.7,
-                label=name if y == 1 else None,
-            )
-            left += value
-        ax.text(left + 1, y, f"{left:.2f}", va="center", fontsize=11.5)
-    ax.set(
-        xlim=(0, 83),
-        ylim=(-0.7, 2.35),
-        yticks=[1, 0],
-        yticklabels=["Nominal", "Adverse"],
-        xlabel="Mission energy (Wh)",
-        xticks=[0, 20, 40, 60, 80],
+    screen = json.loads((results / "candidate18/battery_screen.json").read_text())
+    source = np.genfromtxt(
+        ROOT / "docs/audit/vtc6_discharge.csv", delimiter=",", names=True
     )
-    ax.spines["left"].set_visible(False)
-    ax.tick_params(axis="y", length=0)
-    ax.legend(
-        frameon=False,
-        ncol=5,
-        loc="upper center",
-        fontsize=10.0,
-        handlelength=0.9,
-        columnspacing=0.7,
-    )
-    ax = fig.add_axes([0.13, 0.12, 0.70, 0.35])
-    title(ax, "b", "Recovery feasibility at 100 Wh")
-    counts = np.arange(25)
-    delta = (d["cases"][1]["adverse_wh"] - r["adverse_wh"]) / 6
-    series = []
-    for mult in [1.0, 1.10]:
-        energies = r["adverse_wh"] + (counts - 2) * delta
-        times = r["total_seconds"] + (counts - 2) * (
-            r["retry_seconds_each"] + d["lateral_recovery_seconds_each"]
-        )
-        extra = (mult - 1) * r["hover_propulsion_w"] * 1.25 * times / 3600
-        series.append(((energies + extra) / 0.8).tolist())
-    factors = np.linspace(1.0, 1.10, 101)
-    energy = r["adverse_wh"] + (counts - 2) * delta
-    time = r["total_seconds"] + (counts - 2) * (
-        r["retry_seconds_each"] + d["lateral_recovery_seconds_each"]
-    )
-    required = (
-        energy[None, :]
-        + (factors[:, None] - 1) * r["hover_propulsion_w"] * 1.25 * time[None, :] / 3600
-    ) / 0.8
-    mesh = ax.pcolormesh(
-        counts,
-        factors,
-        required,
-        cmap="cividis",
-        shading="nearest",
-        vmin=80,
-        vmax=145,
-        rasterized=True,
-        edgecolors="face",
-        linewidth=0,
-        antialiased=False,
-    )
-    contour = ax.contour(
-        counts, factors, required, levels=[100], colors=["white"], linewidths=1.3
-    )
-    ax.clabel(contour, fmt={100: "100 Wh"}, inline=True, fontsize=10.5)
-    for n in [2, 8, 20]:
+    fig, axs = plt.subplots(2, 1, figsize=(6.8, 5.4))
+    fig.subplots_adjust(left=0.14, right=0.96, bottom=0.10, top=0.89, hspace=0.9)
+    ax = axs[0]
+    title(ax, "a", "Typical cell discharge at 23°C")
+    for amps, color in [(10, BLUE), (15, ORANGE)]:
         ax.plot(
-            n,
-            1,
-            "o" if n <= 8 else "x",
-            color="white",
-            mec="#303840",
-            ms=5,
-            clip_on=False,
+            source["capacity_mah"],
+            source[f"voltage_{amps}a_v"],
+            "o-",
+            ms=3,
+            color=color,
+            label=f"{amps} A / cell",
+        )
+    for cutoff, style in [(3.3, ":"), (3.0, "--")]:
+        ax.axhline(cutoff, color=GREY, ls=style, lw=1)
+        ax.text(
+            100,
+            cutoff,
+            f"{6 * cutoff:.1f} V pack",
+            ha="left",
+            va="bottom",
+            fontsize=10,
         )
     ax.set(
-        xlabel="Recovered cargo instances (out of 400)",
-        ylabel="Additional propulsion factor",
-        xlim=(0, 24),
-        ylim=(0.999, 1.101),
-        xticks=[0, 4, 8, 12, 16, 20, 24],
-        yticks=[1, 1.05, 1.1],
-        yticklabels=["1.00×", "1.05×", "1.10×"],
+        xlabel="Discharged capacity (mAh / cell)",
+        ylabel="Loaded voltage (V)",
+        xlim=(0, 2800),
+        ylim=(2.85, 3.95),
     )
-    cax = fig.add_axes([0.88, 0.12, 0.025, 0.35])
-    cb = fig.colorbar(mesh, cax=cax, ticks=[90, 100, 110, 120, 130, 140])
-    cb.set_label("Required delivered energy (Wh)", fontsize=11.5)
+    ax.legend(frameon=False, ncol=2, fontsize=10, loc="upper right")
+    clean(ax)
+    ax = axs[1]
+    title(ax, "b", "Reserve after the adverse mission")
+    plotted = []
+    for n, color in [(2, BLUE), (8, GREEN), (20, ORANGE)]:
+        rows = [
+            x
+            for x in screen["results"]
+            if x["cutoff_v"] == 18
+            and abs(x["capacity_scale"] - 3000 / 3120) < 1e-8
+            and x["recoveries"] == n
+        ]
+        ax.plot(
+            [x["interconnect_ohm"] * 1000 for x in rows],
+            [x["reserve_fraction"] * 100 for x in rows],
+            "o-",
+            ms=3,
+            color=color,
+            label=f"{n} recoveries",
+        )
+        plotted.extend(rows)
+    ax.axhline(20, color=GREY, ls="--", lw=1)
+    ax.text(
+        29.5,
+        20.3,
+        "20% requirement",
+        ha="right",
+        va="bottom",
+        fontsize=10,
+        bbox=dict(facecolor="white", edgecolor="none", pad=1),
+    )
+    ax.set(
+        xlabel="Assembly connection resistance (mΩ)",
+        ylabel="Delivered-energy reserve (%)",
+        xlim=(0, 30),
+        ylim=(-1, 33),
+        xticks=[0, 10, 20, 30],
+    )
+    ax.legend(frameon=False, ncol=3, fontsize=10, loc="upper right")
+    clean(ax)
     save(
         fig,
         "07_energy",
-        "Stacked phase budgets and a continuous model surface in recovery count and propulsion loss. White contour: conditional 100 Wh delivered-energy limit with 20% reserve.",
+        "Digitised typical cell curves and coupled pack/load reserve sensitivity. The voltage shift is 40 mV/cell and capacity-axis scale is 3000/3120; no measured pack discharge is claimed.",
         {
-            "phase_labels": list(groups),
-            "phase_energy_wh": values,
-            "recovery_counts": counts.tolist(),
-            "required_energy_wh": series,
-            "propulsion_multipliers": [1, 1.1],
-            "reserve_fraction": 0.2,
-            "phases": r["phases"],
-            "surface_propulsion_factors": factors.tolist(),
-            "surface_required_delivered_wh": required.tolist(),
-            "surface_rendering": "300 dpi raster colour field with vector labels/contour; avoids PDF cell seams",
-            "surface_model": "Same phase-energy, recovery-time and loss equations as the two retained sensitivity curves; no new measurements.",
+            "curve_source": "docs/audit/vtc6_source.json",
+            "cell_trace": {n: source[n].tolist() for n in source.dtype.names},
+            "screening": plotted,
         },
     )
 

@@ -229,7 +229,9 @@ def typeset(content, sources):
                     pending_caption = None
                 out.append(r"\begin{tabular}{" + spec + "}")
             else:
-                out.append(r"\begin{longtable}{" + spec + "}")
+                out.append(
+                    r"\reportneedspace{8\baselineskip}\begin{longtable}{" + spec + "}"
+                )
                 if pending_caption:
                     out.append(
                         r"\caption{"
@@ -455,6 +457,9 @@ def _build_latex(results, out):
         "authority": "XeLaTeX",
         "protected_artifacts_unchanged": True,
         "battery_delivered_energy_qualification": False,
+        "loaded_pack_screening": "18 V, digitised 23 C typical curves, explicit connection/capacity sensitivity",
+        "matched_plant_and_optics_records": "results/candidate18",
+        "unknown_layout_integrated_experiment": False,
         "source": "docs/report_source.md",
         "template": "docs/latex/report.tex",
         "calculation_source": "src/segd/final_design.py",
