@@ -1,0 +1,20 @@
+[
+  {
+    "mesh": "assets/prepared/cardboard_box_01/part_0.obj",
+    "texture": "assets/prepared/cardboard_box_01/part_0.png",
+    "bounds": [
+      [
+        -0.1935101407303442,
+        -0.2587343000390391,
+        0.0006888611127405626
+      ],
+      [
+        0.19329771025600168,
+        0.2575718246884962,
+        0.3412747851350318
+      ]
+    ],
+    "vertices": 958,
+    "faces": 1800
+  }
+]

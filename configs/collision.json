@@ -1,0 +1,6 @@
+{
+  "radius_m": 0.4,
+  "half_height_m": 0.145,
+  "centre_z_m": 0.08,
+  "training_clearance_margin_m": 0.05
+}

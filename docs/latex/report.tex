@@ -1,0 +1,37 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{fontspec}
+\usepackage{color}
+\definecolor{citeblue}{rgb}{0.0000,0.4706,0.7216}
+\definecolor{titleblue}{rgb}{0.0000,0.4667,0.7137}
+\definecolor{titlegreen}{rgb}{0.4078,0.6510,0.3098}
+\definecolor{titlecoral}{rgb}{0.8745,0.3922,0.4000}
+\definecolor{titleorange}{rgb}{0.9569,0.6353,0.3804}
+\definecolor{titleink}{rgb}{0.1608,0.1922,0.2431}
+\setmainfont{Times.TTF}[Path=../assets/fonts/,BoldFont=Timesbd.TTF,ItalicFont=Timesi.TTF,BoldItalicFont=Timesbi.TTF]
+\usepackage{unicode-math}\setmathfont{texgyretermes-math.otf}
+\usepackage{amsmath,siunitx,booktabs,longtable,graphicx,caption,geometry,titlesec,xurl,hyperref,array,fancyhdr}
+\geometry{textwidth=5.5in,textheight=9in,centering,headheight=20pt,headsep=10pt}
+\makeatletter\renewcommand\normalsize{\@setfontsize\normalsize{11.5}{14}}\makeatother
+\AtBeginDocument{\normalsize}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{EE5110 Technical Report}\fancyhead[R]{A0354063J}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{.3pt}
+\titleformat{\section}{\normalfont\fontsize{14}{17}\selectfont}{\thesection}{.7em}{}
+\titlespacing*{\section}{0pt}{2ex plus .5ex minus .2ex}{1.5ex plus .3ex minus .2ex}
+\titleformat{\subsection}{\normalfont\fontsize{11.5}{14}\selectfont}{\thesubsection}{.7em}{}
+\titlespacing*{\subsection}{0pt}{1.8ex plus .5ex minus .2ex}{.8ex plus .2ex}
+\DeclareCaptionFont{report}{\fontsize{11.5}{14}\selectfont}\captionsetup{font=report,labelfont=bf,skip=5pt,hypcap=false}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\setlength{\tabcolsep}{4pt}
+\setlength{\LTpre}{8pt}\setlength{\LTpost}{8pt}\renewcommand{\arraystretch}{1.06}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\hypersetup{colorlinks=true,linkcolor=citeblue,citecolor=citeblue,urlcolor=black,pdftitle={AWISU: Autonomous Warehouse Inventory with a Small UAV},pdfauthor={Junjie Peng}}\urlstyle{same}
+\setcounter{topnumber}{2}\setcounter{bottomnumber}{2}\renewcommand{\topfraction}{.90}\renewcommand{\bottomfraction}{.8}\renewcommand{\textfraction}{.10}\renewcommand{\floatpagefraction}{.8}
+\emergencystretch=2em\widowpenalty=10000\clubpenalty=10000\displaywidowpenalty=10000
+\newcommand{\reportabstracttitle}{A{\fontsize{11.2}{17}\selectfont BSTRACT}}
+\setlength{\leftmargini}{3pc}
+\renewenvironment{abstract}{\vskip.075in\centerline{\fontsize{14}{17}\selectfont\reportabstracttitle}\vspace{.5ex}\begin{quote}}{\par\end{quote}\vskip1ex}
+\AtBeginDocument{\setlength{\abovedisplayskip}{7pt plus2pt minus5pt}\setlength{\belowdisplayskip}{7pt plus2pt minus5pt}\setlength{\abovedisplayshortskip}{0pt plus3pt}\setlength{\belowdisplayshortskip}{4pt plus3pt minus3pt}}
+\raggedbottom
+\begin{document}
+@@CONTENT@@
+\end{document}

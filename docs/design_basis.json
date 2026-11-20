@@ -1,0 +1,151 @@
+{
+  "mass_items": [
+    [
+      "Carbon frame, landing supports",
+      340,
+      "Engineering geometry estimate"
+    ],
+    [
+      "4 x MN3508 KV380, with leads",
+      412,
+      "Manufacturer [6]"
+    ],
+    [
+      "4 x AIR40A ESC, installed allowance",
+      104,
+      "Installation allocation [7]"
+    ],
+    [
+      "4 x P14x4.8, upper mass tolerance",
+      66,
+      "Manufacturer [8]"
+    ],
+    [
+      "Propeller rings and bracing",
+      140,
+      "Custom-part allocation"
+    ],
+    [
+      "Pixhawk 6C, plastic case",
+      34.6,
+      "Manufacturer [10]"
+    ],
+    [
+      "PM02 V3 analog module",
+      20,
+      "Manufacturer [11]"
+    ],
+    [
+      "MID-360",
+      265,
+      "Manufacturer [12]"
+    ],
+    [
+      "OAK-D Lite fixed-focus",
+      61,
+      "Product installation reference [13]"
+    ],
+    [
+      "Orin Nano compute assembly",
+      180,
+      "77g carrier + module/cooling/storage allocation [14,15]"
+    ],
+    [
+      "2 x BFS-U3-51S5M-C camera bodies",
+      72,
+      "Manufacturer [16]"
+    ],
+    [
+      "2 x LM12JC5MC lenses",
+      110,
+      "Manufacturer [17]"
+    ],
+    [
+      "2 x pitch servos and brackets",
+      50,
+      "26.8g servos + 23.2g brackets [18]"
+    ],
+    [
+      "GA-B-60C-5000-6S1P-EC5 battery",
+      755,
+      "Manufacturer catalogue [9]"
+    ],
+    [
+      "Regulators, distribution, LEDs, harness",
+      150,
+      "Installation allocation [11,33,34]"
+    ],
+    [
+      "Sensor mounts and isolators",
+      40,
+      "Custom-part allocation"
+    ],
+    [
+      "Integration contingency",
+      100,
+      "Explicit design allowance"
+    ]
+  ],
+  "wheelbase_m": 0.6,
+  "propeller_diameter_m": 0.3556,
+  "guard_radial_allowance_m": 0.02,
+  "vehicle_envelope_m": [
+    1.0,
+    1.0,
+    0.5
+  ],
+  "battery_voltage_v": 22.2,
+  "battery_capacity_ah": 5.0,
+  "usable_fraction": 0.8,
+  "reserve_fraction": 0.2,
+  "minimum_loaded_voltage_v": 19.8,
+  "thrust_derating": 0.85,
+  "motor_test_voltage_v": 22.2,
+  "motor_test_thrust_g": [
+    710,
+    1100,
+    1350,
+    1580,
+    1730
+  ],
+  "motor_test_power_w": [
+    64.38,
+    117.66,
+    166.5,
+    217.56,
+    255.3
+  ],
+  "scan_speed_mps": 1.0,
+  "discovery_allowance_s": 60,
+  "retry_allowance_s": 30,
+  "nominal_propulsion_factor": 1.1,
+  "adverse_propulsion_factor": 1.25,
+  "nominal_auxiliary_w": 50,
+  "adverse_auxiliary_w": 55,
+  "camera_pixels": [
+    2448,
+    2048
+  ],
+  "camera_pixel_pitch_mm": 0.00345,
+  "lens_focal_length_mm": 12,
+  "camera_side_offset_m": 0.4,
+  "camera_vertical_offset_m": -0.1,
+  "camera_pitch_angles_deg": [
+    -25,
+    0,
+    32
+  ],
+  "camera_pitch_cycle_s": 0.4,
+  "camera_frame_rate_hz": 7.5,
+  "minimum_standoff_m": 0.8,
+  "nominal_standoff_m": 0.85,
+  "barcode_width_m": 0.1,
+  "image_overlap_margin_m": 0.05,
+  "exposure_s": 0.0002,
+  "maximum_tilt_deg": 12,
+  "operating_temperature_c": [
+    5,
+    35
+  ],
+  "launch_body_height_m": 0.25
+}

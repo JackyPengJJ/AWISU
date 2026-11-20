@@ -1,0 +1,27 @@
+Introducing AWISU: autonomous warehouse inventory with a small unmanned aircraft.
+
+The proposed platform combines a lightweight flight controller and onboard computing, within a three kilogram takeoff limit.
+
+Side cameras read labels. Stereo and lidar support navigation. The rotating aircraft is a reference simulation asset.
+
+First, aligned sensor observations build local geometry. Motion proceeds through a known-free corridor, with room to stop.
+
+Both sides follow a continuous five-level sweep. Complete label images and corroborating reads update the inventory.
+
+A missed label triggers local recovery: brake, approach the affected side, retry, and resume from the unfinished boundary.
+
+Optical sampling sets the scan speed. The energy budget includes recovery and reserve; battery delivery still requires qualification.
+
+The reference simulation follows a prescribed route, replayed seven times faster with synchronized external, side, and forward views.
+
+At the aisle end, the aircraft climbs and reverses along the next level. The route continues without resetting to the starting position.
+
+Left and right cameras share the same recorded aircraft pose. The inventory count is drawn from the original saved decoding records.
+
+The lower panel traces the growing route and tracking error, while the side views show the labels passing through each camera.
+
+The fifth pass completes the upper level. This experiment evaluates route tracking and barcode reading on the reference plant.
+
+After scanning, the aircraft returns along the aisle. It then descends and lands, completing the continuous flight.
+
+Saved-image checks confirm four hundred identities. Tracking error improves by nine point six percent over the baseline.

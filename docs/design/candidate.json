@@ -1,0 +1,87 @@
+{
+  "status": "comparison input; final configuration is assembled by segd.final_design",
+  "base_design": "docs/design_basis.json",
+  "optics": {
+    "camera": "BFS-U3-51S5M-C",
+    "lens": "Kowa LM8JC5MC",
+    "focal_mm": 8.0,
+    "pixels": [
+      2448,
+      2048
+    ],
+    "pixel_mm": 0.00345,
+    "pitch_deg": [
+      -30,
+      0,
+      30
+    ],
+    "camera_vertical_offset_m": 0.0,
+    "standoff_m": [
+      0.8,
+      0.95
+    ],
+    "label_outer_width_m": 0.2,
+    "label_outer_height_m": 0.04,
+    "vertical_position_bound_m": 0.05,
+    "along_track_position_bound_m": 0.01,
+    "orientation_cone_deg": 2.0,
+    "image_border_px": 24,
+    "height_grid_step_m": 0.001,
+    "cycle_s": 0.6,
+    "pose_slot_s": 0.2,
+    "pair_offset_in_slot_s": [
+      0.14,
+      0.19
+    ],
+    "timestamp_jitter_s": 0.002,
+    "exposure_s": 0.0002,
+    "scan_speed_mps": 0.78,
+    "pixels_per_module_target": 2.5,
+    "module_width_m": 0.0017,
+    "label_plane_normal_error_deg": 5.0
+  },
+  "mission": {
+    "cargo_instances": 400,
+    "nominal_retry_fraction": 0.02,
+    "adverse_retry_fraction": 0.05,
+    "max_attempts_per_retry": 2,
+    "initialization_actions_s": {
+      "stationary_alignment": 5,
+      "local_planes": 3,
+      "health_and_route_admission": 2
+    },
+    "endpoint_count": 4,
+    "endpoint_confirmation_s": 0.5,
+    "yaw_per_endpoint_s": 4.0,
+    "retry_actions_s": {
+      "decode_delay_s": 0.1,
+      "recenter_speed_mps": 0.5,
+      "settle_and_pair_s": 0.5
+    },
+    "boundary_pair_holds_per_level": 2,
+    "aux_nominal_w": 52,
+    "aux_adverse_w": 57,
+    "air_density_kg_m3": 1.225,
+    "cd_area_m2": 0.15,
+    "vertical_efficiency": 0.6,
+    "acceleration_mps2": 0.6,
+    "vertical_speed_mps": 0.35,
+    "propulsion_loss_nominal": 1.1,
+    "propulsion_loss_adverse": 1.25,
+    "maneuver_induced_factor_adverse": 1.1,
+    "transit_speed_mps": 1.0
+  },
+  "battery": {
+    "model": "RDQ6000-22.2-100-XT150",
+    "capacity_ah": 6,
+    "manufacturer_mass_g": 832,
+    "mass_allocation_g": 852,
+    "mass_uplift_basis": "20 g engineering installation/variation allocation; not a published tolerance",
+    "dimensions_mm": [
+      155,
+      53,
+      48
+    ],
+    "source": "R4"
+  }
+}

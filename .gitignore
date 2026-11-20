@@ -1,0 +1,25 @@
+.venv/
+.tools/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+!.env.example
+build/
+dist/
+runs/
+assets/generated/
+assets/fonts/Times*.TTF
+assets/fonts/times32.exe
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+# The final narrated film is distributed on YouTube, not in Git history.
+submission/*.mp4
+
+.ruff_cache/

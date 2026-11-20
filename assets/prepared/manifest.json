@@ -1,0 +1,124 @@
+[
+  {
+    "asset": "cardboard_box_01",
+    "parts": [
+      {
+        "mesh": "assets/prepared/cardboard_box_01/part_0.obj",
+        "texture": "assets/prepared/cardboard_box_01/part_0.png",
+        "bounds": [
+          [
+            -0.1935101407303442,
+            -0.2587343000390391,
+            0.0006888611127405626
+          ],
+          [
+            0.19329771025600168,
+            0.2575718246884962,
+            0.3412747851350318
+          ]
+        ],
+        "vertices": 958,
+        "faces": 1800
+      }
+    ],
+    "license": "CC0-1.0",
+    "source": "https://polyhaven.com/a/cardboard_box_01"
+  },
+  {
+    "asset": "steel_frame_shelves_03",
+    "parts": [
+      {
+        "mesh": "assets/prepared/steel_frame_shelves_03/part_0.obj",
+        "texture": "assets/prepared/steel_frame_shelves_03/part_0.png",
+        "bounds": [
+          [
+            -0.9968627989292145,
+            -0.3629409819841385,
+            0.30101874470710754
+          ],
+          [
+            -0.03250694274902344,
+            0.28530019521713257,
+            0.4007716774940491
+          ]
+        ],
+        "vertices": 660,
+        "faces": 980
+      },
+      {
+        "mesh": "assets/prepared/steel_frame_shelves_03/part_1.obj",
+        "texture": "assets/prepared/steel_frame_shelves_03/part_1.png",
+        "bounds": [
+          [
+            -0.9968627989292145,
+            -0.3629409819841385,
+            0.4184458553791046
+          ],
+          [
+            -0.03250694274902344,
+            0.28530019521713257,
+            0.5181987285614014
+          ]
+        ],
+        "vertices": 660,
+        "faces": 980
+      },
+      {
+        "mesh": "assets/prepared/steel_frame_shelves_03/part_2.obj",
+        "texture": "assets/prepared/steel_frame_shelves_03/part_2.png",
+        "bounds": [
+          [
+            -0.9968627989292145,
+            -0.36294086277484894,
+            0.5346080660820007
+          ],
+          [
+            -0.03250694274902344,
+            0.2853003144264221,
+            0.6343610286712646
+          ]
+        ],
+        "vertices": 660,
+        "faces": 980
+      },
+      {
+        "mesh": "assets/prepared/steel_frame_shelves_03/part_3.obj",
+        "texture": "assets/prepared/steel_frame_shelves_03/part_3.png",
+        "bounds": [
+          [
+            -1.0443785190582275,
+            -0.36013805866241455,
+            -0.00019049644470214844
+          ],
+          [
+            1.3066017627716064,
+            0.3583051264286041,
+            2.3116424083709717
+          ]
+        ],
+        "vertices": 3761,
+        "faces": 4580
+      },
+      {
+        "mesh": "assets/prepared/steel_frame_shelves_03/part_4.obj",
+        "texture": "assets/prepared/steel_frame_shelves_03/part_4.png",
+        "bounds": [
+          [
+            -1.0444751977920532,
+            -0.3300355076789856,
+            0.27933594584465027
+          ],
+          [
+            1.2971062660217285,
+            0.32823848724365234,
+            1.7526829242706299
+          ]
+        ],
+        "vertices": 790,
+        "faces": 876
+      }
+    ],
+    "license": "CC0-1.0",
+    "source": "https://polyhaven.com/a/steel_frame_shelves_03"
+  }
+]

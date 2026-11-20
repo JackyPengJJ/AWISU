@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awisu"
+version = "1.0.0"
+description = "Warehouse inventory UAV design and reference simulation"
+readme = "README.md"
+authors = [{name = "Junjie Peng"}]
+requires-python = ">=3.11"
+dependencies = ["mujoco", "numpy", "scipy", "matplotlib", "opencv-python-headless", "zxing-cpp", "python-barcode", "pillow", "python-docx", "imageio", "imageio-ffmpeg", "cairosvg==2.9.1"]
+
+[project.optional-dependencies]
+dev = ["ruff"]
+train = ["torch", "gymnasium", "stable-baselines3"]
+
+[project.scripts]
+segd = "segd.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

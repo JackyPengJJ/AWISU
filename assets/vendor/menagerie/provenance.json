@@ -1,0 +1,42 @@
+{
+  "repository": "google-deepmind/mujoco_menagerie",
+  "revision": "98a70c569c4c1b6da467a20012f766ee1f8dc521",
+  "files": [
+    {
+      "path": "skydio_x2/x2.xml",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/98a70c569c4c1b6da467a20012f766ee1f8dc521/skydio_x2/x2.xml",
+      "sha256": "b1cc5d68eb8ff154ab93a9958b58f69210865e1793eb96b30a32f46c68cc7e71",
+      "bytes": 2750
+    },
+    {
+      "path": "skydio_x2/README.md",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/98a70c569c4c1b6da467a20012f766ee1f8dc521/skydio_x2/README.md",
+      "sha256": "7b1b354ffdd2e9f243b211cc6ea9b5dab17614a13fc567378ded2b7676c13394",
+      "bytes": 560
+    },
+    {
+      "path": "skydio_x2/LICENSE",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/98a70c569c4c1b6da467a20012f766ee1f8dc521/skydio_x2/LICENSE",
+      "sha256": "d42cae9a0f292b7a713597ba26e1e1e23d50df906c488f0d36fd3538af200bc1",
+      "bytes": 11355
+    },
+    {
+      "path": "skydio_x2/scene.xml",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/98a70c569c4c1b6da467a20012f766ee1f8dc521/skydio_x2/scene.xml",
+      "sha256": "0a81cc0a15091cc3a91f7abf5a2694aeef555fbf94ed79876896eef38b1dad88",
+      "bytes": 918
+    },
+    {
+      "path": "skydio_x2/assets/X2_lowpoly_texture_SpinningProps_1024.png",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/98a70c569c4c1b6da467a20012f766ee1f8dc521/skydio_x2/assets/X2_lowpoly_texture_SpinningProps_1024.png",
+      "sha256": "24153733dd01f9ddd37a3c79fad5e24ac876228812e3a8e95f60ccd8cedb66e1",
+      "bytes": 298668
+    },
+    {
+      "path": "skydio_x2/assets/X2_lowpoly.obj",
+      "url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/98a70c569c4c1b6da467a20012f766ee1f8dc521/skydio_x2/assets/X2_lowpoly.obj",
+      "sha256": "4d6df3d7b26676a6ade8cbc320599961321ac3e3c52474d7c98dd7adc8152411",
+      "bytes": 540699
+    }
+  ]
+}

@@ -1,0 +1,5202 @@
+[
+  {
+    "barcode": "W0200",
+    "first_seen_s": 7.439999999999864,
+    "last_seen_s": 8.039999999999857,
+    "side": "left",
+    "estimated_uav_position": [
+      0.5748976556938451,
+      -0.06843849584501058,
+      0.8393616109695964
+    ],
+    "observations": 2,
+    "evidence": "0000.jpg"
+  },
+  {
+    "barcode": "W0000",
+    "first_seen_s": 7.439999999999864,
+    "last_seen_s": 8.039999999999857,
+    "side": "right",
+    "estimated_uav_position": [
+      0.5748976556938451,
+      -0.06843849584501058,
+      0.8393616109695964
+    ],
+    "observations": 2,
+    "evidence": "0001.jpg"
+  },
+  {
+    "barcode": "W0201",
+    "first_seen_s": 9.580000000000098,
+    "last_seen_s": 9.580000000000098,
+    "side": "left",
+    "estimated_uav_position": [
+      2.8355483577651843,
+      0.055205105558859935,
+      0.8378566625198195
+    ],
+    "observations": 1,
+    "evidence": "0002.jpg"
+  },
+  {
+    "barcode": "W0001",
+    "first_seen_s": 9.580000000000098,
+    "last_seen_s": 9.580000000000098,
+    "side": "right",
+    "estimated_uav_position": [
+      2.8355483577651843,
+      0.055205105558859935,
+      0.8378566625198195
+    ],
+    "observations": 1,
+    "evidence": "0003.jpg"
+  },
+  {
+    "barcode": "W0202",
+    "first_seen_s": 11.080000000000332,
+    "last_seen_s": 11.58000000000041,
+    "side": "left",
+    "estimated_uav_position": [
+      4.491427884224573,
+      0.03902392599515301,
+      0.8065228570185586
+    ],
+    "observations": 2,
+    "evidence": "0004.jpg"
+  },
+  {
+    "barcode": "W0002",
+    "first_seen_s": 11.080000000000332,
+    "last_seen_s": 11.58000000000041,
+    "side": "right",
+    "estimated_uav_position": [
+      4.491427884224573,
+      0.03902392599515301,
+      0.8065228570185586
+    ],
+    "observations": 2,
+    "evidence": "0005.jpg"
+  },
+  {
+    "barcode": "W0203",
+    "first_seen_s": 13.120000000000651,
+    "last_seen_s": 13.640000000000732,
+    "side": "left",
+    "estimated_uav_position": [
+      6.72811324350596,
+      0.01960452299360591,
+      0.8380540801073184
+    ],
+    "observations": 2,
+    "evidence": "0006.jpg"
+  },
+  {
+    "barcode": "W0003",
+    "first_seen_s": 13.120000000000651,
+    "last_seen_s": 13.640000000000732,
+    "side": "right",
+    "estimated_uav_position": [
+      6.72811324350596,
+      0.01960452299360591,
+      0.8380540801073184
+    ],
+    "observations": 2,
+    "evidence": "0007.jpg"
+  },
+  {
+    "barcode": "W0204",
+    "first_seen_s": 15.16000000000097,
+    "last_seen_s": 15.16000000000097,
+    "side": "left",
+    "estimated_uav_position": [
+      8.967596688108996,
+      -0.0013855975366190085,
+      0.8186879224143196
+    ],
+    "observations": 1,
+    "evidence": "0008.jpg"
+  },
+  {
+    "barcode": "W0004",
+    "first_seen_s": 15.16000000000097,
+    "last_seen_s": 15.16000000000097,
+    "side": "right",
+    "estimated_uav_position": [
+      8.967596688108996,
+      -0.0013855975366190085,
+      0.8186879224143196
+    ],
+    "observations": 1,
+    "evidence": "0009.jpg"
+  },
+  {
+    "barcode": "W0205",
+    "first_seen_s": 16.700000000000962,
+    "last_seen_s": 17.180000000000867,
+    "side": "left",
+    "estimated_uav_position": [
+      10.674566542717,
+      -0.02902661695495067,
+      0.819125475902268
+    ],
+    "observations": 2,
+    "evidence": "0010.jpg"
+  },
+  {
+    "barcode": "W0005",
+    "first_seen_s": 16.700000000000962,
+    "last_seen_s": 17.180000000000867,
+    "side": "right",
+    "estimated_uav_position": [
+      10.674566542717,
+      -0.02902661695495067,
+      0.819125475902268
+    ],
+    "observations": 2,
+    "evidence": "0011.jpg"
+  },
+  {
+    "barcode": "W0206",
+    "first_seen_s": 18.760000000000552,
+    "last_seen_s": 18.760000000000552,
+    "side": "left",
+    "estimated_uav_position": [
+      12.931911219048958,
+      0.004007435088932939,
+      0.795808818982225
+    ],
+    "observations": 1,
+    "evidence": "0012.jpg"
+  },
+  {
+    "barcode": "W0006",
+    "first_seen_s": 18.760000000000552,
+    "last_seen_s": 18.760000000000552,
+    "side": "right",
+    "estimated_uav_position": [
+      12.931911219048958,
+      0.004007435088932939,
+      0.795808818982225
+    ],
+    "observations": 1,
+    "evidence": "0013.jpg"
+  },
+  {
+    "barcode": "W0207",
+    "first_seen_s": 20.28000000000025,
+    "last_seen_s": 20.78000000000015,
+    "side": "left",
+    "estimated_uav_position": [
+      14.601264913087004,
+      0.05228490949892457,
+      0.7939888568435424
+    ],
+    "observations": 2,
+    "evidence": "0014.jpg"
+  },
+  {
+    "barcode": "W0007",
+    "first_seen_s": 20.28000000000025,
+    "last_seen_s": 20.78000000000015,
+    "side": "right",
+    "estimated_uav_position": [
+      14.601264913087004,
+      0.05228490949892457,
+      0.7939888568435424
+    ],
+    "observations": 2,
+    "evidence": "0015.jpg"
+  },
+  {
+    "barcode": "W0208",
+    "first_seen_s": 22.359999999999836,
+    "last_seen_s": 22.359999999999836,
+    "side": "left",
+    "estimated_uav_position": [
+      16.875365053777855,
+      0.008970390634406257,
+      0.8226088003201744
+    ],
+    "observations": 1,
+    "evidence": "0016.jpg"
+  },
+  {
+    "barcode": "W0008",
+    "first_seen_s": 22.359999999999836,
+    "last_seen_s": 22.359999999999836,
+    "side": "right",
+    "estimated_uav_position": [
+      16.875365053777855,
+      0.008970390634406257,
+      0.8226088003201744
+    ],
+    "observations": 1,
+    "evidence": "0017.jpg"
+  },
+  {
+    "barcode": "W0209",
+    "first_seen_s": 23.879999999999534,
+    "last_seen_s": 24.39999999999943,
+    "side": "left",
+    "estimated_uav_position": [
+      18.583371822705104,
+      -0.01571854895217689,
+      0.7991949745612277
+    ],
+    "observations": 2,
+    "evidence": "0018.jpg"
+  },
+  {
+    "barcode": "W0009",
+    "first_seen_s": 23.879999999999534,
+    "last_seen_s": 24.39999999999943,
+    "side": "right",
+    "estimated_uav_position": [
+      18.583371822705104,
+      -0.01571854895217689,
+      0.7991949745612277
+    ],
+    "observations": 2,
+    "evidence": "0019.jpg"
+  },
+  {
+    "barcode": "W0210",
+    "first_seen_s": 25.95999999999912,
+    "last_seen_s": 25.95999999999912,
+    "side": "left",
+    "estimated_uav_position": [
+      20.868780687907805,
+      -0.026419759022697782,
+      0.7824586790631218
+    ],
+    "observations": 1,
+    "evidence": "0021.jpg"
+  },
+  {
+    "barcode": "W0010",
+    "first_seen_s": 25.95999999999912,
+    "last_seen_s": 25.95999999999912,
+    "side": "right",
+    "estimated_uav_position": [
+      20.868780687907805,
+      -0.026419759022697782,
+      0.7824586790631218
+    ],
+    "observations": 1,
+    "evidence": "0022.jpg"
+  },
+  {
+    "barcode": "W0211",
+    "first_seen_s": 27.539999999998805,
+    "last_seen_s": 28.039999999998706,
+    "side": "left",
+    "estimated_uav_position": [
+      22.591882460074938,
+      -0.0024355002426964204,
+      0.7861307422019593
+    ],
+    "observations": 2,
+    "evidence": "0023.jpg"
+  },
+  {
+    "barcode": "W0011",
+    "first_seen_s": 27.539999999998805,
+    "last_seen_s": 28.039999999998706,
+    "side": "right",
+    "estimated_uav_position": [
+      22.591882460074938,
+      -0.0024355002426964204,
+      0.7861307422019593
+    ],
+    "observations": 2,
+    "evidence": "0024.jpg"
+  },
+  {
+    "barcode": "W0212",
+    "first_seen_s": 29.5799999999984,
+    "last_seen_s": 29.5799999999984,
+    "side": "left",
+    "estimated_uav_position": [
+      24.84465323242072,
+      0.07665120446771778,
+      0.810898208498164
+    ],
+    "observations": 1,
+    "evidence": "0025.jpg"
+  },
+  {
+    "barcode": "W0012",
+    "first_seen_s": 29.5799999999984,
+    "last_seen_s": 29.5799999999984,
+    "side": "right",
+    "estimated_uav_position": [
+      24.84465323242072,
+      0.07665120446771778,
+      0.810898208498164
+    ],
+    "observations": 1,
+    "evidence": "0026.jpg"
+  },
+  {
+    "barcode": "W0213",
+    "first_seen_s": 31.17999999999808,
+    "last_seen_s": 31.67999999999798,
+    "side": "left",
+    "estimated_uav_position": [
+      26.5832531987969,
+      0.017212588125980227,
+      0.7840291087372606
+    ],
+    "observations": 2,
+    "evidence": "0027.jpg"
+  },
+  {
+    "barcode": "W0013",
+    "first_seen_s": 31.17999999999808,
+    "last_seen_s": 31.67999999999798,
+    "side": "right",
+    "estimated_uav_position": [
+      26.5832531987969,
+      0.017212588125980227,
+      0.7840291087372606
+    ],
+    "observations": 2,
+    "evidence": "0028.jpg"
+  },
+  {
+    "barcode": "W0214",
+    "first_seen_s": 33.19999999999853,
+    "last_seen_s": 33.69999999999879,
+    "side": "left",
+    "estimated_uav_position": [
+      28.797482907154155,
+      -0.0136817661762515,
+      0.8128232619090362
+    ],
+    "observations": 2,
+    "evidence": "0029.jpg"
+  },
+  {
+    "barcode": "W0014",
+    "first_seen_s": 33.19999999999853,
+    "last_seen_s": 33.19999999999853,
+    "side": "right",
+    "estimated_uav_position": [
+      28.797482907154155,
+      -0.0136817661762515,
+      0.8128232619090362
+    ],
+    "observations": 1,
+    "evidence": "0030.jpg"
+  },
+  {
+    "barcode": "W0215",
+    "first_seen_s": 34.73999999999932,
+    "last_seen_s": 35.239999999999576,
+    "side": "left",
+    "estimated_uav_position": [
+      30.50994404197687,
+      -0.003946940424756108,
+      0.7984340701142557
+    ],
+    "observations": 2,
+    "evidence": "0031.jpg"
+  },
+  {
+    "barcode": "W0015",
+    "first_seen_s": 34.73999999999932,
+    "last_seen_s": 35.239999999999576,
+    "side": "right",
+    "estimated_uav_position": [
+      30.50994404197687,
+      -0.003946940424756108,
+      0.7984340701142557
+    ],
+    "observations": 2,
+    "evidence": "0032.jpg"
+  },
+  {
+    "barcode": "W0216",
+    "first_seen_s": 36.840000000000394,
+    "last_seen_s": 36.840000000000394,
+    "side": "left",
+    "estimated_uav_position": [
+      32.81040187317038,
+      0.005872921363304029,
+      0.7938255288248535
+    ],
+    "observations": 1,
+    "evidence": "0033.jpg"
+  },
+  {
+    "barcode": "W0016",
+    "first_seen_s": 36.840000000000394,
+    "last_seen_s": 36.840000000000394,
+    "side": "right",
+    "estimated_uav_position": [
+      32.81040187317038,
+      0.005872921363304029,
+      0.7938255288248535
+    ],
+    "observations": 1,
+    "evidence": "0034.jpg"
+  },
+  {
+    "barcode": "W0217",
+    "first_seen_s": 38.40000000000119,
+    "last_seen_s": 38.90000000000145,
+    "side": "left",
+    "estimated_uav_position": [
+      34.554101506418995,
+      0.03956292499824223,
+      0.8154623270142408
+    ],
+    "observations": 2,
+    "evidence": "0035.jpg"
+  },
+  {
+    "barcode": "W0017",
+    "first_seen_s": 38.40000000000119,
+    "last_seen_s": 38.90000000000145,
+    "side": "right",
+    "estimated_uav_position": [
+      34.554101506418995,
+      0.03956292499824223,
+      0.8154623270142408
+    ],
+    "observations": 2,
+    "evidence": "0036.jpg"
+  },
+  {
+    "barcode": "W0218",
+    "first_seen_s": 40.50000000000227,
+    "last_seen_s": 40.50000000000227,
+    "side": "left",
+    "estimated_uav_position": [
+      36.82406225172966,
+      -0.00560296437892773,
+      0.8391855443656232
+    ],
+    "observations": 1,
+    "evidence": "0037.jpg"
+  },
+  {
+    "barcode": "W0018",
+    "first_seen_s": 40.50000000000227,
+    "last_seen_s": 40.50000000000227,
+    "side": "right",
+    "estimated_uav_position": [
+      36.82406225172966,
+      -0.00560296437892773,
+      0.8391855443656232
+    ],
+    "observations": 1,
+    "evidence": "0038.jpg"
+  },
+  {
+    "barcode": "W0219",
+    "first_seen_s": 41.980000000003024,
+    "last_seen_s": 42.50000000000329,
+    "side": "left",
+    "estimated_uav_position": [
+      38.48816832352649,
+      -0.024301667575806055,
+      0.8298075107930389
+    ],
+    "observations": 2,
+    "evidence": "0039.jpg"
+  },
+  {
+    "barcode": "W0019",
+    "first_seen_s": 41.980000000003024,
+    "last_seen_s": 42.50000000000329,
+    "side": "right",
+    "estimated_uav_position": [
+      38.48816832352649,
+      -0.024301667575806055,
+      0.8298075107930389
+    ],
+    "observations": 2,
+    "evidence": "0040.jpg"
+  },
+  {
+    "barcode": "W0220",
+    "first_seen_s": 44.02000000000407,
+    "last_seen_s": 44.54000000000433,
+    "side": "left",
+    "estimated_uav_position": [
+      40.71123501632018,
+      -0.05266995862303449,
+      0.8095295333796685
+    ],
+    "observations": 2,
+    "evidence": "0041.jpg"
+  },
+  {
+    "barcode": "W0020",
+    "first_seen_s": 44.02000000000407,
+    "last_seen_s": 44.54000000000433,
+    "side": "right",
+    "estimated_uav_position": [
+      40.71123501632018,
+      -0.05266995862303449,
+      0.8095295333796685
+    ],
+    "observations": 2,
+    "evidence": "0042.jpg"
+  },
+  {
+    "barcode": "W0021",
+    "first_seen_s": 45.580000000004866,
+    "last_seen_s": 46.10000000000513,
+    "side": "right",
+    "estimated_uav_position": [
+      42.44303999006867,
+      0.016662887658065003,
+      0.8113700842053889
+    ],
+    "observations": 2,
+    "evidence": "0043.jpg"
+  },
+  {
+    "barcode": "W0221",
+    "first_seen_s": 46.10000000000513,
+    "last_seen_s": 46.10000000000513,
+    "side": "left",
+    "estimated_uav_position": [
+      43.00926066033247,
+      0.006946539706154862,
+      0.8115066986013221
+    ],
+    "observations": 1,
+    "evidence": "0044.jpg"
+  },
+  {
+    "barcode": "W0222",
+    "first_seen_s": 47.66000000000593,
+    "last_seen_s": 48.180000000006196,
+    "side": "left",
+    "estimated_uav_position": [
+      44.719649015995294,
+      0.019261952463592864,
+      0.7763080081231954
+    ],
+    "observations": 2,
+    "evidence": "0045.jpg"
+  },
+  {
+    "barcode": "W0022",
+    "first_seen_s": 47.66000000000593,
+    "last_seen_s": 48.180000000006196,
+    "side": "right",
+    "estimated_uav_position": [
+      44.719649015995294,
+      0.019261952463592864,
+      0.7763080081231954
+    ],
+    "observations": 2,
+    "evidence": "0046.jpg"
+  },
+  {
+    "barcode": "W0223",
+    "first_seen_s": 49.740000000006994,
+    "last_seen_s": 49.740000000006994,
+    "side": "left",
+    "estimated_uav_position": [
+      46.97406943813229,
+      0.0025273495475130383,
+      0.8029105477972622
+    ],
+    "observations": 1,
+    "evidence": "0047.jpg"
+  },
+  {
+    "barcode": "W0023",
+    "first_seen_s": 49.740000000006994,
+    "last_seen_s": 49.740000000006994,
+    "side": "right",
+    "estimated_uav_position": [
+      46.97406943813229,
+      0.0025273495475130383,
+      0.8029105477972622
+    ],
+    "observations": 1,
+    "evidence": "0048.jpg"
+  },
+  {
+    "barcode": "W0224",
+    "first_seen_s": 51.24000000000776,
+    "last_seen_s": 51.72000000000801,
+    "side": "left",
+    "estimated_uav_position": [
+      48.642349652748436,
+      -0.041992258913670984,
+      0.8047143227765522
+    ],
+    "observations": 2,
+    "evidence": "0049.jpg"
+  },
+  {
+    "barcode": "W0024",
+    "first_seen_s": 51.24000000000776,
+    "last_seen_s": 51.72000000000801,
+    "side": "right",
+    "estimated_uav_position": [
+      48.642349652748436,
+      -0.041992258913670984,
+      0.8047143227765522
+    ],
+    "observations": 2,
+    "evidence": "0050.jpg"
+  },
+  {
+    "barcode": "W0225",
+    "first_seen_s": 53.260000000008795,
+    "last_seen_s": 53.260000000008795,
+    "side": "left",
+    "estimated_uav_position": [
+      50.88923759573881,
+      -0.04377863736263079,
+      0.8329002983887018
+    ],
+    "observations": 1,
+    "evidence": "0051.jpg"
+  },
+  {
+    "barcode": "W0025",
+    "first_seen_s": 53.260000000008795,
+    "last_seen_s": 53.260000000008795,
+    "side": "right",
+    "estimated_uav_position": [
+      50.88923759573881,
+      -0.04377863736263079,
+      0.8329002983887018
+    ],
+    "observations": 1,
+    "evidence": "0052.jpg"
+  },
+  {
+    "barcode": "W0226",
+    "first_seen_s": 54.80000000000958,
+    "last_seen_s": 55.32000000000985,
+    "side": "left",
+    "estimated_uav_position": [
+      52.58322221425546,
+      0.019980161462632574,
+      0.8103578716338589
+    ],
+    "observations": 2,
+    "evidence": "0053.jpg"
+  },
+  {
+    "barcode": "W0026",
+    "first_seen_s": 54.80000000000958,
+    "last_seen_s": 55.32000000000985,
+    "side": "right",
+    "estimated_uav_position": [
+      52.58322221425546,
+      0.019980161462632574,
+      0.8103578716338589
+    ],
+    "observations": 2,
+    "evidence": "0054.jpg"
+  },
+  {
+    "barcode": "W0227",
+    "first_seen_s": 56.92000000001067,
+    "last_seen_s": 56.92000000001067,
+    "side": "left",
+    "estimated_uav_position": [
+      54.91514339694356,
+      0.042593401675390385,
+      0.804049481695818
+    ],
+    "observations": 1,
+    "evidence": "0055.jpg"
+  },
+  {
+    "barcode": "W0027",
+    "first_seen_s": 56.92000000001067,
+    "last_seen_s": 56.92000000001067,
+    "side": "right",
+    "estimated_uav_position": [
+      54.91514339694356,
+      0.042593401675390385,
+      0.804049481695818
+    ],
+    "observations": 1,
+    "evidence": "0056.jpg"
+  },
+  {
+    "barcode": "W0228",
+    "first_seen_s": 58.460000000011455,
+    "last_seen_s": 58.98000000001172,
+    "side": "left",
+    "estimated_uav_position": [
+      56.618723941871686,
+      0.014991280036698957,
+      0.7857388606994437
+    ],
+    "observations": 2,
+    "evidence": "0057.jpg"
+  },
+  {
+    "barcode": "W0028",
+    "first_seen_s": 58.460000000011455,
+    "last_seen_s": 58.98000000001172,
+    "side": "right",
+    "estimated_uav_position": [
+      56.618723941871686,
+      0.014991280036698957,
+      0.7857388606994437
+    ],
+    "observations": 2,
+    "evidence": "0058.jpg"
+  },
+  {
+    "barcode": "W0229",
+    "first_seen_s": 60.5000000000125,
+    "last_seen_s": 60.5000000000125,
+    "side": "left",
+    "estimated_uav_position": [
+      58.85337860992481,
+      -0.002398023152150819,
+      0.8047845632874053
+    ],
+    "observations": 1,
+    "evidence": "0059.jpg"
+  },
+  {
+    "barcode": "W0029",
+    "first_seen_s": 60.5000000000125,
+    "last_seen_s": 60.5000000000125,
+    "side": "right",
+    "estimated_uav_position": [
+      58.85337860992481,
+      -0.002398023152150819,
+      0.8047845632874053
+    ],
+    "observations": 1,
+    "evidence": "0060.jpg"
+  },
+  {
+    "barcode": "W0230",
+    "first_seen_s": 62.000000000013266,
+    "last_seen_s": 62.52000000001353,
+    "side": "left",
+    "estimated_uav_position": [
+      60.511457133009884,
+      -0.015031359412920078,
+      0.7896005400547762
+    ],
+    "observations": 2,
+    "evidence": "0061.jpg"
+  },
+  {
+    "barcode": "W0030",
+    "first_seen_s": 62.000000000013266,
+    "last_seen_s": 62.52000000001353,
+    "side": "right",
+    "estimated_uav_position": [
+      60.511457133009884,
+      -0.015031359412920078,
+      0.7896005400547762
+    ],
+    "observations": 2,
+    "evidence": "0062.jpg"
+  },
+  {
+    "barcode": "W0231",
+    "first_seen_s": 64.06000000001423,
+    "last_seen_s": 64.06000000001423,
+    "side": "left",
+    "estimated_uav_position": [
+      62.76635707340574,
+      0.006551353071796953,
+      0.8133968443885453
+    ],
+    "observations": 1,
+    "evidence": "0063.jpg"
+  },
+  {
+    "barcode": "W0031",
+    "first_seen_s": 64.06000000001423,
+    "last_seen_s": 64.58000000001375,
+    "side": "right",
+    "estimated_uav_position": [
+      62.76635707340574,
+      0.006551353071796953,
+      0.8133968443885453
+    ],
+    "observations": 2,
+    "evidence": "0064.jpg"
+  },
+  {
+    "barcode": "W0232",
+    "first_seen_s": 65.62000000001281,
+    "last_seen_s": 66.14000000001234,
+    "side": "left",
+    "estimated_uav_position": [
+      64.47084496118882,
+      0.05980051426734142,
+      0.82388517666349
+    ],
+    "observations": 2,
+    "evidence": "0065.jpg"
+  },
+  {
+    "barcode": "W0032",
+    "first_seen_s": 65.62000000001281,
+    "last_seen_s": 66.14000000001234,
+    "side": "right",
+    "estimated_uav_position": [
+      64.47084496118882,
+      0.05980051426734142,
+      0.82388517666349
+    ],
+    "observations": 2,
+    "evidence": "0066.jpg"
+  },
+  {
+    "barcode": "W0233",
+    "first_seen_s": 67.7200000000109,
+    "last_seen_s": 67.7200000000109,
+    "side": "left",
+    "estimated_uav_position": [
+      66.76837007714049,
+      -0.014411850774490066,
+      0.7925757788928247
+    ],
+    "observations": 1,
+    "evidence": "0067.jpg"
+  },
+  {
+    "barcode": "W0033",
+    "first_seen_s": 67.7200000000109,
+    "last_seen_s": 67.7200000000109,
+    "side": "right",
+    "estimated_uav_position": [
+      66.76837007714049,
+      -0.014411850774490066,
+      0.7925757788928247
+    ],
+    "observations": 1,
+    "evidence": "0068.jpg"
+  },
+  {
+    "barcode": "W0234",
+    "first_seen_s": 69.2600000000095,
+    "last_seen_s": 69.76000000000904,
+    "side": "left",
+    "estimated_uav_position": [
+      68.4811201860916,
+      -0.03850244593193235,
+      0.8125184527276766
+    ],
+    "observations": 2,
+    "evidence": "0069.jpg"
+  },
+  {
+    "barcode": "W0034",
+    "first_seen_s": 69.2600000000095,
+    "last_seen_s": 69.76000000000904,
+    "side": "right",
+    "estimated_uav_position": [
+      68.4811201860916,
+      -0.03850244593193235,
+      0.8125184527276766
+    ],
+    "observations": 2,
+    "evidence": "0070.jpg"
+  },
+  {
+    "barcode": "W0235",
+    "first_seen_s": 71.30000000000764,
+    "last_seen_s": 71.84000000000715,
+    "side": "left",
+    "estimated_uav_position": [
+      70.7480737582155,
+      -0.02244203266783208,
+      0.7955793050621318
+    ],
+    "observations": 2,
+    "evidence": "0071.jpg"
+  },
+  {
+    "barcode": "W0035",
+    "first_seen_s": 71.30000000000764,
+    "last_seen_s": 71.84000000000715,
+    "side": "right",
+    "estimated_uav_position": [
+      70.7480737582155,
+      -0.02244203266783208,
+      0.7955793050621318
+    ],
+    "observations": 2,
+    "evidence": "0072.jpg"
+  },
+  {
+    "barcode": "W0036",
+    "first_seen_s": 72.86000000000622,
+    "last_seen_s": 73.42000000000571,
+    "side": "right",
+    "estimated_uav_position": [
+      72.46391550159505,
+      -0.0030557020981140347,
+      0.7806949480982435
+    ],
+    "observations": 2,
+    "evidence": "0073.jpg"
+  },
+  {
+    "barcode": "W0236",
+    "first_seen_s": 73.42000000000571,
+    "last_seen_s": 73.42000000000571,
+    "side": "left",
+    "estimated_uav_position": [
+      73.04246518928082,
+      0.0336970490624766,
+      0.7922534240451926
+    ],
+    "observations": 1,
+    "evidence": "0074.jpg"
+  },
+  {
+    "barcode": "W0237",
+    "first_seen_s": 74.92000000000435,
+    "last_seen_s": 75.46000000000386,
+    "side": "left",
+    "estimated_uav_position": [
+      74.71451486142445,
+      0.05397716460539381,
+      0.780124311010722
+    ],
+    "observations": 2,
+    "evidence": "0075.jpg"
+  },
+  {
+    "barcode": "W0037",
+    "first_seen_s": 74.92000000000435,
+    "last_seen_s": 75.46000000000386,
+    "side": "right",
+    "estimated_uav_position": [
+      74.71451486142445,
+      0.05397716460539381,
+      0.780124311010722
+    ],
+    "observations": 2,
+    "evidence": "0076.jpg"
+  },
+  {
+    "barcode": "W0238",
+    "first_seen_s": 77.02000000000244,
+    "last_seen_s": 77.02000000000244,
+    "side": "left",
+    "estimated_uav_position": [
+      77.02830439251419,
+      0.013735952826871555,
+      0.8111171553438935
+    ],
+    "observations": 1,
+    "evidence": "0077.jpg"
+  },
+  {
+    "barcode": "W0038",
+    "first_seen_s": 77.02000000000244,
+    "last_seen_s": 77.02000000000244,
+    "side": "right",
+    "estimated_uav_position": [
+      77.02830439251419,
+      0.013735952826871555,
+      0.8111171553438935
+    ],
+    "observations": 1,
+    "evidence": "0078.jpg"
+  },
+  {
+    "barcode": "W0239",
+    "first_seen_s": 78.54000000000106,
+    "last_seen_s": 79.0400000000006,
+    "side": "left",
+    "estimated_uav_position": [
+      78.68954964307763,
+      -0.027865986435937552,
+      0.8182189158236439
+    ],
+    "observations": 2,
+    "evidence": "0079.jpg"
+  },
+  {
+    "barcode": "W0039",
+    "first_seen_s": 78.54000000000106,
+    "last_seen_s": 79.0400000000006,
+    "side": "right",
+    "estimated_uav_position": [
+      78.68954964307763,
+      -0.027865986435937552,
+      0.8182189158236439
+    ],
+    "observations": 2,
+    "evidence": "0080.jpg"
+  },
+  {
+    "barcode": "W0279",
+    "first_seen_s": 87.23999999999315,
+    "last_seen_s": 87.75999999999267,
+    "side": "left",
+    "estimated_uav_position": [
+      79.43200049414554,
+      -0.0010298064177878116,
+      2.3812475610698347
+    ],
+    "observations": 2,
+    "evidence": "0081.jpg"
+  },
+  {
+    "barcode": "W0079",
+    "first_seen_s": 87.23999999999315,
+    "last_seen_s": 87.75999999999267,
+    "side": "right",
+    "estimated_uav_position": [
+      79.43200049414554,
+      -0.0010298064177878116,
+      2.3812475610698347
+    ],
+    "observations": 2,
+    "evidence": "0082.jpg"
+  },
+  {
+    "barcode": "W0278",
+    "first_seen_s": 89.35999999999122,
+    "last_seen_s": 89.35999999999122,
+    "side": "left",
+    "estimated_uav_position": [
+      77.1473222005051,
+      -0.0358521439256713,
+      2.4149605648575436
+    ],
+    "observations": 1,
+    "evidence": "0083.jpg"
+  },
+  {
+    "barcode": "W0078",
+    "first_seen_s": 89.35999999999122,
+    "last_seen_s": 89.35999999999122,
+    "side": "right",
+    "estimated_uav_position": [
+      77.1473222005051,
+      -0.0358521439256713,
+      2.4149605648575436
+    ],
+    "observations": 1,
+    "evidence": "0084.jpg"
+  },
+  {
+    "barcode": "W0277",
+    "first_seen_s": 90.85999999998985,
+    "last_seen_s": 91.37999999998938,
+    "side": "left",
+    "estimated_uav_position": [
+      75.46247966652511,
+      0.01608600128368657,
+      2.412823866389608
+    ],
+    "observations": 2,
+    "evidence": "0085.jpg"
+  },
+  {
+    "barcode": "W0077",
+    "first_seen_s": 90.85999999998985,
+    "last_seen_s": 91.37999999998938,
+    "side": "right",
+    "estimated_uav_position": [
+      75.46247966652511,
+      0.01608600128368657,
+      2.412823866389608
+    ],
+    "observations": 2,
+    "evidence": "0086.jpg"
+  },
+  {
+    "barcode": "W0276",
+    "first_seen_s": 92.899999999988,
+    "last_seen_s": 92.899999999988,
+    "side": "left",
+    "estimated_uav_position": [
+      73.21012118184609,
+      0.02564209347448771,
+      2.408199316196737
+    ],
+    "observations": 1,
+    "evidence": "0087.jpg"
+  },
+  {
+    "barcode": "W0076",
+    "first_seen_s": 92.899999999988,
+    "last_seen_s": 93.41999999998752,
+    "side": "right",
+    "estimated_uav_position": [
+      73.21012118184609,
+      0.02564209347448771,
+      2.408199316196737
+    ],
+    "observations": 2,
+    "evidence": "0088.jpg"
+  },
+  {
+    "barcode": "W0275",
+    "first_seen_s": 94.45999999998658,
+    "last_seen_s": 94.9799999999861,
+    "side": "left",
+    "estimated_uav_position": [
+      71.48498073918599,
+      -0.00954174326328716,
+      2.424610844204637
+    ],
+    "observations": 2,
+    "evidence": "0089.jpg"
+  },
+  {
+    "barcode": "W0075",
+    "first_seen_s": 94.45999999998658,
+    "last_seen_s": 94.9799999999861,
+    "side": "right",
+    "estimated_uav_position": [
+      71.48498073918599,
+      -0.00954174326328716,
+      2.424610844204637
+    ],
+    "observations": 2,
+    "evidence": "0090.jpg"
+  },
+  {
+    "barcode": "W0274",
+    "first_seen_s": 96.5199999999847,
+    "last_seen_s": 97.01999999998425,
+    "side": "left",
+    "estimated_uav_position": [
+      69.2397924476587,
+      -0.034543000983868824,
+      2.3930009668642698
+    ],
+    "observations": 2,
+    "evidence": "0091.jpg"
+  },
+  {
+    "barcode": "W0074",
+    "first_seen_s": 96.5199999999847,
+    "last_seen_s": 97.01999999998425,
+    "side": "right",
+    "estimated_uav_position": [
+      69.2397924476587,
+      -0.034543000983868824,
+      2.3930009668642698
+    ],
+    "observations": 2,
+    "evidence": "0092.jpg"
+  },
+  {
+    "barcode": "W0273",
+    "first_seen_s": 98.07999999998329,
+    "last_seen_s": 98.57999999998283,
+    "side": "left",
+    "estimated_uav_position": [
+      67.52631254280135,
+      -0.015119187982908905,
+      2.398469482097103
+    ],
+    "observations": 2,
+    "evidence": "0093.jpg"
+  },
+  {
+    "barcode": "W0073",
+    "first_seen_s": 98.07999999998329,
+    "last_seen_s": 98.57999999998283,
+    "side": "right",
+    "estimated_uav_position": [
+      67.52631254280135,
+      -0.015119187982908905,
+      2.398469482097103
+    ],
+    "observations": 2,
+    "evidence": "0094.jpg"
+  },
+  {
+    "barcode": "W0272",
+    "first_seen_s": 100.09999999998145,
+    "last_seen_s": 100.63999999998096,
+    "side": "left",
+    "estimated_uav_position": [
+      65.2758901705398,
+      0.02488281188800276,
+      2.3921159040550775
+    ],
+    "observations": 2,
+    "evidence": "0095.jpg"
+  },
+  {
+    "barcode": "W0072",
+    "first_seen_s": 100.09999999998145,
+    "last_seen_s": 100.63999999998096,
+    "side": "right",
+    "estimated_uav_position": [
+      65.2758901705398,
+      0.02488281188800276,
+      2.3921159040550775
+    ],
+    "observations": 2,
+    "evidence": "0096.jpg"
+  },
+  {
+    "barcode": "W0071",
+    "first_seen_s": 101.65999999998003,
+    "last_seen_s": 102.17999999997956,
+    "side": "right",
+    "estimated_uav_position": [
+      63.548901405972536,
+      0.048582764425878444,
+      2.4251342041869948
+    ],
+    "observations": 2,
+    "evidence": "0097.jpg"
+  },
+  {
+    "barcode": "W0271",
+    "first_seen_s": 102.17999999997956,
+    "last_seen_s": 102.17999999997956,
+    "side": "left",
+    "estimated_uav_position": [
+      62.99562471902395,
+      0.011952209403524355,
+      2.3873723860714717
+    ],
+    "observations": 1,
+    "evidence": "0098.jpg"
+  },
+  {
+    "barcode": "W0270",
+    "first_seen_s": 103.71999999997816,
+    "last_seen_s": 104.2199999999777,
+    "side": "left",
+    "estimated_uav_position": [
+      61.31944862785402,
+      0.006930399014172046,
+      2.400646493976177
+    ],
+    "observations": 2,
+    "evidence": "0099.jpg"
+  },
+  {
+    "barcode": "W0070",
+    "first_seen_s": 103.71999999997816,
+    "last_seen_s": 104.2199999999777,
+    "side": "right",
+    "estimated_uav_position": [
+      61.31944862785402,
+      0.006930399014172046,
+      2.400646493976177
+    ],
+    "observations": 2,
+    "evidence": "0100.jpg"
+  },
+  {
+    "barcode": "W0269",
+    "first_seen_s": 105.77999999997628,
+    "last_seen_s": 105.77999999997628,
+    "side": "left",
+    "estimated_uav_position": [
+      59.041359129953385,
+      -0.0280845145360034,
+      2.4234208446498235
+    ],
+    "observations": 1,
+    "evidence": "0101.jpg"
+  },
+  {
+    "barcode": "W0069",
+    "first_seen_s": 105.77999999997628,
+    "last_seen_s": 105.77999999997628,
+    "side": "right",
+    "estimated_uav_position": [
+      59.041359129953385,
+      -0.0280845145360034,
+      2.4234208446498235
+    ],
+    "observations": 1,
+    "evidence": "0102.jpg"
+  },
+  {
+    "barcode": "W0268",
+    "first_seen_s": 107.33999999997486,
+    "last_seen_s": 107.85999999997439,
+    "side": "left",
+    "estimated_uav_position": [
+      57.33190617528952,
+      0.002859594374172717,
+      2.408807316155018
+    ],
+    "observations": 2,
+    "evidence": "0103.jpg"
+  },
+  {
+    "barcode": "W0068",
+    "first_seen_s": 107.33999999997486,
+    "last_seen_s": 107.85999999997439,
+    "side": "right",
+    "estimated_uav_position": [
+      57.33190617528952,
+      0.002859594374172717,
+      2.408807316155018
+    ],
+    "observations": 2,
+    "evidence": "0104.jpg"
+  },
+  {
+    "barcode": "W0267",
+    "first_seen_s": 109.37999999997301,
+    "last_seen_s": 109.37999999997301,
+    "side": "left",
+    "estimated_uav_position": [
+      55.0969234134427,
+      0.02896473592213139,
+      2.4105417046335815
+    ],
+    "observations": 1,
+    "evidence": "0105.jpg"
+  },
+  {
+    "barcode": "W0067",
+    "first_seen_s": 109.37999999997301,
+    "last_seen_s": 109.37999999997301,
+    "side": "right",
+    "estimated_uav_position": [
+      55.0969234134427,
+      0.02896473592213139,
+      2.4105417046335815
+    ],
+    "observations": 1,
+    "evidence": "0106.jpg"
+  },
+  {
+    "barcode": "W0266",
+    "first_seen_s": 110.91999999997161,
+    "last_seen_s": 111.43999999997114,
+    "side": "left",
+    "estimated_uav_position": [
+      53.367508657749724,
+      0.037580208880187115,
+      2.3883852695668337
+    ],
+    "observations": 2,
+    "evidence": "0107.jpg"
+  },
+  {
+    "barcode": "W0066",
+    "first_seen_s": 110.91999999997161,
+    "last_seen_s": 111.43999999997114,
+    "side": "right",
+    "estimated_uav_position": [
+      53.367508657749724,
+      0.037580208880187115,
+      2.3883852695668337
+    ],
+    "observations": 2,
+    "evidence": "0108.jpg"
+  },
+  {
+    "barcode": "W0265",
+    "first_seen_s": 112.97999999996973,
+    "last_seen_s": 112.97999999996973,
+    "side": "left",
+    "estimated_uav_position": [
+      51.11175740235906,
+      -0.019142453510212366,
+      2.4137450693041997
+    ],
+    "observations": 1,
+    "evidence": "0109.jpg"
+  },
+  {
+    "barcode": "W0065",
+    "first_seen_s": 112.97999999996973,
+    "last_seen_s": 112.97999999996973,
+    "side": "right",
+    "estimated_uav_position": [
+      51.11175740235906,
+      -0.019142453510212366,
+      2.4137450693041997
+    ],
+    "observations": 1,
+    "evidence": "0110.jpg"
+  },
+  {
+    "barcode": "W0264",
+    "first_seen_s": 114.51999999996833,
+    "last_seen_s": 115.03999999996786,
+    "side": "left",
+    "estimated_uav_position": [
+      49.42758425477067,
+      -0.025674291820089984,
+      2.4164217668876993
+    ],
+    "observations": 2,
+    "evidence": "0111.jpg"
+  },
+  {
+    "barcode": "W0064",
+    "first_seen_s": 114.51999999996833,
+    "last_seen_s": 115.03999999996786,
+    "side": "right",
+    "estimated_uav_position": [
+      49.42758425477067,
+      -0.025674291820089984,
+      2.4164217668876993
+    ],
+    "observations": 2,
+    "evidence": "0112.jpg"
+  },
+  {
+    "barcode": "W0263",
+    "first_seen_s": 116.61999999996642,
+    "last_seen_s": 116.61999999996642,
+    "side": "left",
+    "estimated_uav_position": [
+      47.12845971312623,
+      -0.035986218218741914,
+      2.385510499280271
+    ],
+    "observations": 1,
+    "evidence": "0113.jpg"
+  },
+  {
+    "barcode": "W0063",
+    "first_seen_s": 116.61999999996642,
+    "last_seen_s": 116.61999999996642,
+    "side": "right",
+    "estimated_uav_position": [
+      47.12845971312623,
+      -0.035986218218741914,
+      2.385510499280271
+    ],
+    "observations": 1,
+    "evidence": "0114.jpg"
+  },
+  {
+    "barcode": "W0262",
+    "first_seen_s": 118.19999999996499,
+    "last_seen_s": 118.65999999996457,
+    "side": "left",
+    "estimated_uav_position": [
+      45.41086670134518,
+      0.02050238381744923,
+      2.4189388898996014
+    ],
+    "observations": 2,
+    "evidence": "0115.jpg"
+  },
+  {
+    "barcode": "W0062",
+    "first_seen_s": 118.19999999996499,
+    "last_seen_s": 118.65999999996457,
+    "side": "right",
+    "estimated_uav_position": [
+      45.41086670134518,
+      0.02050238381744923,
+      2.4189388898996014
+    ],
+    "observations": 2,
+    "evidence": "0116.jpg"
+  },
+  {
+    "barcode": "W0261",
+    "first_seen_s": 120.19999999996317,
+    "last_seen_s": 120.19999999996317,
+    "side": "left",
+    "estimated_uav_position": [
+      43.175793024510895,
+      0.041211151164390475,
+      2.39862264989943
+    ],
+    "observations": 1,
+    "evidence": "0117.jpg"
+  },
+  {
+    "barcode": "W0061",
+    "first_seen_s": 120.19999999996317,
+    "last_seen_s": 120.19999999996317,
+    "side": "right",
+    "estimated_uav_position": [
+      43.175793024510895,
+      0.041211151164390475,
+      2.39862264989943
+    ],
+    "observations": 1,
+    "evidence": "0118.jpg"
+  },
+  {
+    "barcode": "W0260",
+    "first_seen_s": 121.71999999996179,
+    "last_seen_s": 122.27999999996128,
+    "side": "left",
+    "estimated_uav_position": [
+      41.476447149449115,
+      0.01621850543546896,
+      2.4225545808719553
+    ],
+    "observations": 2,
+    "evidence": "0119.jpg"
+  },
+  {
+    "barcode": "W0060",
+    "first_seen_s": 121.71999999996179,
+    "last_seen_s": 122.27999999996128,
+    "side": "right",
+    "estimated_uav_position": [
+      41.476447149449115,
+      0.01621850543546896,
+      2.4225545808719553
+    ],
+    "observations": 2,
+    "evidence": "0120.jpg"
+  },
+  {
+    "barcode": "W0259",
+    "first_seen_s": 123.83999999995986,
+    "last_seen_s": 123.83999999995986,
+    "side": "left",
+    "estimated_uav_position": [
+      39.182292832151354,
+      -0.02739792536137356,
+      2.4248176527287795
+    ],
+    "observations": 1,
+    "evidence": "0121.jpg"
+  },
+  {
+    "barcode": "W0059",
+    "first_seen_s": 123.83999999995986,
+    "last_seen_s": 123.83999999995986,
+    "side": "right",
+    "estimated_uav_position": [
+      39.182292832151354,
+      -0.02739792536137356,
+      2.4248176527287795
+    ],
+    "observations": 1,
+    "evidence": "0122.jpg"
+  },
+  {
+    "barcode": "W0258",
+    "first_seen_s": 125.39999999995844,
+    "last_seen_s": 125.93999999995795,
+    "side": "left",
+    "estimated_uav_position": [
+      37.463219830419106,
+      -0.010669451314266078,
+      2.423163283956655
+    ],
+    "observations": 2,
+    "evidence": "0123.jpg"
+  },
+  {
+    "barcode": "W0058",
+    "first_seen_s": 125.39999999995844,
+    "last_seen_s": 125.93999999995795,
+    "side": "right",
+    "estimated_uav_position": [
+      37.463219830419106,
+      -0.010669451314266078,
+      2.423163283956655
+    ],
+    "observations": 2,
+    "evidence": "0124.jpg"
+  },
+  {
+    "barcode": "W0257",
+    "first_seen_s": 127.49999999995653,
+    "last_seen_s": 127.49999999995653,
+    "side": "left",
+    "estimated_uav_position": [
+      35.132605467402904,
+      0.03240360729825325,
+      2.4195307980288026
+    ],
+    "observations": 1,
+    "evidence": "0125.jpg"
+  },
+  {
+    "barcode": "W0057",
+    "first_seen_s": 127.49999999995653,
+    "last_seen_s": 127.49999999995653,
+    "side": "right",
+    "estimated_uav_position": [
+      35.132605467402904,
+      0.03240360729825325,
+      2.4195307980288026
+    ],
+    "observations": 1,
+    "evidence": "0126.jpg"
+  },
+  {
+    "barcode": "W0256",
+    "first_seen_s": 129.03999999995514,
+    "last_seen_s": 129.5399999999547,
+    "side": "left",
+    "estimated_uav_position": [
+      33.45215777302633,
+      0.03953952362072363,
+      2.4001554672326972
+    ],
+    "observations": 2,
+    "evidence": "0127.jpg"
+  },
+  {
+    "barcode": "W0056",
+    "first_seen_s": 129.03999999995514,
+    "last_seen_s": 129.5399999999547,
+    "side": "right",
+    "estimated_uav_position": [
+      33.45215777302633,
+      0.03953952362072363,
+      2.4001554672326972
+    ],
+    "observations": 2,
+    "evidence": "0128.jpg"
+  },
+  {
+    "barcode": "W0255",
+    "first_seen_s": 131.0799999999533,
+    "last_seen_s": 131.0799999999533,
+    "side": "left",
+    "estimated_uav_position": [
+      31.20712590508837,
+      -0.026647352306623486,
+      2.409248345369966
+    ],
+    "observations": 1,
+    "evidence": "0129.jpg"
+  },
+  {
+    "barcode": "W0055",
+    "first_seen_s": 131.0799999999533,
+    "last_seen_s": 131.0799999999533,
+    "side": "right",
+    "estimated_uav_position": [
+      31.20712590508837,
+      -0.026647352306623486,
+      2.409248345369966
+    ],
+    "observations": 1,
+    "evidence": "0130.jpg"
+  },
+  {
+    "barcode": "W0254",
+    "first_seen_s": 132.63999999995187,
+    "last_seen_s": 133.1399999999514,
+    "side": "left",
+    "estimated_uav_position": [
+      29.501337092134477,
+      -0.04477922067392385,
+      2.403846765574635
+    ],
+    "observations": 2,
+    "evidence": "0131.jpg"
+  },
+  {
+    "barcode": "W0054",
+    "first_seen_s": 132.63999999995187,
+    "last_seen_s": 133.1399999999514,
+    "side": "right",
+    "estimated_uav_position": [
+      29.501337092134477,
+      -0.04477922067392385,
+      2.403846765574635
+    ],
+    "observations": 2,
+    "evidence": "0132.jpg"
+  },
+  {
+    "barcode": "W0253",
+    "first_seen_s": 134.67999999995,
+    "last_seen_s": 135.19999999994954,
+    "side": "left",
+    "estimated_uav_position": [
+      27.26652160115347,
+      -0.02989877774605428,
+      2.4389496334875282
+    ],
+    "observations": 2,
+    "evidence": "0133.jpg"
+  },
+  {
+    "barcode": "W0053",
+    "first_seen_s": 134.67999999995,
+    "last_seen_s": 135.19999999994954,
+    "side": "right",
+    "estimated_uav_position": [
+      27.26652160115347,
+      -0.02989877774605428,
+      2.4389496334875282
+    ],
+    "observations": 2,
+    "evidence": "0134.jpg"
+  },
+  {
+    "barcode": "W0052",
+    "first_seen_s": 136.2199999999486,
+    "last_seen_s": 136.73999999994814,
+    "side": "right",
+    "estimated_uav_position": [
+      25.545779427880245,
+      0.027099625017043598,
+      2.4246168605177756
+    ],
+    "observations": 2,
+    "evidence": "0135.jpg"
+  },
+  {
+    "barcode": "W0252",
+    "first_seen_s": 136.73999999994814,
+    "last_seen_s": 136.73999999994814,
+    "side": "left",
+    "estimated_uav_position": [
+      24.980667349409423,
+      0.018899522940769617,
+      2.3818360918693733
+    ],
+    "observations": 1,
+    "evidence": "0136.jpg"
+  },
+  {
+    "barcode": "W0251",
+    "first_seen_s": 138.29999999994672,
+    "last_seen_s": 138.79999999994627,
+    "side": "left",
+    "estimated_uav_position": [
+      23.265733103011218,
+      0.042793117379845126,
+      2.3771245233068563
+    ],
+    "observations": 2,
+    "evidence": "0137.jpg"
+  },
+  {
+    "barcode": "W0051",
+    "first_seen_s": 138.29999999994672,
+    "last_seen_s": 138.79999999994627,
+    "side": "right",
+    "estimated_uav_position": [
+      23.265733103011218,
+      0.042793117379845126,
+      2.3771245233068563
+    ],
+    "observations": 2,
+    "evidence": "0138.jpg"
+  },
+  {
+    "barcode": "W0250",
+    "first_seen_s": 140.35999999994485,
+    "last_seen_s": 140.35999999994485,
+    "side": "left",
+    "estimated_uav_position": [
+      21.003773585486325,
+      -0.005842698109195667,
+      2.429067449317323
+    ],
+    "observations": 1,
+    "evidence": "0139.jpg"
+  },
+  {
+    "barcode": "W0050",
+    "first_seen_s": 140.35999999994485,
+    "last_seen_s": 140.35999999994485,
+    "side": "right",
+    "estimated_uav_position": [
+      21.003773585486325,
+      -0.005842698109195667,
+      2.429067449317323
+    ],
+    "observations": 1,
+    "evidence": "0140.jpg"
+  },
+  {
+    "barcode": "W0249",
+    "first_seen_s": 141.91999999994343,
+    "last_seen_s": 142.43999999994296,
+    "side": "left",
+    "estimated_uav_position": [
+      19.27223236638801,
+      -0.0333562804881603,
+      2.4196285078658843
+    ],
+    "observations": 2,
+    "evidence": "0141.jpg"
+  },
+  {
+    "barcode": "W0049",
+    "first_seen_s": 141.91999999994343,
+    "last_seen_s": 142.43999999994296,
+    "side": "right",
+    "estimated_uav_position": [
+      19.27223236638801,
+      -0.0333562804881603,
+      2.4196285078658843
+    ],
+    "observations": 2,
+    "evidence": "0142.jpg"
+  },
+  {
+    "barcode": "W0248",
+    "first_seen_s": 143.95999999994157,
+    "last_seen_s": 143.95999999994157,
+    "side": "left",
+    "estimated_uav_position": [
+      17.045043838201703,
+      0.004723561631333291,
+      2.4152166988768564
+    ],
+    "observations": 1,
+    "evidence": "0143.jpg"
+  },
+  {
+    "barcode": "W0048",
+    "first_seen_s": 143.95999999994157,
+    "last_seen_s": 143.95999999994157,
+    "side": "right",
+    "estimated_uav_position": [
+      17.045043838201703,
+      0.004723561631333291,
+      2.4152166988768564
+    ],
+    "observations": 1,
+    "evidence": "0144.jpg"
+  },
+  {
+    "barcode": "W0247",
+    "first_seen_s": 145.4799999999402,
+    "last_seen_s": 145.97999999993974,
+    "side": "left",
+    "estimated_uav_position": [
+      15.365158526411863,
+      0.04623830249809777,
+      2.399269987654169
+    ],
+    "observations": 2,
+    "evidence": "0145.jpg"
+  },
+  {
+    "barcode": "W0047",
+    "first_seen_s": 145.4799999999402,
+    "last_seen_s": 145.97999999993974,
+    "side": "right",
+    "estimated_uav_position": [
+      15.365158526411863,
+      0.04623830249809777,
+      2.399269987654169
+    ],
+    "observations": 2,
+    "evidence": "0146.jpg"
+  },
+  {
+    "barcode": "W0246",
+    "first_seen_s": 147.53999999993832,
+    "last_seen_s": 147.53999999993832,
+    "side": "left",
+    "estimated_uav_position": [
+      13.1171282035026,
+      0.01410384015824007,
+      2.3933675421655467
+    ],
+    "observations": 1,
+    "evidence": "0147.jpg"
+  },
+  {
+    "barcode": "W0046",
+    "first_seen_s": 147.53999999993832,
+    "last_seen_s": 147.53999999993832,
+    "side": "right",
+    "estimated_uav_position": [
+      13.1171282035026,
+      0.01410384015824007,
+      2.3933675421655467
+    ],
+    "observations": 1,
+    "evidence": "0148.jpg"
+  },
+  {
+    "barcode": "W0245",
+    "first_seen_s": 149.0999999999369,
+    "last_seen_s": 149.59999999993644,
+    "side": "left",
+    "estimated_uav_position": [
+      11.413592810687204,
+      -0.033300693898144156,
+      2.4217096864786902
+    ],
+    "observations": 2,
+    "evidence": "0149.jpg"
+  },
+  {
+    "barcode": "W0045",
+    "first_seen_s": 149.0999999999369,
+    "last_seen_s": 149.59999999993644,
+    "side": "right",
+    "estimated_uav_position": [
+      11.413592810687204,
+      -0.033300693898144156,
+      2.4217096864786902
+    ],
+    "observations": 2,
+    "evidence": "0150.jpg"
+  },
+  {
+    "barcode": "W0244",
+    "first_seen_s": 151.11999999993506,
+    "last_seen_s": 151.11999999993506,
+    "side": "left",
+    "estimated_uav_position": [
+      9.165664151698863,
+      -0.06070722803598168,
+      2.435704336156985
+    ],
+    "observations": 1,
+    "evidence": "0151.jpg"
+  },
+  {
+    "barcode": "W0044",
+    "first_seen_s": 151.11999999993506,
+    "last_seen_s": 151.11999999993506,
+    "side": "right",
+    "estimated_uav_position": [
+      9.165664151698863,
+      -0.06070722803598168,
+      2.435704336156985
+    ],
+    "observations": 1,
+    "evidence": "0152.jpg"
+  },
+  {
+    "barcode": "W0243",
+    "first_seen_s": 152.65999999993366,
+    "last_seen_s": 153.1599999999332,
+    "side": "left",
+    "estimated_uav_position": [
+      7.4760173337751175,
+      -0.010234498211091144,
+      2.4557858630429372
+    ],
+    "observations": 2,
+    "evidence": "0153.jpg"
+  },
+  {
+    "barcode": "W0043",
+    "first_seen_s": 152.65999999993366,
+    "last_seen_s": 153.1599999999332,
+    "side": "right",
+    "estimated_uav_position": [
+      7.4760173337751175,
+      -0.010234498211091144,
+      2.4557858630429372
+    ],
+    "observations": 2,
+    "evidence": "0154.jpg"
+  },
+  {
+    "barcode": "W0242",
+    "first_seen_s": 154.7199999999318,
+    "last_seen_s": 154.7199999999318,
+    "side": "left",
+    "estimated_uav_position": [
+      5.2046844710590685,
+      0.05826280625545126,
+      2.4026146662679544
+    ],
+    "observations": 1,
+    "evidence": "0155.jpg"
+  },
+  {
+    "barcode": "W0042",
+    "first_seen_s": 154.7199999999318,
+    "last_seen_s": 154.7199999999318,
+    "side": "right",
+    "estimated_uav_position": [
+      5.2046844710590685,
+      0.05826280625545126,
+      2.4026146662679544
+    ],
+    "observations": 1,
+    "evidence": "0156.jpg"
+  },
+  {
+    "barcode": "W0041",
+    "first_seen_s": 156.21999999993042,
+    "last_seen_s": 156.73999999992995,
+    "side": "right",
+    "estimated_uav_position": [
+      3.524624796650128,
+      0.03766480255056056,
+      2.389549568618536
+    ],
+    "observations": 2,
+    "evidence": "0157.jpg"
+  },
+  {
+    "barcode": "W0241",
+    "first_seen_s": 156.73999999992995,
+    "last_seen_s": 156.73999999992995,
+    "side": "left",
+    "estimated_uav_position": [
+      2.971509023594535,
+      0.04842727338478813,
+      2.3815697664513156
+    ],
+    "observations": 1,
+    "evidence": "0158.jpg"
+  },
+  {
+    "barcode": "W0240",
+    "first_seen_s": 158.27999999992855,
+    "last_seen_s": 158.7799999999281,
+    "side": "left",
+    "estimated_uav_position": [
+      1.307673278101246,
+      -0.02791733294347304,
+      2.424284722148584
+    ],
+    "observations": 2,
+    "evidence": "0159.jpg"
+  },
+  {
+    "barcode": "W0040",
+    "first_seen_s": 158.27999999992855,
+    "last_seen_s": 158.7799999999281,
+    "side": "right",
+    "estimated_uav_position": [
+      1.307673278101246,
+      -0.02791733294347304,
+      2.424284722148584
+    ],
+    "observations": 2,
+    "evidence": "0160.jpg"
+  },
+  {
+    "barcode": "W0280",
+    "first_seen_s": 166.8999999999207,
+    "last_seen_s": 167.4599999999202,
+    "side": "left",
+    "estimated_uav_position": [
+      0.5615447776802188,
+      -0.062149627423594714,
+      3.986393767402352
+    ],
+    "observations": 2,
+    "evidence": "0161.jpg"
+  },
+  {
+    "barcode": "W0080",
+    "first_seen_s": 166.8999999999207,
+    "last_seen_s": 167.4599999999202,
+    "side": "right",
+    "estimated_uav_position": [
+      0.5615447776802188,
+      -0.062149627423594714,
+      3.986393767402352
+    ],
+    "observations": 2,
+    "evidence": "0162.jpg"
+  },
+  {
+    "barcode": "W0281",
+    "first_seen_s": 169.01999999991878,
+    "last_seen_s": 169.01999999991878,
+    "side": "left",
+    "estimated_uav_position": [
+      2.825437599892446,
+      -0.017612236009952716,
+      4.011320201553108
+    ],
+    "observations": 1,
+    "evidence": "0163.jpg"
+  },
+  {
+    "barcode": "W0081",
+    "first_seen_s": 169.01999999991878,
+    "last_seen_s": 169.01999999991878,
+    "side": "right",
+    "estimated_uav_position": [
+      2.825437599892446,
+      -0.017612236009952716,
+      4.011320201553108
+    ],
+    "observations": 1,
+    "evidence": "0164.jpg"
+  },
+  {
+    "barcode": "W0282",
+    "first_seen_s": 170.57999999991736,
+    "last_seen_s": 171.11999999991687,
+    "side": "left",
+    "estimated_uav_position": [
+      4.5661482749050535,
+      -0.01305427267764455,
+      4.015967877662255
+    ],
+    "observations": 2,
+    "evidence": "0165.jpg"
+  },
+  {
+    "barcode": "W0082",
+    "first_seen_s": 170.57999999991736,
+    "last_seen_s": 171.11999999991687,
+    "side": "right",
+    "estimated_uav_position": [
+      4.5661482749050535,
+      -0.01305427267764455,
+      4.015967877662255
+    ],
+    "observations": 2,
+    "evidence": "0166.jpg"
+  },
+  {
+    "barcode": "W0283",
+    "first_seen_s": 172.65999999991547,
+    "last_seen_s": 172.65999999991547,
+    "side": "left",
+    "estimated_uav_position": [
+      6.8117586517938165,
+      0.038896084069580394,
+      3.9961200785703728
+    ],
+    "observations": 1,
+    "evidence": "0167.jpg"
+  },
+  {
+    "barcode": "W0083",
+    "first_seen_s": 172.65999999991547,
+    "last_seen_s": 172.65999999991547,
+    "side": "right",
+    "estimated_uav_position": [
+      6.8117586517938165,
+      0.038896084069580394,
+      3.9961200785703728
+    ],
+    "observations": 1,
+    "evidence": "0168.jpg"
+  },
+  {
+    "barcode": "W0284",
+    "first_seen_s": 174.1799999999141,
+    "last_seen_s": 174.7199999999136,
+    "side": "left",
+    "estimated_uav_position": [
+      8.50357373136475,
+      0.036575104585307425,
+      3.985079507915016
+    ],
+    "observations": 2,
+    "evidence": "0169.jpg"
+  },
+  {
+    "barcode": "W0084",
+    "first_seen_s": 174.1799999999141,
+    "last_seen_s": 174.7199999999136,
+    "side": "right",
+    "estimated_uav_position": [
+      8.50357373136475,
+      0.036575104585307425,
+      3.985079507915016
+    ],
+    "observations": 2,
+    "evidence": "0170.jpg"
+  },
+  {
+    "barcode": "W0285",
+    "first_seen_s": 176.23999999991221,
+    "last_seen_s": 176.73999999991176,
+    "side": "left",
+    "estimated_uav_position": [
+      10.780962171284232,
+      0.00529246749804725,
+      3.991452692752183
+    ],
+    "observations": 2,
+    "evidence": "0171.jpg"
+  },
+  {
+    "barcode": "W0085",
+    "first_seen_s": 176.23999999991221,
+    "last_seen_s": 176.23999999991221,
+    "side": "right",
+    "estimated_uav_position": [
+      10.780962171284232,
+      0.00529246749804725,
+      3.991452692752183
+    ],
+    "observations": 1,
+    "evidence": "0172.jpg"
+  },
+  {
+    "barcode": "W0286",
+    "first_seen_s": 177.75999999991083,
+    "last_seen_s": 178.29999999991034,
+    "side": "left",
+    "estimated_uav_position": [
+      12.468857792491766,
+      -0.023925618725798417,
+      4.011388280102502
+    ],
+    "observations": 2,
+    "evidence": "0173.jpg"
+  },
+  {
+    "barcode": "W0086",
+    "first_seen_s": 177.75999999991083,
+    "last_seen_s": 178.29999999991034,
+    "side": "right",
+    "estimated_uav_position": [
+      12.468857792491766,
+      -0.023925618725798417,
+      4.011388280102502
+    ],
+    "observations": 2,
+    "evidence": "0174.jpg"
+  },
+  {
+    "barcode": "W0287",
+    "first_seen_s": 179.83999999990894,
+    "last_seen_s": 180.33999999990849,
+    "side": "left",
+    "estimated_uav_position": [
+      14.74400617900654,
+      -0.03204728665888176,
+      4.0392727332045615
+    ],
+    "observations": 2,
+    "evidence": "0175.jpg"
+  },
+  {
+    "barcode": "W0087",
+    "first_seen_s": 179.83999999990894,
+    "last_seen_s": 180.33999999990849,
+    "side": "right",
+    "estimated_uav_position": [
+      14.74400617900654,
+      -0.03204728665888176,
+      4.0392727332045615
+    ],
+    "observations": 2,
+    "evidence": "0176.jpg"
+  },
+  {
+    "barcode": "W0288",
+    "first_seen_s": 181.8599999999071,
+    "last_seen_s": 181.8599999999071,
+    "side": "left",
+    "estimated_uav_position": [
+      16.972108884122324,
+      0.06042617223570793,
+      3.9989951030330584
+    ],
+    "observations": 1,
+    "evidence": "0177.jpg"
+  },
+  {
+    "barcode": "W0088",
+    "first_seen_s": 181.8599999999071,
+    "last_seen_s": 181.8599999999071,
+    "side": "right",
+    "estimated_uav_position": [
+      16.972108884122324,
+      0.06042617223570793,
+      3.9989951030330584
+    ],
+    "observations": 1,
+    "evidence": "0178.jpg"
+  },
+  {
+    "barcode": "W0289",
+    "first_seen_s": 183.3999999999057,
+    "last_seen_s": 183.89999999990525,
+    "side": "left",
+    "estimated_uav_position": [
+      18.666759138881076,
+      0.0522808020251646,
+      3.997293049031359
+    ],
+    "observations": 2,
+    "evidence": "0179.jpg"
+  },
+  {
+    "barcode": "W0089",
+    "first_seen_s": 183.3999999999057,
+    "last_seen_s": 183.89999999990525,
+    "side": "right",
+    "estimated_uav_position": [
+      18.666759138881076,
+      0.0522808020251646,
+      3.997293049031359
+    ],
+    "observations": 2,
+    "evidence": "0180.jpg"
+  },
+  {
+    "barcode": "W0290",
+    "first_seen_s": 185.45999999990383,
+    "last_seen_s": 185.45999999990383,
+    "side": "left",
+    "estimated_uav_position": [
+      20.94980043457191,
+      -0.024418969903105953,
+      4.02601959523383
+    ],
+    "observations": 1,
+    "evidence": "0181.jpg"
+  },
+  {
+    "barcode": "W0090",
+    "first_seen_s": 185.45999999990383,
+    "last_seen_s": 185.45999999990383,
+    "side": "right",
+    "estimated_uav_position": [
+      20.94980043457191,
+      -0.024418969903105953,
+      4.02601959523383
+    ],
+    "observations": 1,
+    "evidence": "0182.jpg"
+  },
+  {
+    "barcode": "W0291",
+    "first_seen_s": 186.99999999990243,
+    "last_seen_s": 187.49999999990197,
+    "side": "left",
+    "estimated_uav_position": [
+      22.618801176846276,
+      -0.016048163933401756,
+      4.0034877026840086
+    ],
+    "observations": 2,
+    "evidence": "0183.jpg"
+  },
+  {
+    "barcode": "W0091",
+    "first_seen_s": 186.99999999990243,
+    "last_seen_s": 187.49999999990197,
+    "side": "right",
+    "estimated_uav_position": [
+      22.618801176846276,
+      -0.016048163933401756,
+      4.0034877026840086
+    ],
+    "observations": 2,
+    "evidence": "0184.jpg"
+  },
+  {
+    "barcode": "W0292",
+    "first_seen_s": 189.0199999999006,
+    "last_seen_s": 189.0199999999006,
+    "side": "left",
+    "estimated_uav_position": [
+      24.85201074557615,
+      -0.018252150566476978,
+      3.987818447456773
+    ],
+    "observations": 1,
+    "evidence": "0185.jpg"
+  },
+  {
+    "barcode": "W0092",
+    "first_seen_s": 189.0199999999006,
+    "last_seen_s": 189.0199999999006,
+    "side": "right",
+    "estimated_uav_position": [
+      24.85201074557615,
+      -0.018252150566476978,
+      3.987818447456773
+    ],
+    "observations": 1,
+    "evidence": "0186.jpg"
+  },
+  {
+    "barcode": "W0293",
+    "first_seen_s": 190.59999999989915,
+    "last_seen_s": 191.11999999989868,
+    "side": "left",
+    "estimated_uav_position": [
+      26.590987140538257,
+      0.023734049383949376,
+      4.013801476987938
+    ],
+    "observations": 2,
+    "evidence": "0187.jpg"
+  },
+  {
+    "barcode": "W0093",
+    "first_seen_s": 190.59999999989915,
+    "last_seen_s": 191.11999999989868,
+    "side": "right",
+    "estimated_uav_position": [
+      26.590987140538257,
+      0.023734049383949376,
+      4.013801476987938
+    ],
+    "observations": 2,
+    "evidence": "0188.jpg"
+  },
+  {
+    "barcode": "W0294",
+    "first_seen_s": 192.67999999989726,
+    "last_seen_s": 192.67999999989726,
+    "side": "left",
+    "estimated_uav_position": [
+      28.867040647993,
+      0.025041250504422914,
+      4.0234791676515735
+    ],
+    "observations": 1,
+    "evidence": "0189.jpg"
+  },
+  {
+    "barcode": "W0094",
+    "first_seen_s": 192.67999999989726,
+    "last_seen_s": 192.67999999989726,
+    "side": "right",
+    "estimated_uav_position": [
+      28.867040647993,
+      0.025041250504422914,
+      4.0234791676515735
+    ],
+    "observations": 1,
+    "evidence": "0190.jpg"
+  },
+  {
+    "barcode": "W0295",
+    "first_seen_s": 194.19999999989588,
+    "last_seen_s": 194.7399999998954,
+    "side": "left",
+    "estimated_uav_position": [
+      30.543926995174836,
+      0.001163932318785879,
+      3.9979478923356533
+    ],
+    "observations": 2,
+    "evidence": "0191.jpg"
+  },
+  {
+    "barcode": "W0095",
+    "first_seen_s": 194.19999999989588,
+    "last_seen_s": 194.7399999998954,
+    "side": "right",
+    "estimated_uav_position": [
+      30.543926995174836,
+      0.001163932318785879,
+      3.9979478923356533
+    ],
+    "observations": 2,
+    "evidence": "0192.jpg"
+  },
+  {
+    "barcode": "W0296",
+    "first_seen_s": 196.279999999894,
+    "last_seen_s": 196.279999999894,
+    "side": "left",
+    "estimated_uav_position": [
+      32.81959526945582,
+      -0.047941513360519335,
+      4.00276228893625
+    ],
+    "observations": 1,
+    "evidence": "0193.jpg"
+  },
+  {
+    "barcode": "W0096",
+    "first_seen_s": 196.279999999894,
+    "last_seen_s": 196.279999999894,
+    "side": "right",
+    "estimated_uav_position": [
+      32.81959526945582,
+      -0.047941513360519335,
+      4.00276228893625
+    ],
+    "observations": 1,
+    "evidence": "0194.jpg"
+  },
+  {
+    "barcode": "W0297",
+    "first_seen_s": 197.77999999989262,
+    "last_seen_s": 198.27999999989217,
+    "side": "left",
+    "estimated_uav_position": [
+      34.4900364201688,
+      0.009704491486153611,
+      4.006819846775406
+    ],
+    "observations": 2,
+    "evidence": "0195.jpg"
+  },
+  {
+    "barcode": "W0097",
+    "first_seen_s": 197.77999999989262,
+    "last_seen_s": 198.27999999989217,
+    "side": "right",
+    "estimated_uav_position": [
+      34.4900364201688,
+      0.009704491486153611,
+      4.006819846775406
+    ],
+    "observations": 2,
+    "evidence": "0196.jpg"
+  },
+  {
+    "barcode": "W0298",
+    "first_seen_s": 199.7999999998908,
+    "last_seen_s": 200.35999999989028,
+    "side": "left",
+    "estimated_uav_position": [
+      36.71361220405854,
+      0.035006036636168004,
+      4.037571999853461
+    ],
+    "observations": 2,
+    "evidence": "0197.jpg"
+  },
+  {
+    "barcode": "W0098",
+    "first_seen_s": 199.7999999998908,
+    "last_seen_s": 200.35999999989028,
+    "side": "right",
+    "estimated_uav_position": [
+      36.71361220405854,
+      0.035006036636168004,
+      4.037571999853461
+    ],
+    "observations": 2,
+    "evidence": "0198.jpg"
+  },
+  {
+    "barcode": "W0299",
+    "first_seen_s": 201.89999999988888,
+    "last_seen_s": 201.89999999988888,
+    "side": "left",
+    "estimated_uav_position": [
+      39.0327496292596,
+      -0.013385386426881479,
+      4.0079173784114746
+    ],
+    "observations": 1,
+    "evidence": "0199.jpg"
+  },
+  {
+    "barcode": "W0099",
+    "first_seen_s": 201.89999999988888,
+    "last_seen_s": 201.89999999988888,
+    "side": "right",
+    "estimated_uav_position": [
+      39.0327496292596,
+      -0.013385386426881479,
+      4.0079173784114746
+    ],
+    "observations": 1,
+    "evidence": "0200.jpg"
+  },
+  {
+    "barcode": "W0300",
+    "first_seen_s": 203.4199999998875,
+    "last_seen_s": 203.93999999988702,
+    "side": "left",
+    "estimated_uav_position": [
+      40.70308449175395,
+      -0.028425807406271687,
+      4.011849532295021
+    ],
+    "observations": 2,
+    "evidence": "0201.jpg"
+  },
+  {
+    "barcode": "W0100",
+    "first_seen_s": 203.4199999998875,
+    "last_seen_s": 203.93999999988702,
+    "side": "right",
+    "estimated_uav_position": [
+      40.70308449175395,
+      -0.028425807406271687,
+      4.011849532295021
+    ],
+    "observations": 2,
+    "evidence": "0202.jpg"
+  },
+  {
+    "barcode": "W0301",
+    "first_seen_s": 205.4999999998856,
+    "last_seen_s": 205.4999999998856,
+    "side": "left",
+    "estimated_uav_position": [
+      42.97467399164114,
+      -0.05391842482141518,
+      3.9886278411579776
+    ],
+    "observations": 1,
+    "evidence": "0203.jpg"
+  },
+  {
+    "barcode": "W0101",
+    "first_seen_s": 205.4999999998856,
+    "last_seen_s": 205.4999999998856,
+    "side": "right",
+    "estimated_uav_position": [
+      42.97467399164114,
+      -0.05391842482141518,
+      3.9886278411579776
+    ],
+    "observations": 1,
+    "evidence": "0204.jpg"
+  },
+  {
+    "barcode": "W0302",
+    "first_seen_s": 207.05999999988418,
+    "last_seen_s": 207.55999999988373,
+    "side": "left",
+    "estimated_uav_position": [
+      44.69760809852748,
+      -0.01753499794300701,
+      4.020043456019037
+    ],
+    "observations": 2,
+    "evidence": "0205.jpg"
+  },
+  {
+    "barcode": "W0102",
+    "first_seen_s": 207.05999999988418,
+    "last_seen_s": 207.55999999988373,
+    "side": "right",
+    "estimated_uav_position": [
+      44.69760809852748,
+      -0.01753499794300701,
+      4.020043456019037
+    ],
+    "observations": 2,
+    "evidence": "0206.jpg"
+  },
+  {
+    "barcode": "W0303",
+    "first_seen_s": 209.1399999998823,
+    "last_seen_s": 209.1399999998823,
+    "side": "left",
+    "estimated_uav_position": [
+      47.00345543852203,
+      0.011085667136595957,
+      4.0251613083597855
+    ],
+    "observations": 1,
+    "evidence": "0207.jpg"
+  },
+  {
+    "barcode": "W0103",
+    "first_seen_s": 209.1399999998823,
+    "last_seen_s": 209.1399999998823,
+    "side": "right",
+    "estimated_uav_position": [
+      47.00345543852203,
+      0.011085667136595957,
+      4.0251613083597855
+    ],
+    "observations": 1,
+    "evidence": "0208.jpg"
+  },
+  {
+    "barcode": "W0304",
+    "first_seen_s": 210.71999999988086,
+    "last_seen_s": 211.2199999998804,
+    "side": "left",
+    "estimated_uav_position": [
+      48.69009184586485,
+      0.0009447076724664917,
+      4.000773513246242
+    ],
+    "observations": 2,
+    "evidence": "0209.jpg"
+  },
+  {
+    "barcode": "W0104",
+    "first_seen_s": 210.71999999988086,
+    "last_seen_s": 211.2199999998804,
+    "side": "right",
+    "estimated_uav_position": [
+      48.69009184586485,
+      0.0009447076724664917,
+      4.000773513246242
+    ],
+    "observations": 2,
+    "evidence": "0210.jpg"
+  },
+  {
+    "barcode": "W0305",
+    "first_seen_s": 212.77999999987898,
+    "last_seen_s": 212.77999999987898,
+    "side": "left",
+    "estimated_uav_position": [
+      50.9888114673297,
+      -0.062477620779287896,
+      4.018869946793042
+    ],
+    "observations": 1,
+    "evidence": "0211.jpg"
+  },
+  {
+    "barcode": "W0105",
+    "first_seen_s": 212.77999999987898,
+    "last_seen_s": 212.77999999987898,
+    "side": "right",
+    "estimated_uav_position": [
+      50.9888114673297,
+      -0.062477620779287896,
+      4.018869946793042
+    ],
+    "observations": 1,
+    "evidence": "0212.jpg"
+  },
+  {
+    "barcode": "W0306",
+    "first_seen_s": 214.27999999987762,
+    "last_seen_s": 214.8399999998771,
+    "side": "left",
+    "estimated_uav_position": [
+      52.656382166187136,
+      -0.02418184136840024,
+      3.982590963318341
+    ],
+    "observations": 2,
+    "evidence": "0213.jpg"
+  },
+  {
+    "barcode": "W0106",
+    "first_seen_s": 214.27999999987762,
+    "last_seen_s": 214.8399999998771,
+    "side": "right",
+    "estimated_uav_position": [
+      52.656382166187136,
+      -0.02418184136840024,
+      3.982590963318341
+    ],
+    "observations": 2,
+    "evidence": "0214.jpg"
+  },
+  {
+    "barcode": "W0307",
+    "first_seen_s": 216.3999999998757,
+    "last_seen_s": 216.3999999998757,
+    "side": "left",
+    "estimated_uav_position": [
+      54.99870324095267,
+      0.008901713864261787,
+      4.005464025447849
+    ],
+    "observations": 1,
+    "evidence": "0215.jpg"
+  },
+  {
+    "barcode": "W0107",
+    "first_seen_s": 216.3999999998757,
+    "last_seen_s": 216.3999999998757,
+    "side": "right",
+    "estimated_uav_position": [
+      54.99870324095267,
+      0.008901713864261787,
+      4.005464025447849
+    ],
+    "observations": 1,
+    "evidence": "0216.jpg"
+  },
+  {
+    "barcode": "W0308",
+    "first_seen_s": 217.99999999987423,
+    "last_seen_s": 218.53999999987374,
+    "side": "left",
+    "estimated_uav_position": [
+      56.73667871698064,
+      0.03654547330538589,
+      4.000321176723923
+    ],
+    "observations": 2,
+    "evidence": "0217.jpg"
+  },
+  {
+    "barcode": "W0108",
+    "first_seen_s": 217.99999999987423,
+    "last_seen_s": 218.53999999987374,
+    "side": "right",
+    "estimated_uav_position": [
+      56.73667871698064,
+      0.03654547330538589,
+      4.000321176723923
+    ],
+    "observations": 2,
+    "evidence": "0218.jpg"
+  },
+  {
+    "barcode": "W0309",
+    "first_seen_s": 219.59999999987278,
+    "last_seen_s": 220.09999999987232,
+    "side": "left",
+    "estimated_uav_position": [
+      58.46190431156668,
+      0.02918550471790223,
+      4.000152498510716
+    ],
+    "observations": 2,
+    "evidence": "0219.jpg"
+  },
+  {
+    "barcode": "W0109",
+    "first_seen_s": 219.59999999987278,
+    "last_seen_s": 220.09999999987232,
+    "side": "right",
+    "estimated_uav_position": [
+      58.46190431156668,
+      0.02918550471790223,
+      4.000152498510716
+    ],
+    "observations": 2,
+    "evidence": "0220.jpg"
+  },
+  {
+    "barcode": "W0310",
+    "first_seen_s": 221.61999999987094,
+    "last_seen_s": 222.1199999998705,
+    "side": "left",
+    "estimated_uav_position": [
+      60.7121234111168,
+      -0.048013548003318654,
+      4.01590346948751
+    ],
+    "observations": 2,
+    "evidence": "0221.jpg"
+  },
+  {
+    "barcode": "W0110",
+    "first_seen_s": 221.61999999987094,
+    "last_seen_s": 222.1199999998705,
+    "side": "right",
+    "estimated_uav_position": [
+      60.7121234111168,
+      -0.048013548003318654,
+      4.01590346948751
+    ],
+    "observations": 2,
+    "evidence": "0222.jpg"
+  },
+  {
+    "barcode": "W0311",
+    "first_seen_s": 223.6599999998691,
+    "last_seen_s": 223.6599999998691,
+    "side": "left",
+    "estimated_uav_position": [
+      62.9533386490197,
+      -0.04476099268444761,
+      4.025431045695211
+    ],
+    "observations": 1,
+    "evidence": "0223.jpg"
+  },
+  {
+    "barcode": "W0111",
+    "first_seen_s": 223.6599999998691,
+    "last_seen_s": 223.6599999998691,
+    "side": "right",
+    "estimated_uav_position": [
+      62.9533386490197,
+      -0.04476099268444761,
+      4.025431045695211
+    ],
+    "observations": 1,
+    "evidence": "0224.jpg"
+  },
+  {
+    "barcode": "W0312",
+    "first_seen_s": 225.19999999986769,
+    "last_seen_s": 225.69999999986723,
+    "side": "left",
+    "estimated_uav_position": [
+      64.64799348397644,
+      0.01139977647246396,
+      4.024831958431933
+    ],
+    "observations": 2,
+    "evidence": "0225.jpg"
+  },
+  {
+    "barcode": "W0112",
+    "first_seen_s": 225.19999999986769,
+    "last_seen_s": 225.69999999986723,
+    "side": "right",
+    "estimated_uav_position": [
+      64.64799348397644,
+      0.01139977647246396,
+      4.024831958431933
+    ],
+    "observations": 2,
+    "evidence": "0226.jpg"
+  },
+  {
+    "barcode": "W0313",
+    "first_seen_s": 227.23999999986583,
+    "last_seen_s": 227.23999999986583,
+    "side": "left",
+    "estimated_uav_position": [
+      66.87667011377704,
+      0.005211593765479847,
+      3.993666550863644
+    ],
+    "observations": 1,
+    "evidence": "0227.jpg"
+  },
+  {
+    "barcode": "W0113",
+    "first_seen_s": 227.23999999986583,
+    "last_seen_s": 227.23999999986583,
+    "side": "right",
+    "estimated_uav_position": [
+      66.87667011377704,
+      0.005211593765479847,
+      3.993666550863644
+    ],
+    "observations": 1,
+    "evidence": "0228.jpg"
+  },
+  {
+    "barcode": "W0314",
+    "first_seen_s": 228.7999999998644,
+    "last_seen_s": 229.31999999986394,
+    "side": "left",
+    "estimated_uav_position": [
+      68.5922714600217,
+      -0.006303139987457098,
+      4.006432885946849
+    ],
+    "observations": 2,
+    "evidence": "0229.jpg"
+  },
+  {
+    "barcode": "W0114",
+    "first_seen_s": 228.7999999998644,
+    "last_seen_s": 229.31999999986394,
+    "side": "right",
+    "estimated_uav_position": [
+      68.5922714600217,
+      -0.006303139987457098,
+      4.006432885946849
+    ],
+    "observations": 2,
+    "evidence": "0230.jpg"
+  },
+  {
+    "barcode": "W0315",
+    "first_seen_s": 230.8999999998625,
+    "last_seen_s": 230.8999999998625,
+    "side": "left",
+    "estimated_uav_position": [
+      70.94237063831048,
+      -0.04054937906016717,
+      4.016591304689597
+    ],
+    "observations": 1,
+    "evidence": "0231.jpg"
+  },
+  {
+    "barcode": "W0115",
+    "first_seen_s": 230.8999999998625,
+    "last_seen_s": 230.8999999998625,
+    "side": "right",
+    "estimated_uav_position": [
+      70.94237063831048,
+      -0.04054937906016717,
+      4.016591304689597
+    ],
+    "observations": 1,
+    "evidence": "0232.jpg"
+  },
+  {
+    "barcode": "W0316",
+    "first_seen_s": 232.45999999986108,
+    "last_seen_s": 232.9799999998606,
+    "side": "left",
+    "estimated_uav_position": [
+      72.6579118269944,
+      -0.05062294760983245,
+      4.0248445536459885
+    ],
+    "observations": 2,
+    "evidence": "0233.jpg"
+  },
+  {
+    "barcode": "W0116",
+    "first_seen_s": 232.45999999986108,
+    "last_seen_s": 232.9799999998606,
+    "side": "right",
+    "estimated_uav_position": [
+      72.6579118269944,
+      -0.05062294760983245,
+      4.0248445536459885
+    ],
+    "observations": 2,
+    "evidence": "0234.jpg"
+  },
+  {
+    "barcode": "W0317",
+    "first_seen_s": 234.5399999998592,
+    "last_seen_s": 234.5399999998592,
+    "side": "left",
+    "estimated_uav_position": [
+      74.91757993400728,
+      0.043465599487631484,
+      4.015783078778491
+    ],
+    "observations": 1,
+    "evidence": "0235.jpg"
+  },
+  {
+    "barcode": "W0117",
+    "first_seen_s": 234.5399999998592,
+    "last_seen_s": 234.5399999998592,
+    "side": "right",
+    "estimated_uav_position": [
+      74.91757993400728,
+      0.043465599487631484,
+      4.015783078778491
+    ],
+    "observations": 1,
+    "evidence": "0236.jpg"
+  },
+  {
+    "barcode": "W0318",
+    "first_seen_s": 236.09999999985777,
+    "last_seen_s": 236.6199999998573,
+    "side": "left",
+    "estimated_uav_position": [
+      76.63863551191065,
+      0.05748529270854086,
+      4.0001963874769535
+    ],
+    "observations": 2,
+    "evidence": "0237.jpg"
+  },
+  {
+    "barcode": "W0118",
+    "first_seen_s": 236.09999999985777,
+    "last_seen_s": 236.6199999998573,
+    "side": "right",
+    "estimated_uav_position": [
+      76.63863551191065,
+      0.05748529270854086,
+      4.0001963874769535
+    ],
+    "observations": 2,
+    "evidence": "0238.jpg"
+  },
+  {
+    "barcode": "W0319",
+    "first_seen_s": 238.13999999985592,
+    "last_seen_s": 238.13999999985592,
+    "side": "left",
+    "estimated_uav_position": [
+      78.86982323492892,
+      -0.015059448459353548,
+      4.02500669138174
+    ],
+    "observations": 1,
+    "evidence": "0239.jpg"
+  },
+  {
+    "barcode": "W0119",
+    "first_seen_s": 238.13999999985592,
+    "last_seen_s": 238.13999999985592,
+    "side": "right",
+    "estimated_uav_position": [
+      78.86982323492892,
+      -0.015059448459353548,
+      4.02500669138174
+    ],
+    "observations": 1,
+    "evidence": "0240.jpg"
+  },
+  {
+    "barcode": "W0359",
+    "first_seen_s": 246.67999999984815,
+    "last_seen_s": 247.19999999984768,
+    "side": "left",
+    "estimated_uav_position": [
+      79.42634141611134,
+      0.03845138305048542,
+      5.590600019688762
+    ],
+    "observations": 2,
+    "evidence": "0241.jpg"
+  },
+  {
+    "barcode": "W0159",
+    "first_seen_s": 246.67999999984815,
+    "last_seen_s": 247.19999999984768,
+    "side": "right",
+    "estimated_uav_position": [
+      79.42634141611134,
+      0.03845138305048542,
+      5.590600019688762
+    ],
+    "observations": 2,
+    "evidence": "0242.jpg"
+  },
+  {
+    "barcode": "W0358",
+    "first_seen_s": 248.7199999998463,
+    "last_seen_s": 249.21999999984584,
+    "side": "left",
+    "estimated_uav_position": [
+      77.18616387122752,
+      -0.05852439703214572,
+      5.62281162623435
+    ],
+    "observations": 2,
+    "evidence": "0243.jpg"
+  },
+  {
+    "barcode": "W0158",
+    "first_seen_s": 248.7199999998463,
+    "last_seen_s": 248.7199999998463,
+    "side": "right",
+    "estimated_uav_position": [
+      77.18616387122752,
+      -0.05852439703214572,
+      5.62281162623435
+    ],
+    "observations": 1,
+    "evidence": "0244.jpg"
+  },
+  {
+    "barcode": "W0357",
+    "first_seen_s": 250.27999999984488,
+    "last_seen_s": 250.77999999984442,
+    "side": "left",
+    "estimated_uav_position": [
+      75.50806398873934,
+      -0.015862678800213602,
+      5.618353502894401
+    ],
+    "observations": 2,
+    "evidence": "0245.jpg"
+  },
+  {
+    "barcode": "W0157",
+    "first_seen_s": 250.27999999984488,
+    "last_seen_s": 250.77999999984442,
+    "side": "right",
+    "estimated_uav_position": [
+      75.50806398873934,
+      -0.015862678800213602,
+      5.618353502894401
+    ],
+    "observations": 2,
+    "evidence": "0246.jpg"
+  },
+  {
+    "barcode": "W0356",
+    "first_seen_s": 252.35999999984298,
+    "last_seen_s": 252.35999999984298,
+    "side": "left",
+    "estimated_uav_position": [
+      73.1764244523972,
+      0.002743592422341585,
+      5.616912821131842
+    ],
+    "observations": 1,
+    "evidence": "0247.jpg"
+  },
+  {
+    "barcode": "W0156",
+    "first_seen_s": 252.35999999984298,
+    "last_seen_s": 252.35999999984298,
+    "side": "right",
+    "estimated_uav_position": [
+      73.1764244523972,
+      0.002743592422341585,
+      5.616912821131842
+    ],
+    "observations": 1,
+    "evidence": "0248.jpg"
+  },
+  {
+    "barcode": "W0355",
+    "first_seen_s": 253.89999999984158,
+    "last_seen_s": 254.4399999998411,
+    "side": "left",
+    "estimated_uav_position": [
+      71.47370759013619,
+      0.036055149153365294,
+      5.610701815474035
+    ],
+    "observations": 2,
+    "evidence": "0249.jpg"
+  },
+  {
+    "barcode": "W0155",
+    "first_seen_s": 253.89999999984158,
+    "last_seen_s": 254.4399999998411,
+    "side": "right",
+    "estimated_uav_position": [
+      71.47370759013619,
+      0.036055149153365294,
+      5.610701815474035
+    ],
+    "observations": 2,
+    "evidence": "0250.jpg"
+  },
+  {
+    "barcode": "W0354",
+    "first_seen_s": 255.9599999998397,
+    "last_seen_s": 256.4599999998393,
+    "side": "left",
+    "estimated_uav_position": [
+      69.21831344137122,
+      -0.018112518422158486,
+      5.604046897205146
+    ],
+    "observations": 2,
+    "evidence": "0251.jpg"
+  },
+  {
+    "barcode": "W0154",
+    "first_seen_s": 255.9599999998397,
+    "last_seen_s": 256.4599999998393,
+    "side": "right",
+    "estimated_uav_position": [
+      69.21831344137122,
+      -0.018112518422158486,
+      5.604046897205146
+    ],
+    "observations": 2,
+    "evidence": "0252.jpg"
+  },
+  {
+    "barcode": "W0353",
+    "first_seen_s": 257.49999999983834,
+    "last_seen_s": 258.03999999983785,
+    "side": "left",
+    "estimated_uav_position": [
+      67.50555167480677,
+      -0.006632379577009229,
+      5.624814328902257
+    ],
+    "observations": 2,
+    "evidence": "0253.jpg"
+  },
+  {
+    "barcode": "W0153",
+    "first_seen_s": 257.49999999983834,
+    "last_seen_s": 258.03999999983785,
+    "side": "right",
+    "estimated_uav_position": [
+      67.50555167480677,
+      -0.006632379577009229,
+      5.624814328902257
+    ],
+    "observations": 2,
+    "evidence": "0254.jpg"
+  },
+  {
+    "barcode": "W0352",
+    "first_seen_s": 259.57999999983645,
+    "last_seen_s": 260.079999999836,
+    "side": "left",
+    "estimated_uav_position": [
+      65.24987248806622,
+      -0.011907234149724822,
+      5.613813583509129
+    ],
+    "observations": 2,
+    "evidence": "0255.jpg"
+  },
+  {
+    "barcode": "W0152",
+    "first_seen_s": 259.57999999983645,
+    "last_seen_s": 260.079999999836,
+    "side": "right",
+    "estimated_uav_position": [
+      65.24987248806622,
+      -0.011907234149724822,
+      5.613813583509129
+    ],
+    "observations": 2,
+    "evidence": "0256.jpg"
+  },
+  {
+    "barcode": "W0351",
+    "first_seen_s": 261.65999999983455,
+    "last_seen_s": 261.65999999983455,
+    "side": "left",
+    "estimated_uav_position": [
+      62.98836067165467,
+      0.042521640458687185,
+      5.606554753444245
+    ],
+    "observations": 1,
+    "evidence": "0257.jpg"
+  },
+  {
+    "barcode": "W0151",
+    "first_seen_s": 261.65999999983455,
+    "last_seen_s": 261.65999999983455,
+    "side": "right",
+    "estimated_uav_position": [
+      62.98836067165467,
+      0.042521640458687185,
+      5.606554753444245
+    ],
+    "observations": 1,
+    "evidence": "0258.jpg"
+  },
+  {
+    "barcode": "W0350",
+    "first_seen_s": 263.1199999998332,
+    "last_seen_s": 263.65999999983273,
+    "side": "left",
+    "estimated_uav_position": [
+      61.32222800298211,
+      0.03617613405784904,
+      5.584027954047563
+    ],
+    "observations": 2,
+    "evidence": "0259.jpg"
+  },
+  {
+    "barcode": "W0150",
+    "first_seen_s": 263.1199999998332,
+    "last_seen_s": 263.65999999983273,
+    "side": "right",
+    "estimated_uav_position": [
+      61.32222800298211,
+      0.03617613405784904,
+      5.584027954047563
+    ],
+    "observations": 2,
+    "evidence": "0260.jpg"
+  },
+  {
+    "barcode": "W0349",
+    "first_seen_s": 265.17999999983135,
+    "last_seen_s": 265.17999999983135,
+    "side": "left",
+    "estimated_uav_position": [
+      59.08248958555006,
+      -0.010592101973850583,
+      5.605674964140157
+    ],
+    "observations": 1,
+    "evidence": "0261.jpg"
+  },
+  {
+    "barcode": "W0149",
+    "first_seen_s": 265.17999999983135,
+    "last_seen_s": 265.17999999983135,
+    "side": "right",
+    "estimated_uav_position": [
+      59.08248958555006,
+      -0.010592101973850583,
+      5.605674964140157
+    ],
+    "observations": 1,
+    "evidence": "0262.jpg"
+  },
+  {
+    "barcode": "W0348",
+    "first_seen_s": 266.73999999982993,
+    "last_seen_s": 267.27999999982944,
+    "side": "left",
+    "estimated_uav_position": [
+      57.35610136911561,
+      -0.031102069459715956,
+      5.60681757249917
+    ],
+    "observations": 2,
+    "evidence": "0263.jpg"
+  },
+  {
+    "barcode": "W0148",
+    "first_seen_s": 266.73999999982993,
+    "last_seen_s": 267.27999999982944,
+    "side": "right",
+    "estimated_uav_position": [
+      57.35610136911561,
+      -0.031102069459715956,
+      5.60681757249917
+    ],
+    "observations": 2,
+    "evidence": "0264.jpg"
+  },
+  {
+    "barcode": "W0347",
+    "first_seen_s": 268.79999999982806,
+    "last_seen_s": 268.79999999982806,
+    "side": "left",
+    "estimated_uav_position": [
+      55.10755631419787,
+      -0.02656464568097193,
+      5.596466684945343
+    ],
+    "observations": 1,
+    "evidence": "0265.jpg"
+  },
+  {
+    "barcode": "W0147",
+    "first_seen_s": 268.79999999982806,
+    "last_seen_s": 268.79999999982806,
+    "side": "right",
+    "estimated_uav_position": [
+      55.10755631419787,
+      -0.02656464568097193,
+      5.596466684945343
+    ],
+    "observations": 1,
+    "evidence": "0266.jpg"
+  },
+  {
+    "barcode": "W0346",
+    "first_seen_s": 270.33999999982666,
+    "last_seen_s": 270.8199999998262,
+    "side": "left",
+    "estimated_uav_position": [
+      53.41063203170028,
+      0.033964228055643114,
+      5.622387871776442
+    ],
+    "observations": 2,
+    "evidence": "0267.jpg"
+  },
+  {
+    "barcode": "W0146",
+    "first_seen_s": 270.33999999982666,
+    "last_seen_s": 270.8199999998262,
+    "side": "right",
+    "estimated_uav_position": [
+      53.41063203170028,
+      0.033964228055643114,
+      5.622387871776442
+    ],
+    "observations": 2,
+    "evidence": "0268.jpg"
+  },
+  {
+    "barcode": "W0345",
+    "first_seen_s": 272.3799999998248,
+    "last_seen_s": 272.3799999998248,
+    "side": "left",
+    "estimated_uav_position": [
+      51.184669442077045,
+      0.04939665927594588,
+      5.613682535586704
+    ],
+    "observations": 1,
+    "evidence": "0269.jpg"
+  },
+  {
+    "barcode": "W0145",
+    "first_seen_s": 272.3799999998248,
+    "last_seen_s": 272.3799999998248,
+    "side": "right",
+    "estimated_uav_position": [
+      51.184669442077045,
+      0.04939665927594588,
+      5.613682535586704
+    ],
+    "observations": 1,
+    "evidence": "0270.jpg"
+  },
+  {
+    "barcode": "W0344",
+    "first_seen_s": 273.87999999982344,
+    "last_seen_s": 274.379999999823,
+    "side": "left",
+    "estimated_uav_position": [
+      49.48165830641778,
+      -0.004351251986237551,
+      5.60665746221491
+    ],
+    "observations": 2,
+    "evidence": "0271.jpg"
+  },
+  {
+    "barcode": "W0144",
+    "first_seen_s": 273.87999999982344,
+    "last_seen_s": 274.379999999823,
+    "side": "right",
+    "estimated_uav_position": [
+      49.48165830641778,
+      -0.004351251986237551,
+      5.60665746221491
+    ],
+    "observations": 2,
+    "evidence": "0272.jpg"
+  },
+  {
+    "barcode": "W0343",
+    "first_seen_s": 275.97999999982153,
+    "last_seen_s": 276.4799999998211,
+    "side": "left",
+    "estimated_uav_position": [
+      47.197163167075125,
+      -0.024584890813894388,
+      5.595817878481547
+    ],
+    "observations": 2,
+    "evidence": "0273.jpg"
+  },
+  {
+    "barcode": "W0143",
+    "first_seen_s": 275.97999999982153,
+    "last_seen_s": 275.97999999982153,
+    "side": "right",
+    "estimated_uav_position": [
+      47.197163167075125,
+      -0.024584890813894388,
+      5.595817878481547
+    ],
+    "observations": 1,
+    "evidence": "0274.jpg"
+  },
+  {
+    "barcode": "W0342",
+    "first_seen_s": 277.47999999982017,
+    "last_seen_s": 278.0199999998197,
+    "side": "left",
+    "estimated_uav_position": [
+      45.52546231434545,
+      -0.031073038461574415,
+      5.600333081063382
+    ],
+    "observations": 2,
+    "evidence": "0275.jpg"
+  },
+  {
+    "barcode": "W0142",
+    "first_seen_s": 277.47999999982017,
+    "last_seen_s": 278.0199999998197,
+    "side": "right",
+    "estimated_uav_position": [
+      45.52546231434545,
+      -0.031073038461574415,
+      5.600333081063382
+    ],
+    "observations": 2,
+    "evidence": "0276.jpg"
+  },
+  {
+    "barcode": "W0341",
+    "first_seen_s": 279.57999999981826,
+    "last_seen_s": 279.57999999981826,
+    "side": "left",
+    "estimated_uav_position": [
+      43.24538408392399,
+      0.023927573656708674,
+      5.609013405200305
+    ],
+    "observations": 1,
+    "evidence": "0277.jpg"
+  },
+  {
+    "barcode": "W0141",
+    "first_seen_s": 279.57999999981826,
+    "last_seen_s": 280.0999999998178,
+    "side": "right",
+    "estimated_uav_position": [
+      43.24538408392399,
+      0.023927573656708674,
+      5.609013405200305
+    ],
+    "observations": 2,
+    "evidence": "0278.jpg"
+  },
+  {
+    "barcode": "W0340",
+    "first_seen_s": 281.1599999998168,
+    "last_seen_s": 281.65999999981636,
+    "side": "left",
+    "estimated_uav_position": [
+      41.49522221906893,
+      0.019423537674777544,
+      5.599120879259966
+    ],
+    "observations": 2,
+    "evidence": "0279.jpg"
+  },
+  {
+    "barcode": "W0140",
+    "first_seen_s": 281.1599999998168,
+    "last_seen_s": 281.65999999981636,
+    "side": "right",
+    "estimated_uav_position": [
+      41.49522221906893,
+      0.019423537674777544,
+      5.599120879259966
+    ],
+    "observations": 2,
+    "evidence": "0280.jpg"
+  },
+  {
+    "barcode": "W0339",
+    "first_seen_s": 283.19999999981496,
+    "last_seen_s": 283.6999999998145,
+    "side": "left",
+    "estimated_uav_position": [
+      39.25656393910813,
+      0.002649986421733521,
+      5.594325550289005
+    ],
+    "observations": 2,
+    "evidence": "0281.jpg"
+  },
+  {
+    "barcode": "W0139",
+    "first_seen_s": 283.19999999981496,
+    "last_seen_s": 283.6999999998145,
+    "side": "right",
+    "estimated_uav_position": [
+      39.25656393910813,
+      0.002649986421733521,
+      5.594325550289005
+    ],
+    "observations": 2,
+    "evidence": "0282.jpg"
+  },
+  {
+    "barcode": "W0338",
+    "first_seen_s": 285.2599999998131,
+    "last_seen_s": 285.2599999998131,
+    "side": "left",
+    "estimated_uav_position": [
+      36.98604930378457,
+      -0.030659263525768456,
+      5.605701528139983
+    ],
+    "observations": 1,
+    "evidence": "0283.jpg"
+  },
+  {
+    "barcode": "W0138",
+    "first_seen_s": 285.2599999998131,
+    "last_seen_s": 285.2599999998131,
+    "side": "right",
+    "estimated_uav_position": [
+      36.98604930378457,
+      -0.030659263525768456,
+      5.605701528139983
+    ],
+    "observations": 1,
+    "evidence": "0284.jpg"
+  },
+  {
+    "barcode": "W0337",
+    "first_seen_s": 286.7999999998117,
+    "last_seen_s": 287.3399999998112,
+    "side": "left",
+    "estimated_uav_position": [
+      35.286898382659245,
+      -0.03147446470118945,
+      5.626609868548604
+    ],
+    "observations": 2,
+    "evidence": "0285.jpg"
+  },
+  {
+    "barcode": "W0137",
+    "first_seen_s": 286.7999999998117,
+    "last_seen_s": 287.3399999998112,
+    "side": "right",
+    "estimated_uav_position": [
+      35.286898382659245,
+      -0.03147446470118945,
+      5.626609868548604
+    ],
+    "observations": 2,
+    "evidence": "0286.jpg"
+  },
+  {
+    "barcode": "W0336",
+    "first_seen_s": 288.83999999980983,
+    "last_seen_s": 288.83999999980983,
+    "side": "left",
+    "estimated_uav_position": [
+      33.04459216162188,
+      0.04334074756950818,
+      5.60454521720705
+    ],
+    "observations": 1,
+    "evidence": "0287.jpg"
+  },
+  {
+    "barcode": "W0136",
+    "first_seen_s": 288.83999999980983,
+    "last_seen_s": 288.83999999980983,
+    "side": "right",
+    "estimated_uav_position": [
+      33.04459216162188,
+      0.04334074756950818,
+      5.60454521720705
+    ],
+    "observations": 1,
+    "evidence": "0288.jpg"
+  },
+  {
+    "barcode": "W0335",
+    "first_seen_s": 290.37999999980843,
+    "last_seen_s": 290.89999999980796,
+    "side": "left",
+    "estimated_uav_position": [
+      31.348714724401017,
+      0.012577009270524478,
+      5.596880210434889
+    ],
+    "observations": 2,
+    "evidence": "0289.jpg"
+  },
+  {
+    "barcode": "W0135",
+    "first_seen_s": 290.37999999980843,
+    "last_seen_s": 290.89999999980796,
+    "side": "right",
+    "estimated_uav_position": [
+      31.348714724401017,
+      0.012577009270524478,
+      5.596880210434889
+    ],
+    "observations": 2,
+    "evidence": "0290.jpg"
+  },
+  {
+    "barcode": "W0334",
+    "first_seen_s": 292.45999999980654,
+    "last_seen_s": 292.45999999980654,
+    "side": "left",
+    "estimated_uav_position": [
+      29.066516412103375,
+      -0.0019289338634651768,
+      5.594370438011039
+    ],
+    "observations": 1,
+    "evidence": "0291.jpg"
+  },
+  {
+    "barcode": "W0134",
+    "first_seen_s": 292.45999999980654,
+    "last_seen_s": 292.45999999980654,
+    "side": "right",
+    "estimated_uav_position": [
+      29.066516412103375,
+      -0.0019289338634651768,
+      5.594370438011039
+    ],
+    "observations": 1,
+    "evidence": "0292.jpg"
+  },
+  {
+    "barcode": "W0333",
+    "first_seen_s": 293.97999999980516,
+    "last_seen_s": 294.4999999998047,
+    "side": "left",
+    "estimated_uav_position": [
+      27.39522013303054,
+      -0.03763403226237017,
+      5.609813748955646
+    ],
+    "observations": 2,
+    "evidence": "0293.jpg"
+  },
+  {
+    "barcode": "W0133",
+    "first_seen_s": 293.97999999980516,
+    "last_seen_s": 294.4999999998047,
+    "side": "right",
+    "estimated_uav_position": [
+      27.39522013303054,
+      -0.03763403226237017,
+      5.609813748955646
+    ],
+    "observations": 2,
+    "evidence": "0294.jpg"
+  },
+  {
+    "barcode": "W0332",
+    "first_seen_s": 296.0199999998033,
+    "last_seen_s": 296.0199999998033,
+    "side": "left",
+    "estimated_uav_position": [
+      25.137356272513074,
+      -0.006568342356008039,
+      5.625838458195159
+    ],
+    "observations": 1,
+    "evidence": "0295.jpg"
+  },
+  {
+    "barcode": "W0132",
+    "first_seen_s": 296.0199999998033,
+    "last_seen_s": 296.0199999998033,
+    "side": "right",
+    "estimated_uav_position": [
+      25.137356272513074,
+      -0.006568342356008039,
+      5.625838458195159
+    ],
+    "observations": 1,
+    "evidence": "0296.jpg"
+  },
+  {
+    "barcode": "W0331",
+    "first_seen_s": 297.59999999980187,
+    "last_seen_s": 298.07999999980143,
+    "side": "left",
+    "estimated_uav_position": [
+      23.412309898149463,
+      0.03679213022670902,
+      5.629260100310917
+    ],
+    "observations": 2,
+    "evidence": "0297.jpg"
+  },
+  {
+    "barcode": "W0131",
+    "first_seen_s": 297.59999999980187,
+    "last_seen_s": 298.07999999980143,
+    "side": "right",
+    "estimated_uav_position": [
+      23.412309898149463,
+      0.03679213022670902,
+      5.629260100310917
+    ],
+    "observations": 2,
+    "evidence": "0298.jpg"
+  },
+  {
+    "barcode": "W0330",
+    "first_seen_s": 299.6399999998,
+    "last_seen_s": 299.6399999998,
+    "side": "left",
+    "estimated_uav_position": [
+      21.17199283134444,
+      0.017807036504959906,
+      5.590669574788223
+    ],
+    "observations": 1,
+    "evidence": "0299.jpg"
+  },
+  {
+    "barcode": "W0130",
+    "first_seen_s": 299.6399999998,
+    "last_seen_s": 299.6399999998,
+    "side": "right",
+    "estimated_uav_position": [
+      21.17199283134444,
+      0.017807036504959906,
+      5.590669574788223
+    ],
+    "observations": 1,
+    "evidence": "0300.jpg"
+  },
+  {
+    "barcode": "W0329",
+    "first_seen_s": 301.1999999997986,
+    "last_seen_s": 301.69999999979814,
+    "side": "left",
+    "estimated_uav_position": [
+      19.453742981160595,
+      0.01704184566035284,
+      5.617515222221931
+    ],
+    "observations": 2,
+    "evidence": "0301.jpg"
+  },
+  {
+    "barcode": "W0129",
+    "first_seen_s": 301.1999999997986,
+    "last_seen_s": 301.69999999979814,
+    "side": "right",
+    "estimated_uav_position": [
+      19.453742981160595,
+      0.01704184566035284,
+      5.617515222221931
+    ],
+    "observations": 2,
+    "evidence": "0302.jpg"
+  },
+  {
+    "barcode": "W0328",
+    "first_seen_s": 303.23999999979674,
+    "last_seen_s": 303.7399999997963,
+    "side": "left",
+    "estimated_uav_position": [
+      17.22400170819456,
+      -0.02057451609281426,
+      5.611393185978324
+    ],
+    "observations": 2,
+    "evidence": "0303.jpg"
+  },
+  {
+    "barcode": "W0128",
+    "first_seen_s": 303.23999999979674,
+    "last_seen_s": 303.23999999979674,
+    "side": "right",
+    "estimated_uav_position": [
+      17.22400170819456,
+      -0.02057451609281426,
+      5.611393185978324
+    ],
+    "observations": 1,
+    "evidence": "0304.jpg"
+  },
+  {
+    "barcode": "W0327",
+    "first_seen_s": 304.75999999979535,
+    "last_seen_s": 305.29999999979486,
+    "side": "left",
+    "estimated_uav_position": [
+      15.525442190718497,
+      -0.015848197933580874,
+      5.610070058690232
+    ],
+    "observations": 2,
+    "evidence": "0305.jpg"
+  },
+  {
+    "barcode": "W0127",
+    "first_seen_s": 305.29999999979486,
+    "last_seen_s": 305.29999999979486,
+    "side": "right",
+    "estimated_uav_position": [
+      14.970296831074995,
+      0.00927743088762196,
+      5.609691319674194
+    ],
+    "observations": 1,
+    "evidence": "0306.jpg"
+  },
+  {
+    "barcode": "W0326",
+    "first_seen_s": 306.7999999997935,
+    "last_seen_s": 307.29999999979304,
+    "side": "left",
+    "estimated_uav_position": [
+      13.294067024700983,
+      0.010295537748143822,
+      5.588900878970875
+    ],
+    "observations": 2,
+    "evidence": "0307.jpg"
+  },
+  {
+    "barcode": "W0126",
+    "first_seen_s": 306.7999999997935,
+    "last_seen_s": 307.29999999979304,
+    "side": "right",
+    "estimated_uav_position": [
+      13.294067024700983,
+      0.010295537748143822,
+      5.588900878970875
+    ],
+    "observations": 2,
+    "evidence": "0308.jpg"
+  },
+  {
+    "barcode": "W0125",
+    "first_seen_s": 308.3599999997921,
+    "last_seen_s": 308.8799999997916,
+    "side": "right",
+    "estimated_uav_position": [
+      11.565572988295592,
+      0.0650980205028612,
+      5.613456101216965
+    ],
+    "observations": 2,
+    "evidence": "0309.jpg"
+  },
+  {
+    "barcode": "W0325",
+    "first_seen_s": 308.8799999997916,
+    "last_seen_s": 308.8799999997916,
+    "side": "left",
+    "estimated_uav_position": [
+      10.990206040598396,
+      0.04028484669724458,
+      5.560923833624668
+    ],
+    "observations": 1,
+    "evidence": "0310.jpg"
+  },
+  {
+    "barcode": "W0324",
+    "first_seen_s": 310.4399999997902,
+    "last_seen_s": 310.9799999997897,
+    "side": "left",
+    "estimated_uav_position": [
+      9.291847967707627,
+      0.020234362728139416,
+      5.607397481013672
+    ],
+    "observations": 2,
+    "evidence": "0311.jpg"
+  },
+  {
+    "barcode": "W0124",
+    "first_seen_s": 310.4399999997902,
+    "last_seen_s": 310.9799999997897,
+    "side": "right",
+    "estimated_uav_position": [
+      9.291847967707627,
+      0.020234362728139416,
+      5.607397481013672
+    ],
+    "observations": 2,
+    "evidence": "0312.jpg"
+  },
+  {
+    "barcode": "W0323",
+    "first_seen_s": 312.5399999997883,
+    "last_seen_s": 312.5399999997883,
+    "side": "left",
+    "estimated_uav_position": [
+      6.985647329796011,
+      -0.03733742183221226,
+      5.617699282365763
+    ],
+    "observations": 1,
+    "evidence": "0313.jpg"
+  },
+  {
+    "barcode": "W0123",
+    "first_seen_s": 312.5399999997883,
+    "last_seen_s": 312.5399999997883,
+    "side": "right",
+    "estimated_uav_position": [
+      6.985647329796011,
+      -0.03733742183221226,
+      5.617699282365763
+    ],
+    "observations": 1,
+    "evidence": "0314.jpg"
+  },
+  {
+    "barcode": "W0322",
+    "first_seen_s": 314.0799999997869,
+    "last_seen_s": 314.5999999997864,
+    "side": "left",
+    "estimated_uav_position": [
+      5.300149192080827,
+      -0.02211451854892023,
+      5.614282391041093
+    ],
+    "observations": 2,
+    "evidence": "0315.jpg"
+  },
+  {
+    "barcode": "W0122",
+    "first_seen_s": 314.0799999997869,
+    "last_seen_s": 314.5999999997864,
+    "side": "right",
+    "estimated_uav_position": [
+      5.300149192080827,
+      -0.02211451854892023,
+      5.614282391041093
+    ],
+    "observations": 2,
+    "evidence": "0316.jpg"
+  },
+  {
+    "barcode": "W0121",
+    "first_seen_s": 315.63999999978546,
+    "last_seen_s": 316.139999999785,
+    "side": "right",
+    "estimated_uav_position": [
+      3.5727052371076518,
+      0.0364274311373572,
+      5.5891969914362045
+    ],
+    "observations": 2,
+    "evidence": "0317.jpg"
+  },
+  {
+    "barcode": "W0321",
+    "first_seen_s": 316.139999999785,
+    "last_seen_s": 316.139999999785,
+    "side": "left",
+    "estimated_uav_position": [
+      3.01143956484888,
+      0.045463537296302314,
+      5.60180509825286
+    ],
+    "observations": 1,
+    "evidence": "0318.jpg"
+  },
+  {
+    "barcode": "W0320",
+    "first_seen_s": 317.6599999997836,
+    "last_seen_s": 318.19999999978313,
+    "side": "left",
+    "estimated_uav_position": [
+      1.3322693128894305,
+      0.04244852107858777,
+      5.624501750211948
+    ],
+    "observations": 2,
+    "evidence": "0319.jpg"
+  },
+  {
+    "barcode": "W0120",
+    "first_seen_s": 317.6599999997836,
+    "last_seen_s": 318.19999999978313,
+    "side": "right",
+    "estimated_uav_position": [
+      1.3322693128894305,
+      0.04244852107858777,
+      5.624501750211948
+    ],
+    "observations": 2,
+    "evidence": "0320.jpg"
+  },
+  {
+    "barcode": "W0360",
+    "first_seen_s": 326.3399999997757,
+    "last_seen_s": 326.9199999997752,
+    "side": "left",
+    "estimated_uav_position": [
+      0.5479414584462458,
+      -0.015304705002967382,
+      7.191951573467487
+    ],
+    "observations": 2,
+    "evidence": "0322.jpg"
+  },
+  {
+    "barcode": "W0160",
+    "first_seen_s": 326.3399999997757,
+    "last_seen_s": 326.9199999997752,
+    "side": "right",
+    "estimated_uav_position": [
+      0.5479414584462458,
+      -0.015304705002967382,
+      7.191951573467487
+    ],
+    "observations": 2,
+    "evidence": "0323.jpg"
+  },
+  {
+    "barcode": "W0361",
+    "first_seen_s": 328.4399999997738,
+    "last_seen_s": 328.4399999997738,
+    "side": "left",
+    "estimated_uav_position": [
+      2.800154947385989,
+      -0.017366547779404162,
+      7.242220172568755
+    ],
+    "observations": 1,
+    "evidence": "0324.jpg"
+  },
+  {
+    "barcode": "W0161",
+    "first_seen_s": 328.4399999997738,
+    "last_seen_s": 328.4399999997738,
+    "side": "right",
+    "estimated_uav_position": [
+      2.800154947385989,
+      -0.017366547779404162,
+      7.242220172568755
+    ],
+    "observations": 1,
+    "evidence": "0325.jpg"
+  },
+  {
+    "barcode": "W0362",
+    "first_seen_s": 329.93999999977245,
+    "last_seen_s": 330.459999999772,
+    "side": "left",
+    "estimated_uav_position": [
+      4.488528803421844,
+      -0.044375177457858184,
+      7.214882750634048
+    ],
+    "observations": 2,
+    "evidence": "0326.jpg"
+  },
+  {
+    "barcode": "W0162",
+    "first_seen_s": 329.93999999977245,
+    "last_seen_s": 330.459999999772,
+    "side": "right",
+    "estimated_uav_position": [
+      4.488528803421844,
+      -0.044375177457858184,
+      7.214882750634048
+    ],
+    "observations": 2,
+    "evidence": "0327.jpg"
+  },
+  {
+    "barcode": "W0363",
+    "first_seen_s": 332.01999999977056,
+    "last_seen_s": 332.01999999977056,
+    "side": "left",
+    "estimated_uav_position": [
+      6.773560440624995,
+      0.001630628735869468,
+      7.211167000579659
+    ],
+    "observations": 1,
+    "evidence": "0328.jpg"
+  },
+  {
+    "barcode": "W0163",
+    "first_seen_s": 332.01999999977056,
+    "last_seen_s": 332.01999999977056,
+    "side": "right",
+    "estimated_uav_position": [
+      6.773560440624995,
+      0.001630628735869468,
+      7.211167000579659
+    ],
+    "observations": 1,
+    "evidence": "0329.jpg"
+  },
+  {
+    "barcode": "W0364",
+    "first_seen_s": 333.6199999997691,
+    "last_seen_s": 334.09999999976867,
+    "side": "left",
+    "estimated_uav_position": [
+      8.505000549827015,
+      0.04423452009863611,
+      7.198651859874214
+    ],
+    "observations": 2,
+    "evidence": "0330.jpg"
+  },
+  {
+    "barcode": "W0164",
+    "first_seen_s": 333.6199999997691,
+    "last_seen_s": 334.09999999976867,
+    "side": "right",
+    "estimated_uav_position": [
+      8.505000549827015,
+      0.04423452009863611,
+      7.198651859874214
+    ],
+    "observations": 2,
+    "evidence": "0331.jpg"
+  },
+  {
+    "barcode": "W0365",
+    "first_seen_s": 335.65999999976725,
+    "last_seen_s": 336.1599999997668,
+    "side": "left",
+    "estimated_uav_position": [
+      10.743492267303383,
+      0.04895199025335624,
+      7.21599515416293
+    ],
+    "observations": 2,
+    "evidence": "0332.jpg"
+  },
+  {
+    "barcode": "W0165",
+    "first_seen_s": 335.65999999976725,
+    "last_seen_s": 336.1599999997668,
+    "side": "right",
+    "estimated_uav_position": [
+      10.743492267303383,
+      0.04895199025335624,
+      7.21599515416293
+    ],
+    "observations": 2,
+    "evidence": "0333.jpg"
+  },
+  {
+    "barcode": "W0366",
+    "first_seen_s": 337.6799999997654,
+    "last_seen_s": 337.6799999997654,
+    "side": "left",
+    "estimated_uav_position": [
+      12.984493868720987,
+      -0.004947031583350425,
+      7.2081546270435215
+    ],
+    "observations": 1,
+    "evidence": "0334.jpg"
+  },
+  {
+    "barcode": "W0166",
+    "first_seen_s": 337.6799999997654,
+    "last_seen_s": 337.6799999997654,
+    "side": "right",
+    "estimated_uav_position": [
+      12.984493868720987,
+      -0.004947031583350425,
+      7.2081546270435215
+    ],
+    "observations": 1,
+    "evidence": "0335.jpg"
+  },
+  {
+    "barcode": "W0367",
+    "first_seen_s": 339.219999999764,
+    "last_seen_s": 339.71999999976356,
+    "side": "left",
+    "estimated_uav_position": [
+      14.680132856874131,
+      -0.028311765926513063,
+      7.21938146936746
+    ],
+    "observations": 2,
+    "evidence": "0336.jpg"
+  },
+  {
+    "barcode": "W0167",
+    "first_seen_s": 339.219999999764,
+    "last_seen_s": 339.71999999976356,
+    "side": "right",
+    "estimated_uav_position": [
+      14.680132856874131,
+      -0.028311765926513063,
+      7.21938146936746
+    ],
+    "observations": 2,
+    "evidence": "0337.jpg"
+  },
+  {
+    "barcode": "W0368",
+    "first_seen_s": 341.25999999976216,
+    "last_seen_s": 341.25999999976216,
+    "side": "left",
+    "estimated_uav_position": [
+      16.94212764770162,
+      -0.017013013111203512,
+      7.178175249061031
+    ],
+    "observations": 1,
+    "evidence": "0338.jpg"
+  },
+  {
+    "barcode": "W0168",
+    "first_seen_s": 341.25999999976216,
+    "last_seen_s": 341.25999999976216,
+    "side": "right",
+    "estimated_uav_position": [
+      16.94212764770162,
+      -0.017013013111203512,
+      7.178175249061031
+    ],
+    "observations": 1,
+    "evidence": "0339.jpg"
+  },
+  {
+    "barcode": "W0369",
+    "first_seen_s": 342.81999999976074,
+    "last_seen_s": 343.3199999997603,
+    "side": "left",
+    "estimated_uav_position": [
+      18.65312097602824,
+      0.06269295534417575,
+      7.209512231495912
+    ],
+    "observations": 2,
+    "evidence": "0340.jpg"
+  },
+  {
+    "barcode": "W0169",
+    "first_seen_s": 342.81999999976074,
+    "last_seen_s": 343.3199999997603,
+    "side": "right",
+    "estimated_uav_position": [
+      18.65312097602824,
+      0.06269295534417575,
+      7.209512231495912
+    ],
+    "observations": 2,
+    "evidence": "0341.jpg"
+  },
+  {
+    "barcode": "W0370",
+    "first_seen_s": 344.89999999975885,
+    "last_seen_s": 344.89999999975885,
+    "side": "left",
+    "estimated_uav_position": [
+      20.919964106243086,
+      0.014122778339866034,
+      7.198269373012555
+    ],
+    "observations": 1,
+    "evidence": "0342.jpg"
+  },
+  {
+    "barcode": "W0170",
+    "first_seen_s": 344.89999999975885,
+    "last_seen_s": 344.89999999975885,
+    "side": "right",
+    "estimated_uav_position": [
+      20.919964106243086,
+      0.014122778339866034,
+      7.198269373012555
+    ],
+    "observations": 1,
+    "evidence": "0343.jpg"
+  },
+  {
+    "barcode": "W0371",
+    "first_seen_s": 346.43999999975745,
+    "last_seen_s": 346.959999999757,
+    "side": "left",
+    "estimated_uav_position": [
+      22.623926097317113,
+      -0.022077775002066737,
+      7.178009916408177
+    ],
+    "observations": 2,
+    "evidence": "0344.jpg"
+  },
+  {
+    "barcode": "W0171",
+    "first_seen_s": 346.43999999975745,
+    "last_seen_s": 346.959999999757,
+    "side": "right",
+    "estimated_uav_position": [
+      22.623926097317113,
+      -0.022077775002066737,
+      7.178009916408177
+    ],
+    "observations": 2,
+    "evidence": "0345.jpg"
+  },
+  {
+    "barcode": "W0372",
+    "first_seen_s": 348.4799999997556,
+    "last_seen_s": 348.4799999997556,
+    "side": "left",
+    "estimated_uav_position": [
+      24.88782129849641,
+      -0.011659648039958215,
+      7.232522440996042
+    ],
+    "observations": 1,
+    "evidence": "0346.jpg"
+  },
+  {
+    "barcode": "W0172",
+    "first_seen_s": 348.4799999997556,
+    "last_seen_s": 348.4799999997556,
+    "side": "right",
+    "estimated_uav_position": [
+      24.88782129849641,
+      -0.011659648039958215,
+      7.232522440996042
+    ],
+    "observations": 1,
+    "evidence": "0347.jpg"
+  },
+  {
+    "barcode": "W0373",
+    "first_seen_s": 349.9999999997542,
+    "last_seen_s": 350.51999999975374,
+    "side": "left",
+    "estimated_uav_position": [
+      26.56407609655871,
+      -0.026278697864268785,
+      7.191666871045093
+    ],
+    "observations": 2,
+    "evidence": "0348.jpg"
+  },
+  {
+    "barcode": "W0173",
+    "first_seen_s": 349.9999999997542,
+    "last_seen_s": 350.51999999975374,
+    "side": "right",
+    "estimated_uav_position": [
+      26.56407609655871,
+      -0.026278697864268785,
+      7.191666871045093
+    ],
+    "observations": 2,
+    "evidence": "0349.jpg"
+  },
+  {
+    "barcode": "W0374",
+    "first_seen_s": 352.05999999975234,
+    "last_seen_s": 352.05999999975234,
+    "side": "left",
+    "estimated_uav_position": [
+      28.811743178411493,
+      0.04147863087439553,
+      7.18443361175666
+    ],
+    "observations": 1,
+    "evidence": "0350.jpg"
+  },
+  {
+    "barcode": "W0174",
+    "first_seen_s": 352.05999999975234,
+    "last_seen_s": 352.05999999975234,
+    "side": "right",
+    "estimated_uav_position": [
+      28.811743178411493,
+      0.04147863087439553,
+      7.18443361175666
+    ],
+    "observations": 1,
+    "evidence": "0351.jpg"
+  },
+  {
+    "barcode": "W0375",
+    "first_seen_s": 353.6199999997509,
+    "last_seen_s": 354.0999999997505,
+    "side": "left",
+    "estimated_uav_position": [
+      30.509000052232334,
+      0.022445372796749144,
+      7.22206905815739
+    ],
+    "observations": 2,
+    "evidence": "0352.jpg"
+  },
+  {
+    "barcode": "W0175",
+    "first_seen_s": 353.6199999997509,
+    "last_seen_s": 354.0999999997505,
+    "side": "right",
+    "estimated_uav_position": [
+      30.509000052232334,
+      0.022445372796749144,
+      7.22206905815739
+    ],
+    "observations": 2,
+    "evidence": "0353.jpg"
+  },
+  {
+    "barcode": "W0376",
+    "first_seen_s": 355.6199999997491,
+    "last_seen_s": 356.1399999997486,
+    "side": "left",
+    "estimated_uav_position": [
+      32.741087588463145,
+      -0.04514917060526091,
+      7.1997245777578565
+    ],
+    "observations": 2,
+    "evidence": "0354.jpg"
+  },
+  {
+    "barcode": "W0176",
+    "first_seen_s": 355.6199999997491,
+    "last_seen_s": 356.1399999997486,
+    "side": "right",
+    "estimated_uav_position": [
+      32.741087588463145,
+      -0.04514917060526091,
+      7.1997245777578565
+    ],
+    "observations": 2,
+    "evidence": "0355.jpg"
+  },
+  {
+    "barcode": "W0377",
+    "first_seen_s": 357.6799999997472,
+    "last_seen_s": 357.6799999997472,
+    "side": "left",
+    "estimated_uav_position": [
+      34.99088681546453,
+      -0.04012621000015121,
+      7.212082529942125
+    ],
+    "observations": 1,
+    "evidence": "0356.jpg"
+  },
+  {
+    "barcode": "W0177",
+    "first_seen_s": 357.6799999997472,
+    "last_seen_s": 357.6799999997472,
+    "side": "right",
+    "estimated_uav_position": [
+      34.99088681546453,
+      -0.04012621000015121,
+      7.212082529942125
+    ],
+    "observations": 1,
+    "evidence": "0357.jpg"
+  },
+  {
+    "barcode": "W0378",
+    "first_seen_s": 359.19999999974584,
+    "last_seen_s": 359.71999999974537,
+    "side": "left",
+    "estimated_uav_position": [
+      36.67378460827861,
+      -0.025309998587553638,
+      7.209569919733525
+    ],
+    "observations": 2,
+    "evidence": "0358.jpg"
+  },
+  {
+    "barcode": "W0178",
+    "first_seen_s": 359.19999999974584,
+    "last_seen_s": 359.71999999974537,
+    "side": "right",
+    "estimated_uav_position": [
+      36.67378460827861,
+      -0.025309998587553638,
+      7.209569919733525
+    ],
+    "observations": 2,
+    "evidence": "0359.jpg"
+  },
+  {
+    "barcode": "W0379",
+    "first_seen_s": 361.27999999974395,
+    "last_seen_s": 361.27999999974395,
+    "side": "left",
+    "estimated_uav_position": [
+      38.92710799895404,
+      0.04586016759917078,
+      7.225540934490143
+    ],
+    "observations": 1,
+    "evidence": "0360.jpg"
+  },
+  {
+    "barcode": "W0179",
+    "first_seen_s": 361.27999999974395,
+    "last_seen_s": 361.27999999974395,
+    "side": "right",
+    "estimated_uav_position": [
+      38.92710799895404,
+      0.04586016759917078,
+      7.225540934490143
+    ],
+    "observations": 1,
+    "evidence": "0361.jpg"
+  },
+  {
+    "barcode": "W0380",
+    "first_seen_s": 362.81999999974255,
+    "last_seen_s": 363.3399999997421,
+    "side": "left",
+    "estimated_uav_position": [
+      40.643361310015884,
+      0.009335059173396151,
+      7.202995743359588
+    ],
+    "observations": 2,
+    "evidence": "0362.jpg"
+  },
+  {
+    "barcode": "W0180",
+    "first_seen_s": 362.81999999974255,
+    "last_seen_s": 363.3399999997421,
+    "side": "right",
+    "estimated_uav_position": [
+      40.643361310015884,
+      0.009335059173396151,
+      7.202995743359588
+    ],
+    "observations": 2,
+    "evidence": "0363.jpg"
+  },
+  {
+    "barcode": "W0381",
+    "first_seen_s": 364.8599999997407,
+    "last_seen_s": 364.8599999997407,
+    "side": "left",
+    "estimated_uav_position": [
+      42.925697494919675,
+      -0.047358205275747335,
+      7.197608928917132
+    ],
+    "observations": 1,
+    "evidence": "0364.jpg"
+  },
+  {
+    "barcode": "W0181",
+    "first_seen_s": 364.8599999997407,
+    "last_seen_s": 364.8599999997407,
+    "side": "right",
+    "estimated_uav_position": [
+      42.925697494919675,
+      -0.047358205275747335,
+      7.197608928917132
+    ],
+    "observations": 1,
+    "evidence": "0365.jpg"
+  },
+  {
+    "barcode": "W0382",
+    "first_seen_s": 366.3999999997393,
+    "last_seen_s": 366.9399999997388,
+    "side": "left",
+    "estimated_uav_position": [
+      44.613489501313076,
+      -0.04468759269615879,
+      7.22116660714742
+    ],
+    "observations": 2,
+    "evidence": "0366.jpg"
+  },
+  {
+    "barcode": "W0182",
+    "first_seen_s": 366.3999999997393,
+    "last_seen_s": 366.9399999997388,
+    "side": "right",
+    "estimated_uav_position": [
+      44.613489501313076,
+      -0.04468759269615879,
+      7.22116660714742
+    ],
+    "observations": 2,
+    "evidence": "0367.jpg"
+  },
+  {
+    "barcode": "W0383",
+    "first_seen_s": 368.4799999997374,
+    "last_seen_s": 368.4799999997374,
+    "side": "left",
+    "estimated_uav_position": [
+      46.891809866378665,
+      -0.003518475879337862,
+      7.222613328541826
+    ],
+    "observations": 1,
+    "evidence": "0368.jpg"
+  },
+  {
+    "barcode": "W0183",
+    "first_seen_s": 368.4799999997374,
+    "last_seen_s": 368.4799999997374,
+    "side": "right",
+    "estimated_uav_position": [
+      46.891809866378665,
+      -0.003518475879337862,
+      7.222613328541826
+    ],
+    "observations": 1,
+    "evidence": "0369.jpg"
+  },
+  {
+    "barcode": "W0384",
+    "first_seen_s": 370.039999999736,
+    "last_seen_s": 370.5399999997355,
+    "side": "left",
+    "estimated_uav_position": [
+      48.59738813998267,
+      0.03378535518089737,
+      7.220048632538612
+    ],
+    "observations": 2,
+    "evidence": "0370.jpg"
+  },
+  {
+    "barcode": "W0184",
+    "first_seen_s": 370.039999999736,
+    "last_seen_s": 370.5399999997355,
+    "side": "right",
+    "estimated_uav_position": [
+      48.59738813998267,
+      0.03378535518089737,
+      7.220048632538612
+    ],
+    "observations": 2,
+    "evidence": "0371.jpg"
+  },
+  {
+    "barcode": "W0385",
+    "first_seen_s": 372.1399999997341,
+    "last_seen_s": 372.1399999997341,
+    "side": "left",
+    "estimated_uav_position": [
+      50.88969157462556,
+      0.03761789794196613,
+      7.1980043266529465
+    ],
+    "observations": 1,
+    "evidence": "0372.jpg"
+  },
+  {
+    "barcode": "W0185",
+    "first_seen_s": 372.1399999997341,
+    "last_seen_s": 372.1399999997341,
+    "side": "right",
+    "estimated_uav_position": [
+      50.88969157462556,
+      0.03761789794196613,
+      7.1980043266529465
+    ],
+    "observations": 1,
+    "evidence": "0373.jpg"
+  },
+  {
+    "barcode": "W0386",
+    "first_seen_s": 373.6599999997327,
+    "last_seen_s": 374.1799999997322,
+    "side": "left",
+    "estimated_uav_position": [
+      52.58209325626126,
+      -0.015731286205585476,
+      7.2017678516404064
+    ],
+    "observations": 2,
+    "evidence": "0374.jpg"
+  },
+  {
+    "barcode": "W0186",
+    "first_seen_s": 373.6599999997327,
+    "last_seen_s": 374.1799999997322,
+    "side": "right",
+    "estimated_uav_position": [
+      52.58209325626126,
+      -0.015731286205585476,
+      7.2017678516404064
+    ],
+    "observations": 2,
+    "evidence": "0375.jpg"
+  },
+  {
+    "barcode": "W0387",
+    "first_seen_s": 375.69999999973084,
+    "last_seen_s": 375.69999999973084,
+    "side": "left",
+    "estimated_uav_position": [
+      54.83442695458847,
+      -0.05715577569312902,
+      7.235810208211394
+    ],
+    "observations": 1,
+    "evidence": "0376.jpg"
+  },
+  {
+    "barcode": "W0187",
+    "first_seen_s": 375.69999999973084,
+    "last_seen_s": 375.69999999973084,
+    "side": "right",
+    "estimated_uav_position": [
+      54.83442695458847,
+      -0.05715577569312902,
+      7.235810208211394
+    ],
+    "observations": 1,
+    "evidence": "0377.jpg"
+  },
+  {
+    "barcode": "W0388",
+    "first_seen_s": 377.23999999972943,
+    "last_seen_s": 377.719999999729,
+    "side": "left",
+    "estimated_uav_position": [
+      56.50988983828492,
+      -0.027345191952652805,
+      7.195271607462772
+    ],
+    "observations": 2,
+    "evidence": "0378.jpg"
+  },
+  {
+    "barcode": "W0188",
+    "first_seen_s": 377.23999999972943,
+    "last_seen_s": 377.719999999729,
+    "side": "right",
+    "estimated_uav_position": [
+      56.50988983828492,
+      -0.027345191952652805,
+      7.195271607462772
+    ],
+    "observations": 2,
+    "evidence": "0379.jpg"
+  },
+  {
+    "barcode": "W0389",
+    "first_seen_s": 379.31999999972754,
+    "last_seen_s": 379.31999999972754,
+    "side": "left",
+    "estimated_uav_position": [
+      58.78271704307108,
+      0.06164581334725745,
+      7.204654786418426
+    ],
+    "observations": 1,
+    "evidence": "0380.jpg"
+  },
+  {
+    "barcode": "W0189",
+    "first_seen_s": 379.31999999972754,
+    "last_seen_s": 379.8199999997271,
+    "side": "right",
+    "estimated_uav_position": [
+      58.78271704307108,
+      0.06164581334725745,
+      7.204654786418426
+    ],
+    "observations": 2,
+    "evidence": "0381.jpg"
+  },
+  {
+    "barcode": "W0390",
+    "first_seen_s": 380.83999999972616,
+    "last_seen_s": 381.3599999997257,
+    "side": "left",
+    "estimated_uav_position": [
+      60.458800668964926,
+      0.014035807582031976,
+      7.200562294747502
+    ],
+    "observations": 2,
+    "evidence": "0382.jpg"
+  },
+  {
+    "barcode": "W0190",
+    "first_seen_s": 380.83999999972616,
+    "last_seen_s": 381.3599999997257,
+    "side": "right",
+    "estimated_uav_position": [
+      60.458800668964926,
+      0.014035807582031976,
+      7.200562294747502
+    ],
+    "observations": 2,
+    "evidence": "0383.jpg"
+  },
+  {
+    "barcode": "W0391",
+    "first_seen_s": 382.8999999997243,
+    "last_seen_s": 383.4199999997238,
+    "side": "left",
+    "estimated_uav_position": [
+      62.76495084398509,
+      -0.00748390029009683,
+      7.197420118013347
+    ],
+    "observations": 2,
+    "evidence": "0384.jpg"
+  },
+  {
+    "barcode": "W0191",
+    "first_seen_s": 382.8999999997243,
+    "last_seen_s": 383.4199999997238,
+    "side": "right",
+    "estimated_uav_position": [
+      62.76495084398509,
+      -0.00748390029009683,
+      7.197420118013347
+    ],
+    "observations": 2,
+    "evidence": "0385.jpg"
+  },
+  {
+    "barcode": "W0392",
+    "first_seen_s": 384.45999999972287,
+    "last_seen_s": 384.9599999997224,
+    "side": "left",
+    "estimated_uav_position": [
+      64.44530213273801,
+      -0.05598812606423581,
+      7.188242491402763
+    ],
+    "observations": 2,
+    "evidence": "0386.jpg"
+  },
+  {
+    "barcode": "W0192",
+    "first_seen_s": 384.9599999997224,
+    "last_seen_s": 384.9599999997224,
+    "side": "right",
+    "estimated_uav_position": [
+      65.02150506037498,
+      -0.00646170496986841,
+      7.205150851526364
+    ],
+    "observations": 1,
+    "evidence": "0387.jpg"
+  },
+  {
+    "barcode": "W0393",
+    "first_seen_s": 386.519999999721,
+    "last_seen_s": 386.99999999972056,
+    "side": "left",
+    "estimated_uav_position": [
+      66.69979414140231,
+      -0.0015153060750437578,
+      7.237981893791704
+    ],
+    "observations": 2,
+    "evidence": "0388.jpg"
+  },
+  {
+    "barcode": "W0193",
+    "first_seen_s": 386.519999999721,
+    "last_seen_s": 386.99999999972056,
+    "side": "right",
+    "estimated_uav_position": [
+      66.69979414140231,
+      -0.0015153060750437578,
+      7.237981893791704
+    ],
+    "observations": 2,
+    "evidence": "0389.jpg"
+  },
+  {
+    "barcode": "W0394",
+    "first_seen_s": 388.53999999971916,
+    "last_seen_s": 388.53999999971916,
+    "side": "left",
+    "estimated_uav_position": [
+      68.94945230588858,
+      0.045484133661840134,
+      7.21157909316613
+    ],
+    "observations": 1,
+    "evidence": "0390.jpg"
+  },
+  {
+    "barcode": "W0194",
+    "first_seen_s": 388.53999999971916,
+    "last_seen_s": 388.53999999971916,
+    "side": "right",
+    "estimated_uav_position": [
+      68.94945230588858,
+      0.045484133661840134,
+      7.21157909316613
+    ],
+    "observations": 1,
+    "evidence": "0391.jpg"
+  },
+  {
+    "barcode": "W0395",
+    "first_seen_s": 390.07999999971776,
+    "last_seen_s": 390.5799999997173,
+    "side": "left",
+    "estimated_uav_position": [
+      70.63681076472287,
+      0.03114034876238416,
+      7.2011548339923035
+    ],
+    "observations": 2,
+    "evidence": "0392.jpg"
+  },
+  {
+    "barcode": "W0195",
+    "first_seen_s": 390.07999999971776,
+    "last_seen_s": 390.5799999997173,
+    "side": "right",
+    "estimated_uav_position": [
+      70.63681076472287,
+      0.03114034876238416,
+      7.2011548339923035
+    ],
+    "observations": 2,
+    "evidence": "0393.jpg"
+  },
+  {
+    "barcode": "W0396",
+    "first_seen_s": 392.1399999997159,
+    "last_seen_s": 392.1399999997159,
+    "side": "left",
+    "estimated_uav_position": [
+      72.90468077881168,
+      -0.029525119480268255,
+      7.220379906966242
+    ],
+    "observations": 1,
+    "evidence": "0394.jpg"
+  },
+  {
+    "barcode": "W0196",
+    "first_seen_s": 392.1399999997159,
+    "last_seen_s": 392.1399999997159,
+    "side": "right",
+    "estimated_uav_position": [
+      72.90468077881168,
+      -0.029525119480268255,
+      7.220379906966242
+    ],
+    "observations": 1,
+    "evidence": "0395.jpg"
+  },
+  {
+    "barcode": "W0397",
+    "first_seen_s": 393.6599999997145,
+    "last_seen_s": 394.15999999971405,
+    "side": "left",
+    "estimated_uav_position": [
+      74.58901114500465,
+      -0.044509668178164805,
+      7.205758379043342
+    ],
+    "observations": 2,
+    "evidence": "0396.jpg"
+  },
+  {
+    "barcode": "W0197",
+    "first_seen_s": 393.6599999997145,
+    "last_seen_s": 394.15999999971405,
+    "side": "right",
+    "estimated_uav_position": [
+      74.58901114500465,
+      -0.044509668178164805,
+      7.205758379043342
+    ],
+    "observations": 2,
+    "evidence": "0397.jpg"
+  },
+  {
+    "barcode": "W0398",
+    "first_seen_s": 395.7199999997126,
+    "last_seen_s": 395.7199999997126,
+    "side": "left",
+    "estimated_uav_position": [
+      76.8468824507643,
+      0.008575722326169193,
+      7.227984650226314
+    ],
+    "observations": 1,
+    "evidence": "0398.jpg"
+  },
+  {
+    "barcode": "W0198",
+    "first_seen_s": 395.7199999997126,
+    "last_seen_s": 395.7199999997126,
+    "side": "right",
+    "estimated_uav_position": [
+      76.8468824507643,
+      0.008575722326169193,
+      7.227984650226314
+    ],
+    "observations": 1,
+    "evidence": "0399.jpg"
+  },
+  {
+    "barcode": "W0399",
+    "first_seen_s": 397.2799999997112,
+    "last_seen_s": 397.8199999997107,
+    "side": "left",
+    "estimated_uav_position": [
+      78.56568727650921,
+      0.018727763949794828,
+      7.203821603166628
+    ],
+    "observations": 2,
+    "evidence": "0400.jpg"
+  },
+  {
+    "barcode": "W0199",
+    "first_seen_s": 397.2799999997112,
+    "last_seen_s": 397.8199999997107,
+    "side": "right",
+    "estimated_uav_position": [
+      78.56568727650921,
+      0.018727763949794828,
+      7.203821603166628
+    ],
+    "observations": 2,
+    "evidence": "0401.jpg"
+  }
+]

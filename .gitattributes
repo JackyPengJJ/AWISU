@@ -1,0 +1,15 @@
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.pdf binary
+*.mp4 binary
+*.png binary
+*.jpg binary
+*.ttf binary
+*.zip binary
+*.npz binary
+# Preserve experimental evidence bytes, including CSV line endings.
+results/** -text
+models/** -text

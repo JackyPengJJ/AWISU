@@ -1,0 +1,8 @@
+{
+  "seed": 1,
+  "actual_total_steps": 1000000,
+  "new_steps": 1000000,
+  "wall_s": 2707.6939583760104,
+  "model_sha256": "8a49af19724660a84160b9dc8f2170d4bc390d798c598e60d7b7f6758f2550d9",
+  "scope": "approved-scene residual control with synthetic delayed/noisy state; stale calibration excluded; no full-perception validation"
+}

@@ -1,0 +1,10 @@
+{
+  "experiment": "isolated_code128_image_study",
+  "samples": 720,
+  "correct": 439,
+  "wrong": 0,
+  "camera_width_px": 4096,
+  "horizontal_fov_deg": 45,
+  "distance_m": 1.15,
+  "limitations": "Frontoparallel cropped image, no perspective/occlusion, no scene-rendered inventory; not full-mission read rate."
+}

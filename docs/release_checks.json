@@ -1,0 +1,26 @@
+{
+  "tests": {
+    "passed": 19,
+    "failed": 0
+  },
+  "python_format": "ruff format; undefined-name checks passed",
+  "clean_package_import": true,
+  "released_checkpoint_loaded": true,
+  "report_rebuilt_from_clean_sources": true,
+  "report_pages": 20,
+  "report_figures": 7,
+  "references": 43,
+  "video_url": "https://youtu.be/ZQHlchVMqs8",
+  "retained_video_filename": "submission/EE5110_A0354063J_JunjiePeng_Video.mp4",
+  "retained_video_bytes_unchanged": true,
+  "video_duration_s": 136,
+  "video_fps": 30,
+  "video_size": [
+    1920,
+    1080
+  ],
+  "video_audio": "AAC LC, 48 kHz, English",
+  "original_training_or_inference_rerun": false,
+  "github_upload_performed": false,
+  "source_archive_excludes": "Local final MP4; hosted video is linked in README."
+}

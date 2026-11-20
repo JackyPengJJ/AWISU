@@ -1,0 +1,12 @@
+{
+  "scope": "Initial three-seed residual-control study with synthetic delayed/noisy state. Stale scene calibration excluded; not full-perception RL.",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "initial_steps_per_seed": 1000000,
+  "validation_interval_steps": 250000,
+  "full_perception_transfer": "Required separately; never inferred from proxy training.",
+  "calibration_used": false
+}

@@ -1,0 +1,147 @@
+{
+  "duration_s": 136,
+  "synthetic_voice": "Jenny (Dioco)",
+  "engine": "Piper 1.8.0, local CPU synthesis",
+  "voice_source": "https://huggingface.co/rhasspy/piper-voices/tree/main/en/en_GB/jenny_dioco/medium",
+  "model_sha256": "62ba183a504cfcd8816ec1b50ee856ed318ccc9dd22fd0bedd7d839c95dfa20e",
+  "source_video_sha256": "df8893f06a8920b21e0d1b705ec18ba20124864b2cca583e4a62c8a688ee48fe",
+  "output_sha256": "ae53b3261c0ed807ed62bcfe06ee368ddd12b494d2cf6f16efbc81f3aeb6d886",
+  "video_bitstream_sha256": "SHA256=ce2393cdc261458c2b2e73eed0c02e20ed02dfeea0f7ff440752a4d6e618e3fe",
+  "video_stream_unchanged": true,
+  "source_file_unchanged": true,
+  "full_decode_passed": true,
+  "measured_audio": {
+    "input_i": "-16.01",
+    "input_tp": "-1.52",
+    "input_lra": "6.90",
+    "input_thresh": "-26.14",
+    "output_i": "-16.18",
+    "output_tp": "-1.50",
+    "output_lra": "6.90",
+    "output_thresh": "-26.31",
+    "normalization_type": "dynamic",
+    "target_offset": "0.18"
+  },
+  "subtitles": "Optional embedded English subtitles; narration.srt also supplied",
+  "segments": [
+    {
+      "start": 0.6,
+      "end": 7.8,
+      "text": "Introducing AWISU: autonomous warehouse inventory with a small unmanned aircraft.",
+      "file": "00.wav",
+      "duration_s": 5.305759637188209,
+      "length_scale": 1.0
+    },
+    {
+      "start": 8.2,
+      "end": 15.8,
+      "text": "The proposed platform combines a lightweight flight controller and onboard computing, within a three kilogram takeoff limit.",
+      "file": "01.wav",
+      "duration_s": 7.453605442176871,
+      "length_scale": 1.0
+    },
+    {
+      "start": 16.2,
+      "end": 23.8,
+      "text": "Side cameras read labels. Stereo and lidar support navigation. The rotating aircraft is a reference simulation asset.",
+      "file": "02.wav",
+      "duration_s": 7.4071655328798185,
+      "length_scale": 1.0
+    },
+    {
+      "start": 24.3,
+      "end": 31.8,
+      "text": "First, aligned sensor observations build local geometry. Motion proceeds through a known-free corridor, with room to stop.",
+      "file": "03.wav",
+      "duration_s": 7.198185941043084,
+      "length_scale": 0.9336488134872013
+    },
+    {
+      "start": 32.3,
+      "end": 39.8,
+      "text": "Both sides follow a continuous five-level sweep. Complete label images and corroborating reads update the inventory.",
+      "file": "04.wav",
+      "duration_s": 7.012426303854875,
+      "length_scale": 1.0
+    },
+    {
+      "start": 40.3,
+      "end": 47.8,
+      "text": "A missed label triggers local recovery: brake, approach the affected side, retry, and resume from the unfinished boundary.",
+      "file": "05.wav",
+      "duration_s": 7.383945578231293,
+      "length_scale": 0.930780460757594
+    },
+    {
+      "start": 48.2,
+      "end": 55.8,
+      "text": "Optical sampling sets the scan speed. The energy budget includes recovery and reserve; battery delivery still requires qualification.",
+      "file": "06.wav",
+      "duration_s": 7.500045351473923,
+      "length_scale": 0.917287666076822
+    },
+    {
+      "start": 56.5,
+      "end": 65.8,
+      "text": "The reference simulation follows a prescribed route, replayed seven times faster with synchronized external, side, and forward views.",
+      "file": "07.wav",
+      "duration_s": 8.765532879818593,
+      "length_scale": 1.0
+    },
+    {
+      "start": 68.5,
+      "end": 77.8,
+      "text": "At the aisle end, the aircraft climbs and reverses along the next level. The route continues without resetting to the starting position.",
+      "file": "08.wav",
+      "duration_s": 7.6741950113378685,
+      "length_scale": 1.0
+    },
+    {
+      "start": 80.5,
+      "end": 88.8,
+      "text": "Left and right cameras share the same recorded aircraft pose. The inventory count is drawn from the original saved decoding records.",
+      "file": "09.wav",
+      "duration_s": 7.90639455782313,
+      "length_scale": 1.0
+    },
+    {
+      "start": 92.0,
+      "end": 100.0,
+      "text": "The lower panel traces the growing route and tracking error, while the side views show the labels passing through each camera.",
+      "file": "10.wav",
+      "duration_s": 7.1053061224489795,
+      "length_scale": 1.0
+    },
+    {
+      "start": 103.3,
+      "end": 111.8,
+      "text": "The fifth pass completes the upper level. This experiment evaluates route tracking and barcode reading on the reference plant.",
+      "file": "11.wav",
+      "duration_s": 6.8382766439909295,
+      "length_scale": 1.0
+    },
+    {
+      "start": 115.0,
+      "end": 122.8,
+      "text": "After scanning, the aircraft returns along the aisle. It then descends and lands, completing the continuous flight.",
+      "file": "12.wav",
+      "duration_s": 6.501587301587302,
+      "length_scale": 1.0
+    },
+    {
+      "start": 128.2,
+      "end": 135.6,
+      "text": "Saved-image checks confirm four hundred identities. Tracking error improves by nine point six percent over the baseline.",
+      "file": "13.wav",
+      "duration_s": 6.977596371882086,
+      "length_scale": 0.9690616428291543
+    }
+  ],
+  "decoded_frames": 4080,
+  "reported_duration_s": 136.0,
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": 30.0
+}

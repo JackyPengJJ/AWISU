@@ -1,0 +1,46 @@
+{
+  "config": {
+    "mass_kg": 2.65,
+    "speed_mps": 1.1,
+    "physics_dt": 0.005,
+    "control_dt": 0.02,
+    "motor_tau_s": 0.04,
+    "max_motor_thrust_n": 13.0,
+    "battery_wh": 88.8,
+    "usable_fraction": 0.8,
+    "reserve_fraction": 0.2,
+    "hotel_power_w": 40.0,
+    "hover_power_w": 330.0,
+    "seed": 0,
+    "state_source": "truth",
+    "wind_n": 0.0,
+    "visual_assets": true
+  },
+  "python": "3.11.18",
+  "host": "IN-001",
+  "source_sha256": "ffa81b964c5bc76e99132f8d3cfe433f91b9e34f466c1ab55e962a6112eadd9f",
+  "versions": {
+    "mujoco": "4.0.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "seed": 0,
+  "requested_steps": 1000000,
+  "scope": "proxy-state residual controller training; stale calibration excluded; synthetic delay/noise only until new calibration is validated",
+  "navigation_calibration": {
+    "source": "results/stereo-1528666.stdct-mgmt-02/navigation.csv",
+    "source_sha256": "4e8518219d2790e6ce42cb30f1b36c38e5d26c99ae10ac1bfa63f02ef34e9953",
+    "sample_dt_s": 0.02,
+    "samples": 1072,
+    "position_rmse_axes_m": [
+      0.1561871507652649,
+      0.018078405717993535,
+      0.006503476957313257
+    ],
+    "scope": "Position-error trace from short stereo/LiDAR experiment. Velocity-error proxy is a smoothed position derivative, not directly measured estimator velocity. No coverage claim for full warehouse.",
+    "npz_sha256": "127ac1c721d845b730634d3fb944dcc4c6a4d2c28c3afaa132f8ad8cf2cbda9a",
+    "environment_status": "stale_scene_before_support_fix",
+    "use_for_new_training": false
+  },
+  "resume": null
+}

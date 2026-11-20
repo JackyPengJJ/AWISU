@@ -1,0 +1,15 @@
+{
+  "scores_rmse_m": {
+    "baseline": 0.10557418702666764,
+    "seed0_best": 0.11102861441732753,
+    "seed0_final": 0.10815643569088473,
+    "seed1_best": 0.1279766263158551,
+    "seed1_final": 0.17835304824062156,
+    "seed2_best": 0.09773682793267388,
+    "seed2_final": 0.11370129448195451
+  },
+  "selected": "seed2_best",
+  "policy": "models/ppo_residual.zip",
+  "improves_baseline": true,
+  "scope": "Two short held-out proxy-state tracking runs per candidate; not statistical proof or full sensor navigation."
+}

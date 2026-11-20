@@ -1,0 +1,14 @@
+{
+  "source_images": [
+    "assets/report_sources/mission_scene.png",
+    "assets/report_sources/mission_left.png",
+    "assets/report_sources/mission_right.png"
+  ],
+  "blocks": [
+    "acquire",
+    "admit",
+    "associate",
+    "recover"
+  ],
+  "map_is_schematic": true
+}

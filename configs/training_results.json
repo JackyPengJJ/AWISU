@@ -1,0 +1,33 @@
+{
+  "jobs": [
+    {
+      "seed": 0,
+      "requested_steps": 1000000,
+      "output": "results/training/seed0",
+      "status": "completed",
+      "actual_steps": 1000000,
+      "wall_s": 2713.13675652002
+    },
+    {
+      "seed": 1,
+      "requested_steps": 1000000,
+      "output": "results/training/seed1",
+      "status": "completed",
+      "actual_steps": 1000000,
+      "wall_s": 2707.6939583760104
+    },
+    {
+      "seed": 2,
+      "requested_steps": 1000000,
+      "output": "results/training/seed2",
+      "status": "completed",
+      "actual_steps": 1000000,
+      "wall_s": 2700.4487542129937
+    }
+  ],
+  "scene": "configs/realistic.json",
+  "collision": "configs/collision.json",
+  "calibration_used": false,
+  "scope": "Synthetic delayed/noisy-state residual flight control, full navigation and inventory validation separate",
+  "status": "completed_and_evaluated"
+}

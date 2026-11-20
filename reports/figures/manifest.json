@@ -1,0 +1,114 @@
+{
+  "style_basis": "scientific-visualization v1.4; general conference conventions, not venue certification",
+  "font": "Comic Neue 12.2 pt; Times fallback for mathematical symbols",
+  "matplotlib": "3.11.2",
+  "figures": [
+    {
+      "figure": "framework",
+      "formats": [
+        "svg",
+        "pdf",
+        "png"
+      ],
+      "source": "scripts/render_method_figures.py",
+      "data": "framework.data.json"
+    },
+    {
+      "figure": "hardware",
+      "formats": [
+        "svg",
+        "pdf",
+        "png"
+      ],
+      "source": "scripts/render_method_figures.py",
+      "data": "hardware.data.json"
+    },
+    {
+      "figure": "02_propulsion",
+      "description": "Matched manufacturer samples and installed-mass headroom; positive margins lie below the 3 kg limit. Pack-current status is reported separately.",
+      "size_inches": [
+        6.8,
+        4.8
+      ],
+      "font_pt": 12.2,
+      "formats": [
+        "pdf",
+        "svg",
+        "png"
+      ],
+      "raster_dpi": 300,
+      "data": "02_propulsion.data.json"
+    },
+    {
+      "figure": "04_observability",
+      "description": "Analytical lateral clearance and LiDAR elevation envelope. Descent into the lower blind zone requires a previously mapped free column.",
+      "size_inches": [
+        6.8,
+        3.7
+      ],
+      "font_pt": 12.2,
+      "formats": [
+        "pdf",
+        "svg",
+        "png"
+      ],
+      "raster_dpi": 300,
+      "data": "04_observability.data.json"
+    },
+    {
+      "figure": "05_imaging",
+      "description": "Rack-plane admissible label-centre regions at three camera pitches, after finite-label and uncertainty erosion. The common dashed height is the limiting transition; the travel budget uses the best admissible pitch.",
+      "size_inches": [
+        6.8,
+        4.8
+      ],
+      "font_pt": 12.2,
+      "formats": [
+        "pdf",
+        "svg",
+        "png"
+      ],
+      "raster_dpi": 300,
+      "data": "05_imaging.data.json"
+    },
+    {
+      "figure": "07_energy",
+      "description": "Stacked phase budgets and a continuous model surface in recovery count and propulsion loss. White contour: conditional 100 Wh delivered-energy limit with 20% reserve.",
+      "size_inches": [
+        6.8,
+        5.0
+      ],
+      "font_pt": 12.2,
+      "formats": [
+        "pdf",
+        "svg",
+        "png"
+      ],
+      "raster_dpi": 300,
+      "data": "07_energy.data.json"
+    },
+    {
+      "figure": "08_experiment",
+      "description": "All selection outcomes; fixed 1 s min/max error envelopes from one complete route per controller; untouched barcode crop. No confidence intervals.",
+      "size_inches": [
+        6.8,
+        4.2
+      ],
+      "font_pt": 12.2,
+      "formats": [
+        "pdf",
+        "svg",
+        "png"
+      ],
+      "raster_dpi": 300,
+      "data": "08_experiment.data.json"
+    }
+  ],
+  "input_sha256": {
+    "results/final/inference/trajectory.csv": "9cd96f932b7c7a28320a47b0fac7a35bc88ac31ef091dbd76ee1170682f9f376",
+    "results/final/baseline/trajectory.csv": "0569f17c601321a1045c64f4511a51592ade24dfef6eb9aa2e29dbe4a34fb559",
+    "results/final/selection.json": "6d2b8c62fb1ece3862a81f3e9f09d53079b5f06e0547fc4f7b609f1f51853b42",
+    "results/final/inference/metrics.json": "7535dc4e68a4acbf32f8681514ba73b76e7ced6daf71fb52f22e6569de283486",
+    "results/final/inference/inventory.json": "cdaa28ac75ff91394e382803fb2aa93963dfe67979f92a6354feda89ea204f92"
+  }
+}

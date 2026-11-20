@@ -1,0 +1,18 @@
+{
+  "experiment": "control_only_proxy",
+  "mission_inventory_success": false,
+  "reason": "completed",
+  "route_completed": true,
+  "collision": false,
+  "duration_s": 501.01999999961686,
+  "planned_duration_s": 499.0356514160862,
+  "reference_distance_m": 498.09999999999997,
+  "actual_distance_m": 499.46413834146824,
+  "position_rmse_m": 0.11477304683808082,
+  "position_p95_m": 0.13641152164726794,
+  "minimum_clearance_m": 0.060816140033560034,
+  "energy_wh": 51.520018176229414,
+  "remaining_usable_fraction": 0.2747745189156896,
+  "wall_time_s": 50.870059659995604,
+  "inventory_note": "No image-decoded full mission inventory; route completion is not mission success."
+}

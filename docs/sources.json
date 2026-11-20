@@ -1,0 +1,462 @@
+[
+  {
+    "id": 1,
+    "title": "Assignment specification",
+    "url": "docs/assignment/Segement_D_CA.pdf",
+    "kind": "assignment",
+    "facts": "Mass <3 kg; unknown GPS-denied aisle; bilateral barcode inventory; one flight; A4 portrait TNR 11.5 <=20 pages.",
+    "accessed": "2026-11-07",
+    "image_credit": null
+  },
+  {
+    "id": 2,
+    "title": "Course lecture notes",
+    "url": "docs/assignment/Segement_D_Notes.pdf",
+    "kind": "lecture",
+    "facts": "Dynamics, control, estimation and SLAM background.",
+    "accessed": "2026-11-07",
+    "image_credit": null
+  },
+  {
+    "id": 3,
+    "title": "Corvus Robotics, Corvus One",
+    "url": "https://www.corvus-robotics.com/corvus-one",
+    "kind": "manufacturer",
+    "facts": "Commercial autonomous inventory workflow; onboard navigation and operational inventory evidence. Vendor workflow, not component sizing.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 4,
+    "title": "Verity, Warehouse Intelligence",
+    "url": "https://www.verity.net/",
+    "kind": "manufacturer",
+    "facts": "Autonomous inventory and warehouse-data integration; commercial workflow comparison.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 5,
+    "title": "Holybro, X500 v2 development kit",
+    "url": "https://docs.holybro.com/drone-development-kit/px4-development-kit-x500v2",
+    "kind": "manufacturer",
+    "facts": "500 mm wheelbase; 2216 KV920, 20A 4S ESC, 1045 props; quoted 610g has frame-kit scope; no-payload hover is not loaded endurance.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 6,
+    "title": "T-MOTOR, MN3508 Navigator motor",
+    "url": "https://store.tmotor.com/product/mn3508-motor-navigator-type.html",
+    "kind": "manufacturer",
+    "facts": "KV380: 103g including cables, 3-6S, 14A/310W 180s rating. 22.2V P14x4.8 table: 710g/64.38W, 1100g/117.66W, 1730g/255.30W.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 7,
+    "title": "T-MOTOR, AIR 40A 2-6S ESC",
+    "url": "https://store.tmotor.com/product/air-40a-6s-esc.html",
+    "kind": "manufacturer",
+    "facts": "2-6S, no BEC; 40A nominal ESC; installed mass is explicitly budgeted pending weighing.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 8,
+    "title": "T-MOTOR, P14x4.8 carbon propeller",
+    "url": "https://store.tmotor.com/product/polish-carbon-fiber-14x4_8-prop.html",
+    "kind": "manufacturer",
+    "facts": "355.6mm diameter; published mass 15 +/-1.5g per propeller; budget 66g for four.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 9,
+    "title": "Gens ace / Tattu, RC product brochure",
+    "url": "https://www.genstattu.com/content/instock/rc_product_brochure.pdf",
+    "kind": "manufacturer",
+    "facts": "GA-B-60C-5000-6S1P-EC5: 5000mAh 6S, 755g; 164.5x45x47mm. Nominal 111Wh calculated at 22.2V.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 10,
+    "title": "Holybro, Pixhawk 6C",
+    "url": "https://holybro.com/products/pixhawk-6c",
+    "kind": "manufacturer",
+    "facts": "Plastic-case 34.6g; independent flight controller; select analog power module.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 11,
+    "title": "Holybro, PM02 V3 analog power module",
+    "url": "https://holybro.com/collections/power-modules-pdbs/products/pm02-v3-12s-power-module",
+    "kind": "manufacturer",
+    "facts": "20g; 2-12S; 5.2V/3A; analog compatible with 6C. Supplied connector/wire limit 30A continuous, 60A short burst.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 12,
+    "title": "Livox, MID-360 specifications",
+    "url": "https://www.livoxtech.com/mid-360/specs",
+    "kind": "manufacturer",
+    "facts": "265g; 6.5W average; 9-27V; 360deg horizontal, -7..52deg vertical; 10Hz typical, 200kpoints/s; near-zone qualifications and cold-start 14W.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 13,
+    "title": "Luxonis, OAK-D Lite",
+    "url": "https://docs.luxonis.com/hardware/products/OAK-D%20Lite",
+    "kind": "manufacturer",
+    "facts": "Fixed-focus stereo option; 2.5-3W streaming plus workload-dependent processing; no IR projector. 61g installation reference from product listing.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 14,
+    "title": "NVIDIA, Jetson module lineup",
+    "url": "https://developer.nvidia.com/embedded/jetson-modules",
+    "kind": "manufacturer",
+    "facts": "Orin Nano module supports configurable 7-25W modes; module power is not complete-carrier power or installed mass.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 15,
+    "title": "Hiwonder, Jetson Mini carrier",
+    "url": "https://www.hiwonder.com/products/mini-carrier",
+    "kind": "manufacturer",
+    "facts": "77g board; 103x64x22mm; 5-19V input; four USB3 ports, GbE, CSI. Separate 180g installed compute allocation includes module, cooling and storage.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 16,
+    "title": "Teledyne FLIR, BFS-U3-51S5 specifications",
+    "url": "https://softwareservices.flir.com/BFS-U3-51S5/latest/Model/spec.html",
+    "kind": "manufacturer",
+    "facts": "2448x2048, Sony IMX250 3.45um, global shutter, C mount, 36g, max3W, USB3.1, hardware I/O and ROI.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 17,
+    "title": "Kowa, JC5MC lens series: LM8JC5MC and LM12JC5MC",
+    "url": "https://kowa-fa-sea.com.sg/industrial-lens/jc5mc-series/",
+    "kind": "manufacturer",
+    "facts": "LM8JC5MC: 8 mm, C mount, 2/3-inch 5 MP, 55 g; comparison candidate. LM12JC5MC: 12 mm, 55 g, earlier design reference. Actual sensor dimensions determine field of view.",
+    "accessed": "2026-11-09",
+    "image_credit": "Manufacturer copyright; credited academic illustration",
+    "additional_urls": [
+      "https://www.kowa-lenses.com/media/97/cb/c4/1770293399/LM12JC5MC%20Data%20Sheet.pdf"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "TowerPro, MG90S Analog pitch servo",
+    "url": "https://torqpro.com/product/mg90s-analog/",
+    "kind": "manufacturer",
+    "facts": "13.4g; no-load0.08s/60deg at6V. Loaded133ms settling interval is a design target.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 19,
+    "title": "Xu et al., FAST-LIO2, 2021",
+    "url": "https://arxiv.org/abs/2107.06829",
+    "kind": "paper",
+    "facts": "Direct raw-point LiDAR-inertial odometry with incremental map; project comparison uses measurement modality, observability and compute implications.",
+    "accessed": "2026-11-07",
+    "image_credit": null,
+    "bibliography": "Wei Xu, Yixi Cai, Dongjiao He, Jiarong Lin, and Fu Zhang. FAST-LIO2: Fast Direct LiDAR-inertial Odometry. arXiv:2107.06829, 2021",
+    "bibliography_verified": "2026-11-20",
+    "bibliography_basis": "Primary author or arXiv record"
+  },
+  {
+    "id": 20,
+    "title": "Campos et al., ORB-SLAM3, 2021",
+    "url": "https://arxiv.org/abs/2007.11898",
+    "kind": "paper",
+    "facts": "Feature-based visual/visual-inertial multi-map SLAM; map reuse and relocalisation.",
+    "accessed": "2026-11-07",
+    "image_credit": null,
+    "bibliography": "Carlos Campos, Richard Elvira, Juan J. Gómez Rodríguez, José M. M. Montiel, and Juan D. Tardós. ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM. arXiv:2007.11898, 2021",
+    "bibliography_verified": "2026-11-20",
+    "bibliography_basis": "Primary author or arXiv record"
+  },
+  {
+    "id": 21,
+    "title": "Zheng et al., FAST-LIVO2, 2024 preprint / 2025 T-RO",
+    "url": "https://arxiv.org/abs/2408.14035",
+    "kind": "paper",
+    "facts": "Direct LiDAR/image fusion via ESIKF sequential updates and unified voxel map; visual exposure handling. Primary deployment algorithm candidate.",
+    "accessed": "2026-11-07",
+    "image_credit": null,
+    "bibliography": "Chunran Zheng et al. FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry. arXiv:2408.14035, 2024",
+    "bibliography_verified": "2026-11-20",
+    "bibliography_basis": "Primary author or arXiv record"
+  },
+  {
+    "id": 22,
+    "title": "Tordesillas et al., FASTER, T-RO",
+    "url": "https://arxiv.org/abs/2001.04420",
+    "kind": "paper",
+    "facts": "Plans with a safe backup in known free space. Borrow backup-trajectory principle; use simpler low-speed aisle coverage planner.",
+    "accessed": "2026-11-07",
+    "image_credit": null,
+    "bibliography": "Jesus Tordesillas, Brett T. Lopez, Michael Everett, and Jonathan P. How. FASTER: Fast and Safe Trajectory Planner for Navigation in Unknown Environments. arXiv:2001.04420, 2021",
+    "bibliography_verified": "2026-11-20",
+    "bibliography_basis": "Primary author or arXiv record"
+  },
+  {
+    "id": 23,
+    "title": "PX4, external position estimation",
+    "url": "https://docs.px4.io/main/en/ros/external_position_estimation",
+    "kind": "official software",
+    "facts": "External odometry, coordinate frames, covariance and timing integration.",
+    "accessed": "2026-11-07",
+    "image_credit": null
+  },
+  {
+    "id": 24,
+    "title": "PX4, Offboard mode",
+    "url": "https://docs.px4.io/main/en/flight_modes/offboard",
+    "kind": "official software",
+    "facts": "External setpoints and proof-of-life/offboard-loss handling; design uses explicit faster setpoint rates.",
+    "accessed": "2026-11-07",
+    "image_credit": null
+  },
+  {
+    "id": 25,
+    "title": "Hornung et al., OctoMap",
+    "url": "https://doi.org/10.1007/s10514-012-9321-0",
+    "kind": "paper",
+    "facts": "Probabilistic 3D occupied/free/unknown representation; unknown-space frontier semantics.",
+    "accessed": "2026-11-07",
+    "image_credit": null,
+    "bibliography": "Armin Hornung, Kai M. Wurm, Maren Bennewitz, Cyrill Stachniss, and Wolfram Burgard. OctoMap: An Efficient Probabilistic 3D Mapping Framework Based on Octrees. Autonomous Robots, 34:189–206, 2013",
+    "bibliography_verified": "2026-11-20",
+    "bibliography_basis": "Publisher article metadata, volume 34, pages 189–206 (2013)",
+    "additional_urls": [
+      "https://octomap.github.io/"
+    ]
+  },
+  {
+    "id": 26,
+    "title": "zxing-cpp reference implementation",
+    "url": "https://github.com/zxing-cpp/zxing-cpp",
+    "kind": "official software",
+    "facts": "Image-pixel barcode decoding.",
+    "accessed": "2026-11-07",
+    "image_credit": null
+  },
+  {
+    "id": 27,
+    "title": "MuJoCo documentation",
+    "url": "https://mujoco.readthedocs.io/en/stable/overview.html",
+    "kind": "official software",
+    "facts": "Rigid-body dynamics and rendering for supplementary experiment.",
+    "accessed": "2026-11-07",
+    "image_credit": null
+  },
+  {
+    "id": 28,
+    "title": "Johannink et al., Residual RL, 2019",
+    "url": "https://arxiv.org/abs/1812.03201",
+    "kind": "paper",
+    "facts": "Learn bounded correction around conventional feedback.",
+    "accessed": "2026-11-07",
+    "image_credit": null,
+    "bibliography": "Tobias Johannink et al. Residual Reinforcement Learning for Robot Control. arXiv:1812.03201, 2018",
+    "bibliography_verified": "2026-11-20",
+    "bibliography_basis": "Primary author or arXiv record"
+  },
+  {
+    "id": 29,
+    "title": "Schulman et al., PPO, 2017",
+    "url": "https://arxiv.org/abs/1707.06347",
+    "kind": "paper",
+    "facts": "Policy-gradient algorithm used for residual-control experiment.",
+    "accessed": "2026-11-07",
+    "image_credit": null,
+    "bibliography": "John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov. Proximal Policy Optimization Algorithms. arXiv:1707.06347, 2017",
+    "bibliography_verified": "2026-11-20",
+    "bibliography_basis": "Primary author or arXiv record"
+  },
+  {
+    "id": 30,
+    "title": "MuJoCo Menagerie, Skydio X2",
+    "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/skydio_x2",
+    "kind": "licensed asset",
+    "facts": "Manufacturer-provided Apache-2.0 visual mesh used in existing simulation.",
+    "accessed": "2026-11-07",
+    "image_credit": "MuJoCo Menagerie Skydio X2, Apache-2.0; locally rendered reference asset with simplified static blades. Callouts describe proposed component roles, not built hardware.",
+    "project_render": "assets/report_sources/skydio_reference_render.png"
+  },
+  {
+    "id": 31,
+    "title": "Poly Haven, Cardboard Box 01",
+    "url": "https://polyhaven.com/a/cardboard_box_01",
+    "kind": "licensed asset",
+    "facts": "CC0 carton mesh used in experimental scene.",
+    "accessed": "2026-11-07",
+    "image_credit": null
+  },
+  {
+    "id": 32,
+    "title": "Poly Haven, Steel Frame Shelves 03",
+    "url": "https://polyhaven.com/a/steel_frame_shelves_03",
+    "kind": "licensed asset",
+    "facts": "CC0 staging shelf mesh; main racks are dimensioned geometry.",
+    "accessed": "2026-11-07",
+    "image_credit": null
+  },
+  {
+    "id": 33,
+    "title": "Pololu, D36V50F12 regulator",
+    "url": "https://www.pololu.com/product/4095",
+    "kind": "manufacturer",
+    "facts": "12V output, 13.3-50V input; current and efficiency depend on thermal/input conditions. Nominal4.5A is specified at36V input.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration",
+    "additional_urls": [
+      "https://www.pololu.com/product/4092"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Lumileds LUXEON Rebel emitters; Texas Instruments TPS92512 LED driver",
+    "url": "https://lumileds.com/products/high-power-leds/luxeon-rebel/",
+    "kind": "manufacturer",
+    "facts": "LXML-PWC1-0100: min100lm at350mA, typical180lm at700mA; design uses directed LED bars and closed-loop exposure. TPS92512 accepts4.5-42V and supports analog/PWM current control; twoLEDs inseries driven at0.70A from12V.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration",
+    "additional_urls": [
+      "https://www.ti.com/product/TPS92512"
+    ]
+  },
+  {
+    "id": 35,
+    "title": "Teledyne FLIR, BFS-U3-122S6 specifications",
+    "url": "https://softwareservices.flir.com/BFS-U3-122S6/latest/Model/spec.html",
+    "kind": "manufacturer",
+    "facts": "Selected 4096×3000 global-shutter camera, 36 g, maximum 3 W; complete lens/mount mass accounted separately.",
+    "accessed": "2026-11-07",
+    "image_credit": "Manufacturer copyright; credited academic illustration"
+  },
+  {
+    "id": 36,
+    "title": "Opto Engineering RT-V1228-MPY2 catalogue",
+    "url": "https://www.opto-e.com/en/products/en-12rt-series/RT-V1228-MPY2",
+    "facts": "Current supplier catalogue:12mm,1.1 inch,12MP,C mount,97g,42x36.2mm; original manufacturer-declared technical data,last updated2024-11-05. Listing is not confirmation of stock.",
+    "accessed": "2026-11-09",
+    "evidence_type": "primary manufacturer publication; archive host identified where applicable",
+    "retrieved_url": "https://www.opto-e.com/en/products/en-12rt-series/RT-V1228-MPY2",
+    "file": "docs/review/followup_sources/S11.html",
+    "sha256": "c2255f1d57af591d23d0709b14732fe7d139c410992f65bd118a2d2341c21f00",
+    "bytes": 110135
+  },
+  {
+    "id": 37,
+    "title": "GEPRC VTC6 6S2P6000 pack",
+    "url": "https://geprc.com/product/geprc-vtc6-18650-6s2p-6000mah-batteries/",
+    "facts": "607g,6S2P6000mAh,30A maximum continuous pack current,111x38x69mm. Vendor advertises22.2V; cell manufacturer nominal3.6V implies21.6V for6S.",
+    "accessed": "2026-11-09",
+    "evidence_type": "primary manufacturer publication; archive host identified where applicable",
+    "file": "docs/review/followup_sources/S6.html",
+    "sha256": "69ea239b310cdcc380c01117c738ce137916996445bfa9d83c4881a1be08ecb5",
+    "bytes": 431921
+  },
+  {
+    "id": 38,
+    "title": "Murata VTC6 cell datasheet",
+    "url": "https://www.murata.com/-/media/webrenewal/products/batteries/cylindrical/datasheet/us18650vtc6-product-datasheet.ashx",
+    "facts": "3.6V,3Ah minimum at low-current2V cutoff. Discharge curves at23C for3..30A. Cutoff-aware delivered energy is required, not6000mAh times a marketing nominal voltage.",
+    "accessed": "2026-11-09",
+    "evidence_type": "primary manufacturer publication; archive host identified where applicable",
+    "file": "docs/review/followup_sources/S7.pdf",
+    "sha256": "ff42082f0d94c311bfd9a8b24211c5d522aeee161adb7473731e9fe94fcc9f08",
+    "bytes": 275509
+  },
+  {
+    "id": 39,
+    "title": "Flywoo P30B 6S2P6000 pack",
+    "url": "https://flywoo.net/products/flywoo-explorer-molicell-p30b-18650-6s2p-6000mah-lionpack-battery",
+    "facts": "596.2g,6S2P,6000mAh,XT60; description calls35A peak, so do not treat35A as verified continuous pack current. Adds20g installation allowance.",
+    "accessed": "2026-11-09",
+    "evidence_type": "primary manufacturer publication; archive host identified where applicable",
+    "retrieval_error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": 40,
+    "title": "Lee, Leok and McClamroch, Geometric Tracking Control, CDC 2010",
+    "url": "https://www.math.ucsd.edu/~mleok/pdf/LeLeMc2010_quadrotor.pdf",
+    "facts": "Geometric attitude and position tracking on SE(3); actuator limits need additional handling.",
+    "accessed": "2026-11-09",
+    "kind": "original research or official implementation",
+    "bibliography": "Taeyoung Lee, Melvin Leok, and N. Harris McClamroch. Geometric Tracking Control of a Quadrotor UAV on SE(3). IEEE Conference on Decision and Control, 2010",
+    "bibliography_verified": "2026-11-20",
+    "bibliography_basis": "Primary author or arXiv record"
+  },
+  {
+    "id": 41,
+    "title": "Kamel, Burri and Siegwart, Linear vs Nonlinear MPC, 2017; ETH ASL implementation",
+    "url": "https://arxiv.org/abs/1611.09240",
+    "facts": "Linear and nonlinear MPC, disturbance observer and position control implementations; repository provides original paper citation.",
+    "accessed": "2026-11-09",
+    "kind": "original research or official implementation",
+    "additional_urls": [
+      "https://github.com/ethz-asl/mav_control_rw"
+    ],
+    "bibliography": "Mina Kamel, Michael Burri, and Roland Siegwart. Linear vs Nonlinear MPC for Trajectory Tracking Applied to Rotary Wing Micro Aerial Vehicles. arXiv:1611.09240, 2017",
+    "bibliography_verified": "2026-11-20",
+    "bibliography_basis": "Primary author or arXiv record"
+  },
+  {
+    "id": 42,
+    "title": "PX4 controller diagrams",
+    "url": "https://docs.px4.io/main/en/flight_stack/controller_diagrams",
+    "facts": "Cascade, velocity PID, acceleration and actuator saturation/anti-windup; main documentation accessed 2026-11-09.",
+    "accessed": "2026-11-09",
+    "kind": "original research or official implementation"
+  },
+  {
+    "id": 43,
+    "title": "HKU MARS, FAST-LIVO2 official implementation",
+    "url": "https://github.com/hku-mars/FAST-LIVO2",
+    "facts": "ROS/Livox driver2 dependencies, sensor configuration/calibration; OAK image adaptation remains project work.",
+    "accessed": "2026-11-09",
+    "kind": "original research or official implementation"
+  },
+  {
+    "id": 44,
+    "title": "Lumenier NAV Amprius6S6000 pack",
+    "url": "https://www.lumenier.com/products/lumenier-nav-6000mah-6s-21700-amprius-lithium-ion-battery-xt60",
+    "facts": "465g,133.2Wh nominal. Page says12A continuous/20A burst but also3C/5C, which is inconsistent for6Ah. Conservatively screen at12A and do not select it for the full-aircraft current.",
+    "accessed": "2026-11-09",
+    "evidence_type": "primary manufacturer publication; archive host identified where applicable",
+    "file": "docs/review/followup_sources/S8.html",
+    "sha256": "fbcb66963cbbe7d480e6c0312e3b0af313a0f964af22f9c7dab17b873823e5e3",
+    "bytes": 210597
+  },
+  {
+    "id": 45,
+    "title": "R. E. Kalman, Contributions to the Theory of Optimal Control, Bol. Soc. Mat. Mex. 5, 102–119, 1960",
+    "url": "https://liberzon.csl.illinois.edu/teaching/kalman_paper.pdf",
+    "facts": "Original linear quadratic regulation paper; Riccati equation, controllability and observability. University-hosted reprint.",
+    "accessed": "2026-11-09",
+    "kind": "original research reprint"
+  },
+  {
+    "id": 46,
+    "title": "Kassis, Agarwal, He, Patel and Brueckner, Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents, 2026",
+    "url": "https://arxiv.org/abs/2609.00065",
+    "kind": "paper",
+    "accessed": "2026-11-19",
+    "facts": "Figure-auditing workflow credit; revised 2 September 2026. Not evidence of UAV performance."
+  }
+]

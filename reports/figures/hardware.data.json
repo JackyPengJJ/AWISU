@@ -1,0 +1,6 @@
+{
+  "render": "assets/report_sources/skydio_reference_render.png",
+  "render_script": "scripts/render_report_asset.py",
+  "mesh": "assets/prepared/skydio_x2/x2_inspection.obj",
+  "meaning": "Reference mesh with proposed component-role callouts"
+}

@@ -1,0 +1,33 @@
+{
+  "method": "ID syntax plus saved pixel crop agreement on at least two of original, 2x resized and Otsu variants; not independent temporal observations",
+  "accepted": 400,
+  "rejected": [
+    {
+      "barcode": "W,\"!",
+      "first_seen_s": 24.39999999999943,
+      "last_seen_s": 24.39999999999943,
+      "side": "left",
+      "estimated_uav_position": [
+        19.150781102818904,
+        -0.0284323432581183,
+        0.822241296345772
+      ],
+      "observations": 1,
+      "evidence": "0020.jpg"
+    },
+    {
+      "barcode": "W0520",
+      "first_seen_s": 317.6599999997836,
+      "last_seen_s": 317.6599999997836,
+      "side": "right",
+      "estimated_uav_position": [
+        1.3322693128894305,
+        0.04244852107858777,
+        5.624501750211948
+      ],
+      "observations": 1,
+      "evidence": "0321.jpg"
+    }
+  ],
+  "truth_inventory_used": false
+}

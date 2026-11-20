@@ -1,0 +1,6 @@
+{
+  "status": "validated",
+  "training_authorized_on_this_environment": true,
+  "collision_config": "configs/collision.json",
+  "static_audit": "results/final/environment_audit.json"
+}

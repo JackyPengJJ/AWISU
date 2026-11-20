@@ -1,0 +1,72 @@
+[
+  {
+    "start": 0.6,
+    "end": 7.8,
+    "text": "Introducing AWISU: autonomous warehouse inventory with a small unmanned aircraft."
+  },
+  {
+    "start": 8.2,
+    "end": 15.8,
+    "text": "The proposed platform combines a lightweight flight controller and onboard computing, within a three kilogram takeoff limit."
+  },
+  {
+    "start": 16.2,
+    "end": 23.8,
+    "text": "Side cameras read labels. Stereo and lidar support navigation. The rotating aircraft is a reference simulation asset."
+  },
+  {
+    "start": 24.3,
+    "end": 31.8,
+    "text": "First, aligned sensor observations build local geometry. Motion proceeds through a known-free corridor, with room to stop."
+  },
+  {
+    "start": 32.3,
+    "end": 39.8,
+    "text": "Both sides follow a continuous five-level sweep. Complete label images and corroborating reads update the inventory."
+  },
+  {
+    "start": 40.3,
+    "end": 47.8,
+    "text": "A missed label triggers local recovery: brake, approach the affected side, retry, and resume from the unfinished boundary."
+  },
+  {
+    "start": 48.2,
+    "end": 55.8,
+    "text": "Optical sampling sets the scan speed. The energy budget includes recovery and reserve; battery delivery still requires qualification."
+  },
+  {
+    "start": 56.5,
+    "end": 65.8,
+    "text": "The reference simulation follows a prescribed route, replayed seven times faster with synchronized external, side, and forward views."
+  },
+  {
+    "start": 68.5,
+    "end": 77.8,
+    "text": "At the aisle end, the aircraft climbs and reverses along the next level. The route continues without resetting to the starting position."
+  },
+  {
+    "start": 80.5,
+    "end": 88.8,
+    "text": "Left and right cameras share the same recorded aircraft pose. The inventory count is drawn from the original saved decoding records."
+  },
+  {
+    "start": 92.0,
+    "end": 100.0,
+    "text": "The lower panel traces the growing route and tracking error, while the side views show the labels passing through each camera."
+  },
+  {
+    "start": 103.3,
+    "end": 111.8,
+    "text": "The fifth pass completes the upper level. This experiment evaluates route tracking and barcode reading on the reference plant."
+  },
+  {
+    "start": 115.0,
+    "end": 122.8,
+    "text": "After scanning, the aircraft returns along the aisle. It then descends and lands, completing the continuous flight."
+  },
+  {
+    "start": 128.2,
+    "end": 135.6,
+    "text": "Saved-image checks confirm four hundred identities. Tracking error improves by nine point six percent over the baseline."
+  }
+]

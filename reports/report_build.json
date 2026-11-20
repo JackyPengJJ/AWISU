@@ -1,0 +1,15 @@
+{
+  "pages": 20,
+  "page_limit": 20,
+  "requested_pages": "at most 20",
+  "individual_project": true,
+  "font": "Times New Roman body/captions 11.5 pt; 17.28 pt small-cap title with matching AWISU initials; 14 pt section headings; Comic Neue figure labels; Times-style math",
+  "figures": 7,
+  "references": 43,
+  "authority": "XeLaTeX",
+  "protected_artifacts_unchanged": true,
+  "battery_delivered_energy_qualification": false,
+  "source": "docs/report_source.md",
+  "template": "docs/latex/report.tex",
+  "calculation_source": "src/segd/final_design.py"
+}

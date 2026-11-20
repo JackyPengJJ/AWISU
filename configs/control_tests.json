@@ -1,0 +1,8 @@
+{
+  "scope": "Frozen control-only demonstration set. Not the 90-task full-perception final study.",
+  "tests": [
+    {"name":"nominal", "overrides":{"seed":101,"state_source":"truth"}},
+    {"name":"wind", "overrides":{"seed":102,"state_source":"truth","wind_n":0.7}},
+    {"name":"proxy", "overrides":{"seed":103,"state_source":"proxy","wind_n":0.5}}
+  ]
+}

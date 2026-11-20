@@ -1,0 +1,19 @@
+{
+  "mass_kg": 2.65,
+  "speed_mps": 1.1,
+  "physics_dt": 0.005,
+  "control_dt": 0.02,
+  "motor_tau_s": 0.04,
+  "max_motor_thrust_n": 13.0,
+  "battery_wh": 88.8,
+  "usable_fraction": 0.8,
+  "reserve_fraction": 0.2,
+  "hotel_power_w": 40.0,
+  "hover_power_w": 330.0,
+  "seed": 0,
+  "state_source": "lidar",
+  "wind_n": 0.0,
+  "visual_assets": true,
+  "inventory": false,
+  "stereo_odometry": true
+}

@@ -1,0 +1,70 @@
+{
+  "status": "research_only_not_final_hardware_approval",
+  "optics": {
+    "camera": "BFS-U3-122S6M-C",
+    "lens": "Opto Engineering RT-V1228-MPY2; Computar V1228-MPY2 reference",
+    "pixels": [
+      4096,
+      3000
+    ],
+    "pixel_mm": 0.00345,
+    "focal_mm": 12,
+    "pitch_deg": [
+      -28,
+      0,
+      28
+    ],
+    "label_outer_width_m": 0.25,
+    "label_outer_height_m": 0.04,
+    "module_width_m": 0.0012,
+    "scan_speed_mps": 0.85,
+    "height_grid_step_m": 0.001
+  },
+  "lens_allocation_g_each": 110,
+  "pitch_assembly_allocation_g": 70,
+  "code128_b_data_symbols": 12,
+  "label_width_comparison_mm": [
+    100,
+    200,
+    250
+  ],
+  "mission": {
+    "cargo_instances": 400,
+    "aux_nominal_w": 55,
+    "aux_adverse_w": 60
+  },
+  "retry_counts": [
+    2,
+    8,
+    20
+  ],
+  "batteries": [
+    {
+      "name": "GEPRC VTC6 6S2P 6000",
+      "manufacturer_mass_g": 607,
+      "installed_allocation_g": 627,
+      "capacity_ah": 6,
+      "pack_continuous_limit_a": 30,
+      "source": "S6",
+      "cutoff_voltage_v": 19.8
+    },
+    {
+      "name": "Flywoo P30B 6S2P 6000",
+      "manufacturer_mass_g": 596.2,
+      "installed_allocation_g": 616.2,
+      "capacity_ah": 6,
+      "pack_continuous_limit_a": null,
+      "published_peak_or_ambiguous_a": 35,
+      "source": "S4",
+      "cutoff_voltage_v": 19.8
+    }
+  ],
+  "notes": [
+    "Larger labels are an installation assumption, not an original assignment requirement or a change to the historical experiment.",
+    "110 g lens allocation exceeds the archived manufacturer datasheet's 102.8 g; 97 g later brochure mass is not used.",
+    "20 g battery uplift and 20 g extra pitch-support mass are engineering allocations, not manufacturer masses.",
+    "Nameplate Li-ion energy is not accepted as delivered energy above the loaded cutoff. Nominal cell voltage is 3.6 V, even if the pack marketing says 22.2 V.",
+    "All retry cases retain the full local brake/recenter overhead; no unmeasured recovery success rate is assumed.",
+    "Opto Engineering currently catalogues RT-V1228-MPY2 at97g; allocation remains110g to cover the heavier archived specification and installation. Catalogue listing is not stock confirmation."
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "chapters": [
+    {
+      "name": "hardware",
+      "seconds": 24
+    },
+    {
+      "name": "method",
+      "seconds": 24
+    },
+    {
+      "name": "analysis",
+      "seconds": 8
+    },
+    {
+      "name": "replay",
+      "seconds": 72
+    },
+    {
+      "name": "results",
+      "seconds": 8
+    }
+  ],
+  "duration_s": 136,
+  "fps": 30,
+  "size": [
+    1920,
+    1080
+  ],
+  "font": "Comic Neue Regular / Bold",
+  "all_replay_views_native_fps": 30,
+  "native_view_sizes": {
+    "external": [
+      1280,
+      720
+    ],
+    "left_right_front": [
+      480,
+      240
+    ]
+  },
+  "full_simulation_duration_s": 501.01999999961686,
+  "pose_interpolation": "linear position, quaternion SLERP at 30 output frames/s",
+  "new_inference": false,
+  "new_decode_test": false,
+  "replay_speed": 6.95861111110579,
+  "instantaneous_error_display": "Interpolated display position compared with the preceding saved reference sample; scientific aggregate metrics are read unchanged from metrics.json.",
+  "source_code_sha256": "924b0e6d5444c46e321b6c2a34b19c3ad50e176372a9c1e7ec5e0383f6453622",
+  "font_sha256": {
+    "ComicNeue-Bold.ttf": "3e7e5fccfd7e0788f317b43312151c1bd5cf058c9697a8d83eac3939050bd61e",
+    "ComicNeue-Regular.ttf": "a0ee5a37c8b27c4db0700137d928598b1e23b0089e1546a8961909176b779360"
+  },
+  "design_calculations_sha256": "217caa9d0ede285562af8297047308e9e6bede5f433d4c0013fa5f3f8a0eab9b",
+  "replay_views": [
+    "external",
+    "left",
+    "right",
+    "front_left"
+  ],
+  "source_sha256": {
+    "results/final/inference/trajectory.csv": "9cd96f932b7c7a28320a47b0fac7a35bc88ac31ef091dbd76ee1170682f9f376",
+    "results/final/inference/metrics.json": "7535dc4e68a4acbf32f8681514ba73b76e7ced6daf71fb52f22e6569de283486",
+    "results/final/inference/inventory.json": "cdaa28ac75ff91394e382803fb2aa93963dfe67979f92a6354feda89ea204f92",
+    "results/final/inference/evidence/0000.jpg": "6af9f5f148c54cb6465a700a22b5d49047f84864b8c5dc22201f57592bfdd32f",
+    "models/ppo_residual.zip": "16108ffe2ce6900a50a50a9fc3ea7164f65d3c507b411a490c797c51afcc9b1c",
+    "results/final/presentation_dynamic/mission_presentation.mp4": "870d4e09309291c2a98ac5dac7c2f2a9c471f6c3d9aa84893c415044f8acead7"
+  },
+  "output_sha256": "df8893f06a8920b21e0d1b705ec18ba20124864b2cca583e4a62c8a688ee48fe",
+  "interrupted_render_recovery": [
+    {
+      "original_incomplete_file": "replay_00000_00540.mp4",
+      "slice_nals": 470,
+      "kept_frames": 462,
+      "output": "replay_00000_00462.mp4",
+      "dropped_tail_frames": 8,
+      "annexb_sha256": "fad656e469cdcb668eb79f04a423792b7fc88a0b9403fd924df71bc2dee89815",
+      "method": "Length-prefixed complete AVC NAL units converted to Annex B with identical encoder SPS/PPS from completed film part; final 8 slices excluded before decode/re-encode."
+    },
+    {
+      "original_incomplete_file": "replay_00540_01080.mp4",
+      "slice_nals": 455,
+      "kept_frames": 447,
+      "output": "replay_00540_00987.mp4",
+      "dropped_tail_frames": 8,
+      "annexb_sha256": "e1f21e8683f3032c3d019b29c69b49dfe308c7cc34536eaa50da399af52d21f3",
+      "method": "Length-prefixed complete AVC NAL units converted to Annex B with identical encoder SPS/PPS from completed film part; final 8 slices excluded before decode/re-encode."
+    },
+    {
+      "original_incomplete_file": "replay_01080_01620.mp4",
+      "slice_nals": 433,
+      "kept_frames": 425,
+      "output": "replay_01080_01505.mp4",
+      "dropped_tail_frames": 8,
+      "annexb_sha256": "833f2196e9f26c59c9eb44a2e46daf2840b252ed6ee5a941e8e6d5950f85ba6b",
+      "method": "Length-prefixed complete AVC NAL units converted to Annex B with identical encoder SPS/PPS from completed film part; final 8 slices excluded before decode/re-encode."
+    },
+    {
+      "original_incomplete_file": "replay_01620_02160.mp4",
+      "slice_nals": 345,
+      "kept_frames": 337,
+      "output": "replay_01620_01957.mp4",
+      "dropped_tail_frames": 8,
+      "annexb_sha256": "0e9331062e31271ed2f1b60bb98c39228a48bd75b843a48c29be1bd5bbd53b6f",
+      "method": "Length-prefixed complete AVC NAL units converted to Annex B with identical encoder SPS/PPS from completed film part; final 8 slices excluded before decode/re-encode."
+    }
+  ],
+  "design_vs_experiment": "Hardware and method are proposed design; replay uses retained 2.65 kg prescribed-route plant.",
+  "style_reference": "https://showlab.github.io/Show-Harness/",
+  "external_reference_footage_used": false,
+  "product_photo_adjustment": "White background margins trimmed; product pixels retained, then display resized.",
+  "product_mesh": "Retained simulation aircraft with project guards and fixed scanning payload; licensed Menagerie Skydio X2 appearance. Proposed custom component selections are separate.",
+  "container_timing_audit": {
+    "decoded_frames": 4080,
+    "time_base": "config in time_base: 1/30",
+    "expected_step_ticks": 1.0,
+    "actual_step_ticks": [
+      1
+    ],
+    "constant_frame_cadence": true,
+    "encoded_picture_payload_unchanged": true,
+    "mdat_sha256": "8c8cef2c0a742d10edca00f9e46e3b31a2cc25c9efc01d9646bc369649e488f6",
+    "method": "Stream copy; rescale MP4 track timestamps to 1/30 s. No re-encoding or frame duplication."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "config": {
+    "mass_kg": 2.65,
+    "speed_mps": 1.1,
+    "physics_dt": 0.005,
+    "control_dt": 0.02,
+    "motor_tau_s": 0.04,
+    "max_motor_thrust_n": 13.0,
+    "battery_wh": 88.8,
+    "usable_fraction": 0.8,
+    "reserve_fraction": 0.2,
+    "hotel_power_w": 40.0,
+    "hover_power_w": 330.0,
+    "seed": 703,
+    "state_source": "proxy",
+    "wind_n": 0.5,
+    "visual_assets": true
+  },
+  "python": "3.11.18",
+  "host": "IN-001",
+  "source_sha256": "f405934108c20f4c73f7d5067e5be9c9358803b4e83b7546f83478cfbed1cdfa",
+  "versions": {
+    "mujoco": "4.0.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  }
+}

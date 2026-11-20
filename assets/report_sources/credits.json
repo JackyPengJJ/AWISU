@@ -1,0 +1,26 @@
+[
+  {
+    "name": "pixhawk6c",
+    "file": "assets/report_sources/pixhawk6c.jpg",
+    "source_id": 10,
+    "url": "https://holybro.com/cdn/shop/products/11054Pixhawk6C-Plasticcase_1_400x.jpg?v=1775119916",
+    "sha256": "c4be3b8338ce716d5fef9cb0fc571556acc6211e9df7a30a08fadae399d70b4a",
+    "credit": "Holybro, Pixhawk 6C; manufacturer photograph"
+  },
+  {
+    "name": "mn3508",
+    "file": "assets/report_sources/mn3508.jpg",
+    "source_id": 6,
+    "url": "https://store.tmotor.com/images/202609/goods_img/mn3508-260904-white-common-3.jpg",
+    "sha256": "1630307f8efbf59bcef219692fd2f8d1835afed2ebd6a3532a05d0edc64093b3",
+    "credit": "T-MOTOR, MN3508 Navigator motor; manufacturer photograph"
+  },
+  {
+    "name": "carrier",
+    "source_id": 15,
+    "file": "assets/report_sources/carrier.jpg",
+    "url": "https://www.hiwonder.com/cdn/shop/files/1_8713779d-5e72-45d9-85e4-82682df65a67.jpg",
+    "sha256": "c745149c2128bb875837a4ed173b8d97c99a1382ccd162a56684047ff6fa1afe",
+    "credit": "Hiwonder, Jetson Mini carrier; manufacturer photograph"
+  }
+]

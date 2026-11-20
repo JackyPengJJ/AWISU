@@ -1,0 +1,409 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{fontspec}
+\usepackage{color}
+\definecolor{citeblue}{rgb}{0.0000,0.4706,0.7216}
+\definecolor{titleblue}{rgb}{0.0000,0.4667,0.7137}
+\definecolor{titlegreen}{rgb}{0.4078,0.6510,0.3098}
+\definecolor{titlecoral}{rgb}{0.8745,0.3922,0.4000}
+\definecolor{titleorange}{rgb}{0.9569,0.6353,0.3804}
+\definecolor{titleink}{rgb}{0.1608,0.1922,0.2431}
+\setmainfont{Times.TTF}[Path=../assets/fonts/,BoldFont=Timesbd.TTF,ItalicFont=Timesi.TTF,BoldItalicFont=Timesbi.TTF]
+\usepackage{unicode-math}\setmathfont{texgyretermes-math.otf}
+\usepackage{amsmath,siunitx,booktabs,longtable,graphicx,caption,geometry,titlesec,xurl,hyperref,array,fancyhdr}
+\geometry{textwidth=5.5in,textheight=9in,centering,headheight=20pt,headsep=10pt}
+\makeatletter\renewcommand\normalsize{\@setfontsize\normalsize{11.5}{14}}\makeatother
+\AtBeginDocument{\normalsize}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{EE5110 Technical Report}\fancyhead[R]{A0354063J}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{.3pt}
+\titleformat{\section}{\normalfont\fontsize{14}{17}\selectfont}{\thesection}{.7em}{}
+\titlespacing*{\section}{0pt}{2ex plus .5ex minus .2ex}{1.5ex plus .3ex minus .2ex}
+\titleformat{\subsection}{\normalfont\fontsize{11.5}{14}\selectfont}{\thesubsection}{.7em}{}
+\titlespacing*{\subsection}{0pt}{1.8ex plus .5ex minus .2ex}{.8ex plus .2ex}
+\DeclareCaptionFont{report}{\fontsize{11.5}{14}\selectfont}\captionsetup{font=report,labelfont=bf,skip=5pt,hypcap=false}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}\setlength{\tabcolsep}{4pt}
+\setlength{\LTpre}{8pt}\setlength{\LTpost}{8pt}\renewcommand{\arraystretch}{1.06}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\hypersetup{colorlinks=true,linkcolor=citeblue,citecolor=citeblue,urlcolor=black,pdftitle={AWISU: Autonomous Warehouse Inventory with a Small UAV},pdfauthor={Junjie Peng}}\urlstyle{same}
+\setcounter{topnumber}{2}\setcounter{bottomnumber}{2}\renewcommand{\topfraction}{.90}\renewcommand{\bottomfraction}{.8}\renewcommand{\textfraction}{.10}\renewcommand{\floatpagefraction}{.8}
+\emergencystretch=2em\widowpenalty=10000\clubpenalty=10000\displaywidowpenalty=10000
+\newcommand{\reportabstracttitle}{A{\fontsize{11.2}{17}\selectfont BSTRACT}}
+\setlength{\leftmargini}{3pc}
+\renewenvironment{abstract}{\vskip.075in\centerline{\fontsize{14}{17}\selectfont\reportabstracttitle}\vspace{.5ex}\begin{quote}}{\par\end{quote}\vskip1ex}
+\AtBeginDocument{\setlength{\abovedisplayskip}{7pt plus2pt minus5pt}\setlength{\belowdisplayskip}{7pt plus2pt minus5pt}\setlength{\abovedisplayshortskip}{0pt plus3pt}\setlength{\belowdisplayshortskip}{4pt plus3pt minus3pt}}
+\raggedbottom
+\begin{document}
+\begin{center}\vspace*{6pt}{\fontsize{17.28}{20}\selectfont \textcolor{titleblue}{A}\textcolor{titlegreen}{W}\textcolor{titlecoral}{I}\textcolor{titleorange}{S}\textcolor{titleblue}{U}: \textcolor{titleblue}{A}{\fontsize{13.82}{14}\selectfont UTONOMOUS} \textcolor{titlegreen}{W}{\fontsize{13.82}{14}\selectfont AREHOUSE}\\\textcolor{titlecoral}{I}{\fontsize{13.82}{14}\selectfont NVENTORY} {\fontsize{13.82}{14}\selectfont WITH} {\fontsize{13.82}{14}\selectfont A} \textcolor{titleorange}{S}{\fontsize{13.82}{14}\selectfont MALL} \textcolor{titleblue}{U}AV\par}\vspace{12pt}\textbf{Junjie Peng}\\[8pt]\href{https://example.com/segd/code}{\raisebox{-2pt}{\includegraphics[height=11.5pt]{figures/github.pdf}} Code}\quad\href{https://youtu.be/ZQHlchVMqs8}{\raisebox{-2pt}{\includegraphics[height=10pt]{figures/youtube.pdf}} YouTube}\end{center}
+\begin{abstract}
+We present AWISU, a small-UAV design for bilateral barcode inventory in an unknown, GPS-denied warehouse aisle. The design combines LiDAR-inertial-visual navigation, two pitch-adjustable global-shutter cameras, a spatial inventory record and immediate local recovery. Complete-label projection constrains continuous scanning to 0.85 m/s for the supported label geometry. Installed mass is 2901.6 g including 100 g contingency; individual flight and recovery actions determine mission duration and energy. A 400-item scenario with two recoveries takes 665.0 s and requires 73.14 Wh under adverse power assumptions, or 91.43 Wh delivered while retaining a 20\% reserve. A MuJoCo study evaluates reference tracking and image decoding. The selected residual controller reduces full-route RMSE from 0.1148 to 0.1038 m; crop verification recovers 400 item IDs from 1420 images. Optical sampling, coverage and recovery workload jointly determine the operating envelope.
+
+\end{abstract}
+\section{I{\fontsize{11.2}{14}\selectfont NTRODUCTION}}
+Warehouse inventory links barcode reading to spatial coverage and cargo identity. An aircraft must associate each observation with a physical cargo instance, distinguish an empty location from an unseen one, and return with a record of what remains unresolved. In a narrow aisle, these decisions also affect flight: a clearer image may require slower motion or a closer viewpoint, while every retry consumes the energy needed to finish the remaining racks.
+
+The task concerns an 80 m × 2.5 m × 8 m aisle, five cargo levels on each side, aisle-facing barcodes and a take-off mass strictly below 3 kg. Specified dimensions supply mission priors; rack poses, obstacles and cargo locations must be discovered online. Completing both sides in one take-off, without a battery change, couples platform selection, GPS-free navigation and flight control to the coverage task.
+
+AWISU uses separate left and right scanning heads to observe both racks during each longitudinal pass. Pitch sweeps cover a cargo band, and endpoint climbs connect five passes into a continuous snake. Component selection balances installed mass, optical sampling, current and energy. A spatial record preserves confirmed items during local recovery; inspected surfaces and confirmed cargo tracks define completion.
+
+Figure~\ref{fig:1} links these choices through a finite-label visibility model, a motion-admission rule and an action-based mission budget. Their outputs set acquisition cadence, admissible motion and recovery workload. Reference tracking and rendered-image decoding experiments then examine the control and imaging portions of the design.
+
+Sizing assumes a static, access-controlled aisle at 5–35 °C. Item count, label geometry and recovery frequency remain design variables. The worked example uses 400 visible cargo units and 250×40 mm labels with unchanged payloads; two, eight and twenty recovery cases show how workload changes one-flight feasibility.
+
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/framework.pdf}
+\captionof{figure}{AWISU overview. Recorded images show acquisition; coverage states and recovery illustrate the proposed task logic. Solid and dashed paths denote covered and planned travel.}\label{fig:1}\end{minipage}\par\addvspace{8pt}
+\section{R{\fontsize{11.2}{14}\selectfont ELATED} W{\fontsize{11.2}{14}\selectfont ORK} {\fontsize{11.2}{14}\selectfont AND} D{\fontsize{11.2}{14}\selectfont ESIGN} C{\fontsize{11.2}{14}\selectfont HOICES}}
+\subsection{I{\fontsize{9.2}{14}\selectfont NVENTORY} {\fontsize{9.2}{14}\selectfont WORKFLOW} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont AIRCRAFT} {\fontsize{9.2}{14}\selectfont PLATFORM}}
+Corvus One \cite{r3} and Verity \cite{r4} organise inventory around repeated observations, location association and warehouse records. We adopt this organisation: each confirmed item retains image evidence and a spatial identity, while failed reads remain actionable records. Commercial workflows motivate the task structure; component specifications and mission calculations determine aircraft sizing.
+
+Platform alternatives include a documented development kit, a custom quadrotor and a hexarotor. Holybro's X500 v2 uses a 500 mm frame, 2216 KV920 motors, 4S ESCs and 1045 propellers \cite{r5}. We select a 600 mm custom frame to accommodate protected 14-inch rotors. Its larger disc area reduces loading, at the expense of aisle clearance and custom structure. A hexarotor adds actuators and protection area within the same mass limit.
+
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering
+\captionof{table}{Platform alternatives for the warehouse task.}\label{tab:1}
+\begin{tabular}{C{0.290\dimexpr\linewidth-24pt\relax}C{0.290\dimexpr\linewidth-24pt\relax}C{0.420\dimexpr\linewidth-24pt\relax}}
+\toprule
+\textbf{Platform} & \textbf{Useful capability} & \textbf{Limiting trade-off}\\\midrule
+Commercial \cite{r3,r4} & Integrated inventory workflow & Component detail unavailable\\
+X500 v2 \cite{r5} & Documented PX4 kit & Stock 4S / 10-inch propulsion\\
+Custom quadrotor & 600 mm; 14-inch rotors & Custom structure; selected\\
+Hexarotor & More actuators & Added mass and guarded area\\
+\bottomrule\end{tabular}\end{minipage}\par\addvspace{8pt}
+\subsection{N{\fontsize{9.2}{14}\selectfont AVIGATION} {\fontsize{9.2}{14}\selectfont IN} {\fontsize{9.2}{14}\selectfont REPETITIVE} {\fontsize{9.2}{14}\selectfont AISLES}}
+Repeated uprights constrain depth but can leave along-aisle displacement ambiguous; plain cartons and changing light also weaken image tracking. Complementary measurements address these two failure modes. ORB-SLAM3 offers visual-inertial estimation and map reuse \cite{r20}. FAST-LIO2 registers raw LiDAR points efficiently \cite{r19}. FAST-LIVO2 combines geometric and photometric updates in a common estimator \cite{r21}. We select the latter to exploit both structural and visual cues, accepting additional calibration and timing work. A geometry-only FAST-LIO2 path supplies a fallback when image quality falls.
+
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering
+\captionof{table}{Navigation alternatives and warehouse trade-offs.}\label{tab:2}
+\begin{tabular}{C{0.290\dimexpr\linewidth-24pt\relax}C{0.290\dimexpr\linewidth-24pt\relax}C{0.420\dimexpr\linewidth-24pt\relax}}
+\toprule
+\textbf{Method} & \textbf{Measurements} & \textbf{Warehouse trade-off}\\\midrule
+ORB-SLAM3 \cite{r20} & Images + IMU & Low mass; texture dependence\\
+FAST-LIO2 \cite{r19} & LiDAR + IMU & Geometry; axial degeneracy\\
+FAST-LIVO2 \cite{r21} & LiDAR + images + IMU & Complementary cues; calibration\\
+\bottomrule\end{tabular}\end{minipage}\par\addvspace{8pt}
+\subsection{C{\fontsize{9.2}{14}\selectfont ONTROL} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont SAFE} {\fontsize{9.2}{14}\selectfont TRAJECTORY} {\fontsize{9.2}{14}\selectfont EXECUTION}}
+Cascaded PID, geometric feedback, LQR and MPC offer different ways to track the same low-speed route. Geometric control handles nonlinear attitude directly \cite{r40}; LQR gives a local model-based reference \cite{r45}; MPC incorporates predicted constraints at a greater modelling and solver cost \cite{r41}. We select PX4's cascaded position/velocity and attitude/rate structure \cite{r42}, with explicit tilt, actuator and shared-current limits. Its established firmware implementation avoids adding an optimisation deadline to the companion computer. We evaluate a bounded learned residual as a supplementary tracking experiment \cite{r28,r29}.
+
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering
+\captionof{table}{Controller comparison for narrow-aisle flight.}\label{tab:3}
+\begin{tabular}{C{0.290\dimexpr\linewidth-24pt\relax}C{0.290\dimexpr\linewidth-24pt\relax}C{0.420\dimexpr\linewidth-24pt\relax}}
+\toprule
+\textbf{Controller} & \textbf{Constraint handling} & \textbf{Selection trade-off}\\\midrule
+Cascaded PID \cite{r42} & Saturation / anti-windup & PX4 implementation; selected\\
+Geometric \cite{r40} & Added actuator constraints & Nonlinear attitude; inertia model\\
+LQR \cite{r45} & Added saturation checks & Local model; low compute\\
+MPC \cite{r41} & Predicted state/input limits & Solver deadline; model sensitivity\\
+\bottomrule\end{tabular}\end{minipage}\par\addvspace{8pt}
+For motion planning, we adopt FASTER's principle of retaining a stopping backup in observed free space \cite{r22}. Short, low-speed local segments and an inventory-driven frontier fit the optical scan limit without the mixed-integer optimisation used by FASTER. This choice preserves a defined response to late map updates while matching the scan's optical speed limit.
+
+\section{S{\fontsize{11.2}{14}\selectfont YSTEM} D{\fontsize{11.2}{14}\selectfont ESIGN} {\fontsize{11.2}{14}\selectfont AND} M{\fontsize{11.2}{14}\selectfont ETHOD}}
+\subsection{H{\fontsize{9.2}{14}\selectfont ARDWARE} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont INSTALLATION}}
+We select four T-MOTOR MN3508 KV380 motors, P14×4.8 carbon propellers and AIR40A 2–6S ESCs \cite{r6,r7,r8}. GEPRC specifies its 6S2P VTC6 pack at 6000 mAh, 607 g and 30 A continuous discharge \cite{r37}; we allocate 627 g installed. A plastic-case Pixhawk 6C and analog PM02 V3 provide flight control and voltage/current monitoring \cite{r10,r11}. MID-360 supplies LiDAR/IMU observations, OAK-D Lite supplies forward stereo and navigation images, and an Orin Nano 8 GB module runs on a Hiwonder Mini carrier \cite{r12,r13,r14,r15}. The 180 g computer allocation includes the 77 g carrier, module, cooling, storage and supports.
+
+Each side head uses a BFS-U3-122S6M-C: 4096×3000 pixels, 3.45 μm pitch, global shutter, 36 g and 3 W maximum \cite{r35}. A 12 mm RT-V1228-MPY2 lens covers the 1.1-inch sensor \cite{r36}. Its 110 g installed allocation covers the 97 g catalogue lens, mounting and variation. Two pitch assemblies receive 70 g for servos, balance and supports \cite{r18}. Figure~\ref{fig:2} links a reference mesh to these component roles; opposing cameras observe both racks during translation.
+
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/hardware.pdf}
+\captionof{figure}{Reference aircraft and selected components. Render: Skydio X2 \cite{r30}; product photos: T-MOTOR \cite{r6}, Holybro \cite{r10}, Opto Engineering \cite{r36}. Callouts identify proposed component roles.}\label{fig:2}\end{minipage}\par\addvspace{8pt}
+We reject the 5 MP/8 mm option because its 55 g lenses reduce mass but require approximately 1.61 mm barcode modules under the baseline uncertainty envelope \cite{r16,r17}. Our 12.3 MP installation adds 130 g in lenses/supports for improved sampling. With these optics, the 755 g 5 Ah LiPo exceeds the mass limit \cite{r9}. Flywoo's 596.2 g P30B pack saves 10.8 g, but its published 35 A description leaves continuous pack current unspecified \cite{r39}. We accept the GEPRC mass penalty for its documented continuous rating. Amprius's 465 g option supplies 12 A continuous, below the approximately 20 A low-voltage mission demand \cite{r44}.
+
+\begin{longtable}{C{0.440\dimexpr\linewidth-24pt\relax}C{0.130\dimexpr\linewidth-24pt\relax}C{0.430\dimexpr\linewidth-24pt\relax}}
+\caption{Installed mass budget.}\label{tab:4}\\
+\toprule
+\textbf{Item} & \textbf{Mass (g)} & \textbf{Basis}\\\midrule
+\endfirsthead
+\toprule
+\textbf{Item} & \textbf{Mass (g)} & \textbf{Basis}\\\midrule
+\endhead
+Carbon frame, landing supports & 340 & Engineering geometry estimate\\
+4 x MN3508 KV380, with leads & 412 & Manufacturer \cite{r6}\\
+4 x AIR40A ESC, installed allowance & 104 & Installation allocation \cite{r7}\\
+4 x P14x4.8, upper mass tolerance & 66 & Manufacturer \cite{r8}\\
+Propeller rings and bracing & 140 & Custom-part allocation\\
+Pixhawk 6C, plastic case & 34.6 & Manufacturer \cite{r10}\\
+PM02 V3 analog module & 20 & Manufacturer \cite{r11}\\
+MID-360 & 265 & Manufacturer \cite{r12}\\
+OAK-D Lite fixed-focus & 61 & Product installation reference \cite{r13}\\
+Orin Nano compute assembly & 180 & 77g carrier + module/cooling/storage allocation \cite{r14,r15}\\
+2 x BFS-U3-122S6M-C bodies & 72 & Manufacturer \cite{r35}\\
+2 x RT-V1228-MPY2 lenses, installed & 220 & 110 g each allocation \cite{r36}\\
+2 x pitch servos and brackets & 70 & 70 g paired installed allocation \cite{r18}\\
+GEPRC VTC6 6S2P 6 Ah, installed & 627 & 607 g product + 20 g allowance \cite{r37}\\
+Regulators, distribution, LEDs, harness & 150 & Installation allocation \cite{r11,r33,r34}\\
+Sensor mounts and isolators & 40 & Custom-part allocation\\
+Integration contingency & 100 & Explicit design allowance\\
+\textbf{Total installed} & \textbf{2901.6} & \textbf{Includes 100 g contingency}\\
+\bottomrule\end{longtable}
+The 2901.6 g total includes 100 g contingency and leaves 98.4 g to the limit. Custom structure uses two 180×140×2 mm carbon plates and four 16/14 mm outer/inner-diameter tubes, approximately 240 mm long. At 1600 kg/m³ these contribute 161 g and 72 g; the remainder of the 340 g frame allocation covers joints, fasteners and landing supports. Rings/bracing receive a separate 140 g. Substitutions must fit installed allocations, including cables and supports.
+
+Adjacent motors are $0.600/\sqrt{2}=0.424$ m apart. With 0.3556 m rotors and two 0.020 m radial protection allowances, protected discs remain 0.029 m apart. Rounding the 0.996 m enclosing diameter gives a 1.00 m collision envelope of 0.50 m height. Side optical centres lie at $y=\pm0.40$ m, level with the body reference, with principal rays outside the rotors. Battery placement below the plates balances the elevated LiDAR and outboard optics.
+
+Bank changes the swept envelope. For radius $r=0.50$ m and half-height $h=0.25$ m, lateral extent is $r\cos\theta+h\sin\theta$. At 12°, subtracting that extent and tracking/localisation/map allowances of 0.15/0.15/0.05 m from the 1.25 m half-aisle leaves 0.359 m. At the 7.2 m upper scan height, vertical extent is $r\sin\theta+h\cos\theta$; allowances of 0.10/0.075/0.025 m leave 0.252 m ceiling clearance. Scan admission requires lateral sigma ≤0.05 m and vertical sigma ≤0.025 m; rack protrusions are checked against the same tilted envelope.
+
+\subsection{P{\fontsize{9.2}{14}\selectfont OWER}, {\fontsize{9.2}{14}\selectfont INTERFACES} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont COMPUTATION}}
+A fused 6S branch feeds the ESCs; PM02 V3 powers Pixhawk separately. D36V50F12 regulates the computer, LiDAR and LEDs to 12 V; D36V50F6 supplies an isolated 6 V servo rail \cite{r11,r33,r34}. Regulation keeps the carrier below its 19 V maximum at 25.2 V full pack charge. Regulator selection uses a 60 W auxiliary allocation and thermal curves over 19.8–25.2 V.
+
+MID-360 connects through Livox driver2 over Ethernet, preserving per-point acquisition offsets for deskewing. OAK-D Lite supplies calibrated stereo/depth and grayscale images over USB. We specify an adapter for the image model, intrinsics, exposure timestamps and extrinsics required by FAST-LIVO2 \cite{r21,r43}. Integration measures clock offset/drift against a 1 ms alignment target. At 1 m/s that offset contributes 1 mm translation; a 0.2° camera–LiDAR rotation error contributes about 17 mm at 5 m, so rotational calibration dominates this example.
+
+The estimator interface registers its body frame to Pixhawk FRD and converts local output to NED for MAVLink ODOMETRY, including covariance, resets and acquisition timestamps \cite{r23}. PX4 receives smooth local odometry and 50 Hz setpoints over 921600-baud UART. A 250-byte odometry message at 50 Hz uses 12.5 kB/s; our 20 kB/s control/telemetry allocation fits approximately 92 kB/s before framing overhead. Stabilisation and the stopping backup run onboard independently of inventory and ground-link queues \cite{r24}.
+
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering
+\captionof{table}{Input scale and bounded resource allocations.}\label{tab:5}
+\begin{tabular}{C{0.290\dimexpr\linewidth-24pt\relax}C{0.290\dimexpr\linewidth-24pt\relax}C{0.420\dimexpr\linewidth-24pt\relax}}
+\toprule
+\textbf{Function} & \textbf{Input / allocation} & \textbf{Deadline or overload action}\\\midrule
+Estimation & 200 Hz IMU; 10 Hz LiDAR; 30 Hz images & 50 Hz output; stop scan after 0.15 s correction age\\
+Map / planner & 10 Hz map; 5 Hz plan; 0.10 m grid & Retain known-free stopping backup\\
+Side images & Two 4096×3000 Mono8; 10 fps each & 245.76 MB/s; decode native crops\\
+Image queues & Two frames per camera; 49.15 MB & Bound queues; pause missed admission\\
+Occupancy & 30×5×10 m; 0.10 m cells & 24 MB cells; 256 MB with indices/history\\
+Application & 512 MB map; 128 MB buffers & 3.5 GB application; about 2 GB OS\\
+\bottomrule\end{tabular}\end{minipage}\par\addvspace{8pt}
+At 200k points/s and 24 bytes/point, LiDAR adds 4.8 MB/s; 640×400 stereo at 30 Hz adds 15.36 MB/s, bringing raw input to about 266 MB/s. Paired exposures briefly produce 20 fps per side. Staggered USB transfer, bounded candidate queues and reduced-resolution detection followed by native crops limit the processing burst. The operating speed depends on sustaining <100 ms observation latency in the selected 15 W computer mode; overload selects slower motion or settled pairs. A 64 GB drive stores item records and selected crops.
+
+\subsection{D{\fontsize{9.2}{14}\selectfont YNAMICS} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont FLIGHT} {\fontsize{9.2}{14}\selectfont CONTROL}}
+We model position $\boldsymbol p$, velocity $\boldsymbol v$, body-to-world attitude $R$, body rate $\boldsymbol\omega$, total thrust $f$ and moment $\boldsymbol\tau$ in an upward-positive local frame \cite{r40}:
+
+\begin{equation}\begin{aligned}\dot{\boldsymbol p}&=\boldsymbol v,\quad m\dot{\boldsymbol v}=Rf\boldsymbol e_3-mg\boldsymbol e_3+\boldsymbol d_f,\\ \dot R&=R[\boldsymbol\omega]_\times,\quad J\dot{\boldsymbol\omega}=\boldsymbol\tau-\boldsymbol\omega\times J\boldsymbol\omega+\boldsymbol d_\tau.\end{aligned}\end{equation}
+The controller interface converts this convention to NED/FRD. Rotor thrust and reaction torque follow $f_i=k_T\Omega_i^2$ and $q_i=k_Q\Omega_i^2$, with first-order motor lag. Our reference simulation uses 40 ms lag and 200 Hz integration. The deployment cascade tracks position, velocity and acceleration, then computes orientation and allocates moments through PX4's attitude/rate loops \cite{r42}.
+
+For acceleration feedback we use:
+
+\begin{equation}\boldsymbol a_c=\boldsymbol a_r+K_p(\boldsymbol p_r-\boldsymbol p)+K_d(\boldsymbol v_r-\boldsymbol v)+K_i\int(\boldsymbol p_r-\boldsymbol p)\,dt.\end{equation}
+Choosing $K_p=\omega_n^2$, $K_d=2\zeta\omega_n$ makes bandwidth and damping explicit. Experimental horizontal gains $2.5~\mathrm{s}^{-2}$ and $2.6~\mathrm{s}^{-1}$ give 1.58 rad/s and 0.82; vertical gains 4.0 and 3.2 give 2.0 rad/s and 0.80. An attitude-response target of at least 2 Hz separates it from the approximately 0.25–0.32 Hz outer loop. Integration is clamped during saturation and frozen on invalid estimates. Loaded step responses determine deployment gains and filters.
+
+Motor/ESC/propeller groups contribute approximately 0.026 kg m² roll/pitch inertia at 0.212 m axis offsets. Including structure, battery and optics gives a provisional 0.04–0.08 kg m² identification range. An illustrative 20\% differential about hover produces 1.21 N m, subject to thrust and current. Current-aware allocation takes the form of weighted wrench fitting:
+
+\begin{equation}\boldsymbol f^\star=\arg\min_{0\le f_i\le f_{max}(V)}\|W(B\boldsymbol f-\boldsymbol w_c)\|_2^2\quad\mathrm{s.t.}\quad\sum_i P_i(f_i,V)+P_{aux}\le VI_{max}.\end{equation}
+Here $B$ maps thrusts to wrench, $\boldsymbol w_c$ is the demand, and $W$ prioritises roll/pitch and collective before yaw. Loaded power maps define $P_i$ and the shared continuous limit is $I_{max}=30$ A. This constraint defines deployment acceptance; the recorded reference controller uses inverse allocation with per-rotor clipping. At 0.85 m/s, 0.10 s latency and 0.6 m/s² braking imply 0.687 m stopping distance. A 1.5 m observed corridor includes mapping/tracking margins; a shorter corridor reduces admissible speed.
+
+\subsection{S{\fontsize{9.2}{14}\selectfont TATE} {\fontsize{9.2}{14}\selectfont ESTIMATION} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont LOCAL} {\fontsize{9.2}{14}\selectfont GEOMETRY}}
+The navigation filter propagates $\boldsymbol x=(\boldsymbol p,\boldsymbol v,R,\boldsymbol b_a,\boldsymbol b_g)$ with MID-360 IMU measurements and corrects it with timestamped LiDAR/image residuals \cite{r21}. PX4 retains its own inertial stabilisation. IMU propagation extrapolates external odometry to control time; camera extrinsics, distortion, clock drift and exposure calibration share one transformation chain. At a linearised error-state update:
+
+\begin{equation}\begin{aligned}P^-&=FP^+F^T+GQG^T,\quad S=HP^-H^T+R_z,\\ K&=P^-H^TS^{-1},\quad \delta\boldsymbol x=K\boldsymbol r.\end{aligned}\end{equation}
+$R_z$ denotes measurement covariance, distinct from attitude $R$. FAST-LIVO2 iterates these updates \cite{r21,r43}. Information conditioning, correspondence count, innovations and visual consistency are monitored jointly because repeated bays can produce a small residual at a wrong displacement. Weak along-aisle information triggers slower motion and a view of rack ends or cross-bracing. Exposure-aware image processing handles illumination changes while LiDAR supplies geometry. Map corrections enter a map-to-odometry transform, preserving a continuous control frame.
+
+Our local voxel map distinguishes occupied, observed-free and unknown space, following OctoMap \cite{r25}. Planning uses a 0.10 m grid with underlying-point queries near obstacles; pruning preserves the return corridor and rack locations. Initialisation aligns gravity, defines an origin and fits floor/parallel rack planes. Upright clusters define bays; support and cargo surfaces define the task's five height bands. Observed surfaces define scan regions.
+
+Initial geometry thresholds are RANSAC residual ≤max(0.03 m, 3σ\_range), five consistent 10 Hz plane updates, <5° normal disagreement and 0.10 m upright/height clustering. These are initial tuning settings. Ambiguous bands pause association and request another view. Endpoint confirmation requires observed rack termination and a free inflated turn volume. Spatial association combines a 3σ gate, projected face overlap and side/band identity; ambiguous matches remain tentative. Empty slots require observed free faces.
+
+MID-360's −7° to +52° elevation range leaves a lower blind region \cite{r12}. We mount forward stereo approximately 15° downward and yaw 180° at each endpoint so it faces the next pass. Four yaw/reacquisition actions cost 16 s. Keeping heading would save this time but require rear sensing or stricter LiDAR-only admission. Climb/descent requires recently observed free columns and ceiling clearance at the highest band. Figure~\ref{fig:3} quantifies clearance and nominal ray limits; installed geometry supplies additional body/rotor occlusion checks.
+
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/04_observability.pdf}
+\captionof{figure}{Motion limits and sensing envelope. Clearance includes tracking, localisation and map margins; the lower blind zone requires a previously mapped descent column.}\label{fig:3}\end{minipage}\par\addvspace{8pt}
+\subsection{C{\fontsize{9.2}{14}\selectfont OVERAGE}, {\fontsize{9.2}{14}\selectfont CONFIRMATION} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont LOCAL} {\fontsize{9.2}{14}\selectfont RECOVERY}}
+At 5 Hz, the local planner receives state/covariance, the map, coverage records and remaining energy. It inflates obstacles by the tilted envelope, finds a short path and fits a timed segment with a stopping backup \cite{r22}. Collision, speed, acceleration and reserve checks precede replacement of the current plan. A late update leaves the accepted backup executable. A blocked endpoint selects another mapped transition column; otherwise we return with a blocked-region record.
+
+Each cargo record uses side, bay/band and spatial track as its key, with payload, observation times, covariance and confirmation state as attributes. This preserves distinct instances of repeated SKUs. An action is admitted when:
+
+\begin{equation}\mathcal A(a)=\mathcal L\land\mathcal F(a)\land\mathcal O(a)\land\left[E_{rem}\ge E_a+E_{unfinished}+E_{return}+0.20E_{del}\right].\end{equation}
+$\mathcal L$ checks current localisation; $\mathcal F$ checks the swept volume and backup; $\mathcal O$ checks image eligibility whenever a surface is marked inspected. Remaining workload $E_{unfinished}$ updates when cargo or blocked space is discovered. Transit alone cannot mark a surface complete.
+
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering
+\captionof{table}{Inventory states and evidence required to advance.}\label{tab:6}
+\begin{tabular}{C{0.290\dimexpr\linewidth-24pt\relax}C{0.290\dimexpr\linewidth-24pt\relax}C{0.420\dimexpr\linewidth-24pt\relax}}
+\toprule
+\textbf{State} & \textbf{Input} & \textbf{Advance condition}\\\midrule
+Initialise & IMU; initial geometry & Origin + free stopping corridor\\
+Extend & Local map; rack bands & Admitted trajectory\\
+Associate & Crops; poses; spatial gates & Update physical instance\\
+Recover & Failed track; energy & Confirm or retain exception\\
+Change level & Endpoint; transition column & Yaw and reacquire\\
+Return & Coverage; tracks; reserve & Complete or report exceptions\\
+\bottomrule\end{tabular}\end{minipage}\par\addvspace{8pt}
+Each side carries two off-axis LUXEON Rebel LXML-PWC1-0100 LEDs in a 0.70 A series string driven by TPS92512 from 12 V \cite{r34}. A 30° beam covers about 0.16 m² at 0.85 m; 360 lm gives approximately 2 klx before losses, motivating a 0.20 ms exposure. The decoder detects candidates at reduced resolution, reads native crops with zxing-cpp \cite{r26}, checks payload syntax and associates each crop using its exposure pose and calibrated pitch.
+
+Confirmation requires consistent, quality-checked whole-label reads from two acquisitions of the same spatial track. Disagreement triggers a changed exposure or viewpoint. An unreadable carton remains an unresolved instance; confirmed aisle-visible units are counted per SKU and any encoded quantity is parsed separately. Empty, unseen, inaccessible and undecodable locations retain different states.
+
+A failed read preserves opposite-side confirmations and freezes the unfinished boundary. Recovery starts with an in-view retry, followed by braking, recentering and an optional approach up to 0.10 m towards the failed side. Aimed pitch/height replaces the normal sweep during this settled read. With 0.70–0.85 m range and the adopted errors, the centred zero-pitch view retains a 0.454 m safe label-centre interval. A 0.10 m offset leaves 0.259 m lateral clearance against the 0.25 m target and improves centre-ray sampling by about 13\%. Smaller free space or larger uncertainty reduces the offset. Both outward and return sweeps must pass collision checks before scanning resumes at the same boundary.
+
+Each failed item receives at most two settled attempts. Completion requires both sides and all five bands inspected, every observed instance confirmed and no unchecked reachable surface boundary. Persistent failures produce an inventory with exceptions; reserve admission selects return when further recovery cannot be afforded.
+
+\section{D{\fontsize{11.2}{14}\selectfont ESIGN} A{\fontsize{11.2}{14}\selectfont NALYSIS}}
+\subsection{C{\fontsize{9.2}{14}\selectfont OMPLETE}-{\fontsize{9.2}{14}\selectfont LABEL} {\fontsize{9.2}{14}\selectfont VISIBILITY} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont ACQUISITION}}
+The selected optics give $f_x=12/0.00345=3478$ pixels and approximately 61.0° horizontal/46.7° vertical field. Our worked 250×40 mm Code128-B label carries 12 data symbols. Its 187 modules include start, checksum, stop and 10-module quiet zones on each side, giving $X=1.337$ mm. Other payload lengths change the module width; this operating case assumes warehouse agreement to larger labels.
+
+Visibility is evaluated at all four label corners against the image frustum. For corner rays $q_k$, inward unit normals $n_j$, camera-orientation uncertainty $\delta$ and label-rotation displacement $\epsilon_l$, sufficient containment is:
+
+\begin{equation}n_j^T q_k-\|q_k\|\sin\delta-\epsilon_l(1+\sin\delta)\ge0,\quad \epsilon_l=2r_l\sin(\alpha_l/2).\end{equation}
+We enclose 0.80–0.95 m range, ±50 mm vertical error, ±10 mm along-track error, 2° orientation error, 5° label rotation and a 24-pixel border. Exposure admission uses measured rack-relative pose. The 2° optical cone describes settled acquisition; manoeuvres use the separate 12° collision envelope. Boundary pairs are acquired after acceleration settles. Vertex evaluation covers the continuous error box, with half a 1 mm height cell added to each interval.
+
+The three poses in Figure~\ref{fig:4} cover the 1.6 m band after complete-label erosion. Minimum usable along-track travel is 0.535 m. This treats a 40 mm-high label as a finite object, including at pose transitions. Each 0.20 s slot reserves 0.14 s for movement/settling and exposes at 0.14 and 0.19 s. Any two eligible observations at the same pitch may be paired, including adjacent cycles. Alternating event gaps of 0.05 and 0.55 s give a 0.60 s two-observation horizon; ±2 ms trigger jitter yields:
+
+\begin{equation}v(T+2j)\le W_{safe},\qquad v\le0.535/0.604=0.885\ \mathrm{m/s}.\end{equation}
+We select 0.85 m/s, leaving 21 mm of travel margin. Observations are separated by at least 46 ms and provide temporal corroboration; persistent glare or damaged bars motivates changed-view recovery. Minimum scale over admitted geometry is 2271 pixels/m: 250, 200 and 100 mm labels give 3.04, 2.43 and 1.21 pixels/module. Our 2.5 pixels/module target therefore excludes the latter two at this payload length. A 0.20 ms exposure limits translational blur to 0.74 pixel at 0.80 m. Loaded pitch settling, focus and contrast tests set final acquisition admission.
+
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/05_imaging.pdf}
+\captionof{figure}{Whole-label admission: (a) three-pitch coverage on the rack face; (b) corner containment schematic; (c) limiting travel budget.}\label{fig:4}\end{minipage}\par\addvspace{8pt}
+\subsection{P{\fontsize{9.2}{14}\selectfont ROPULSION} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont SHARED}-{\fontsize{9.2}{14}\selectfont CURRENT} {\fontsize{9.2}{14}\selectfont AUTHORITY}}
+MN3508 KV380 manufacturer tests at 22.2 V give P14×4.8 samples of 710 g/64.38 W, 1100 g/117.66 W, 1350 g/166.5 W, 1580 g/217.56 W and 1730 g/255.3 W per motor \cite{r6}. Our 725.4 g-per-rotor hover lies within the first interval. With thrusts expressed in newtons, interpolation gives 265.94 W for four rotors:
+
+\begin{equation}P_h=4\left[P_1+\frac{T_h-T_1}{T_2-T_1}(P_2-P_1)\right],\qquad T_h=mg/4.\end{equation}
+Installation multipliers are 1.10 nominal and 1.25 adverse. Low-voltage screening scales maximum thrust by squared voltage and a 0.85 derating:
+
+\begin{equation}\Gamma_{19.8}=\frac{4(1.730)(19.8/22.2)^2(0.85)}{2.9016}=1.61.\end{equation}
+Simultaneous rotor maxima exceed the 30 A pack/harness limit. Collective and differential commands therefore follow the current-aware allocation in Section 3.3; the 1.61 ratio is a voltage-screening result, with the feasible collective/differential envelope determined by the loaded power map. Figure~\ref{fig:5} shows measured propeller samples and installed-mass battery alternatives.
+
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/02_propulsion.pdf}
+\captionof{figure}{Manufacturer power samples at 22.2 V \cite{r6} and installed-mass margin to 3 kg. The diamond marks hover interpolation.}\label{fig:5}\end{minipage}\par\addvspace{8pt}
+\subsection{M{\fontsize{9.2}{14}\selectfont ISSION} {\fontsize{9.2}{14}\selectfont DURATION} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont ENERGY}}
+Five bilateral passes require 400 m scan travel; return and launch approach add 84 m horizontally. Scan speed is 0.85 m/s, vertical speed is 0.35 m/s and acceleration is 0.6 m/s². Rest-to-rest travel over distance $d$ at speed limit $v$ takes:
+
+\begin{equation}t(d)=\begin{cases}2\sqrt{d/a},&d\le v^2/a,\\ d/v+v/a,&d>v^2/a.\end{cases}\end{equation}
+Initialisation allocates 5 s to stationary alignment, 3 s to local-plane acquisition and 2 s to health/admission checks. Each of four endpoints receives 0.5 s confirmation and 4 s yaw/reacquisition; ten boundary holds each consume one 0.60 s optical cycle. Discovery runs during the first scan. Unresolved geometry pauses the scan and consumes the remaining dwell allowance.
+
+A failed item adds 7.66 s for processing, braking/resumption, recentering and two 0.5 s settled attempts. Optional lateral approach/return adds 2.61 s, including 0.30 s settling. Thus two, eight and twenty recovered items add 20.53, 82.14 and 205.32 s. Recovery counts are workload scenarios.
+
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering
+\captionof{table}{Mission budget with two full local recoveries.}\label{tab:7}
+\begin{tabular}{C{0.260\dimexpr\linewidth-32pt\relax}C{0.250\dimexpr\linewidth-32pt\relax}C{0.250\dimexpr\linewidth-32pt\relax}C{0.240\dimexpr\linewidth-32pt\relax}}
+\toprule
+\textbf{Phase} & \textbf{Time (s)} & \textbf{Nominal (Wh)} & \textbf{Adverse (Wh)}\\\midrule
+Takeoff & 2.2 & 0.22 & 0.26\\
+Approach & 3.7 & 0.35 & 0.40\\
+Scan & 477.7 & 46.23 & 52.20\\
+Climb & 20.6 & 2.07 & 2.52\\
+Return & 85.3 & 8.26 & 9.33\\
+Descend & 18.9 & 1.82 & 2.23\\
+Land & 2.2 & 0.21 & 0.25\\
+Initialization & 10.0 & 0.97 & 1.09\\
+Endpoint observation & 2.0 & 0.19 & 0.22\\
+Yaw and reacquisition & 16.0 & 1.54 & 1.74\\
+Boundary pairs & 6.0 & 0.58 & 0.65\\
+Targeted retries & 15.3 & 1.48 & 1.67\\
+Lateral recovery & 5.2 & 0.50 & 0.57\\
+\textbf{Total} & \textbf{665.0} & \textbf{64.43} & \textbf{73.14}\\
+\bottomrule\end{tabular}\end{minipage}\par\addvspace{8pt}
+The phase-power model separates installed hover loss, horizontal tilt/drag and positive climbing work. With installation factor $k$, drag area $C_D A=0.15~\mathrm{m}^2$ and phase duration $t_j$:
+
+\begin{equation}E_j=\frac{\left[kP_h(1+(a/g)^2)^{3/4}+P_{aux}+\tfrac12\rho C_D A v^3\right]t_j+mg\max(0,\Delta z_j)/\eta_z}{3600}.\end{equation}
+Vertical phases omit horizontal terms and use $\eta_z=0.60$; the adverse vertical multiplier is 1.10. Auxiliary load is 55/60 W nominal/adverse, with no descent energy credit. Applying the small tilt increment across a horizontal segment is our modelling approximation; loaded tests identify installation and rack-interaction losses.
+
+VTC6 cell data specify 3.6 V nominal with rate-dependent discharge \cite{r38}, while the pack page lists 22.2 V \cite{r37}. The 12-cell nameplate reference is 129.6 Wh; delivered energy is integrated down to 19.8 V under loaded conditions:
+
+\begin{equation}E_{del}=\int_0^{t_*}V_{pack}(t)I(t)\,dt/3600,\qquad E_{mission}\le0.80E_{del}.\end{equation}
+Two recoveries require 91.43 Wh delivered before reserve; eight and twenty require 99.82 and 116.61 Wh. The 100 Wh boundary in Figure~\ref{fig:6} admits at most eight recoveries with little extra dwell, conditional on pack qualification. Twenty exceed that capacity. Lower temperature, longer discovery and larger installation loss reduce the admitted workload. Battery discharge qualification supplies the measured value of $E_{del}$ for flight release.
+
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/07_energy.pdf}
+\captionof{figure}{Phase energy and the conditional 100 Wh boundary, including 20\% reserve. Factors scale adverse hover power; markers denote 2, 8 and 20 recoveries.}\label{fig:6}\end{minipage}\par\addvspace{8pt}
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering
+\captionof{table}{Recovery workload under adverse power assumptions.}\label{tab:8}
+\begin{tabular}{C{0.200\dimexpr\linewidth-40pt\relax}C{0.200\dimexpr\linewidth-40pt\relax}C{0.200\dimexpr\linewidth-40pt\relax}C{0.200\dimexpr\linewidth-40pt\relax}C{0.200\dimexpr\linewidth-40pt\relax}}
+\toprule
+\textbf{Local recoveries} & \textbf{Duration (s)} & \textbf{Nominal (Wh)} & \textbf{Adverse (Wh)} & \textbf{Required delivered (Wh)}\\\midrule
+2 & 665.0 & 64.43 & 73.14 & 91.43\\
+8 & 726.6 & 70.37 & 79.86 & 99.82\\
+20 & 849.8 & 82.27 & 93.29 & 116.61\\
+\bottomrule\end{tabular}\end{minipage}\par\addvspace{8pt}
+\section{E{\fontsize{11.2}{14}\selectfont XPERIMENTAL} E{\fontsize{11.2}{14}\selectfont VALUATION}}
+\subsection{I{\fontsize{9.2}{14}\selectfont MPLEMENTATION} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont EVALUATION} {\fontsize{9.2}{14}\selectfont CONDITIONS}}
+We built a MuJoCo reference environment for flight tracking, continuous multilevel scanning and image-based inventory \cite{r27}. We use a Skydio X2 mesh from MuJoCo Menagerie, Poly Haven carton/shelf assets, and project geometry for primary rack supports and pallets \cite{r30,r31,r32}. The plant integrates free-body dynamics, four thrust sites, actuator lag, bounded control, contacts and bilateral rendered cameras. Table 9 identifies the configuration used for the recorded experiments alongside the proposed hardware.
+
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering
+\captionof{table}{Design and experimental configurations.}\label{tab:9}
+\begin{tabular}{C{0.290\dimexpr\linewidth-24pt\relax}C{0.290\dimexpr\linewidth-24pt\relax}C{0.420\dimexpr\linewidth-24pt\relax}}
+\toprule
+\textbf{Parameter} & \textbf{Proposed aircraft} & \textbf{Reference experiment}\\\midrule
+Installed mass & 2901.6 g allocation & 2.65 kg rigid body\\
+Envelope & 1.00 m diameter; 0.50 m height & 0.80 m diameter; 0.29 m height\\
+Battery & 6S2P 6 Ah; energy above 19.8 V & 4S 6 Ah model; 88.8 Wh\\
+Propulsion & Matched table + installation factors & 330 W induced-power reference\\
+Optics & 4096×3000; 12 mm; pitch sweep & 4096×2160; 45° horizontal; fixed\\
+Scan speed & 0.85 m/s optical limit & 1.1 m/s prescribed route\\
+Navigation & LiDAR/IMU/image estimator & Delayed/noisy position/velocity; ideal attitude\\
+\bottomrule\end{tabular}\end{minipage}\par\addvspace{8pt}
+The reference experiment uses a known route and state proxies to isolate tracking and rendered-image decoding. The online estimator, rack discovery and temporal-pair recovery constitute the next integration stage. Our 136 s technical video introduces the hardware and method, then replays the complete 501.02 s flight in 72 s at 6.96× speed. External, left/right and front-navigation views share the same saved pose and are re-rendered at 30 fps.
+
+\subsection{C{\fontsize{9.2}{14}\selectfont ONTROLLER} {\fontsize{9.2}{14}\selectfont SELECTION} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont COMPLETE}-{\fontsize{9.2}{14}\selectfont ROUTE} {\fontsize{9.2}{14}\selectfont TRACKING}}
+Physics runs at 200 Hz and control at 50 Hz, with 40 ms motor response and four 13 N actuator limits. A bounded acceleration residual augments position/velocity feedback, following residual reinforcement learning \cite{r28}. PPO uses two 128-unit hidden layers \cite{r29}. Three seeds each completed one million steps of local sinusoidal tracking with randomised mass, motor response, authority and wind. The mission planner supplies the full serpentine reference.
+
+We compare validation-best and final checkpoints from all three seeds plus the baseline on two selection routes: seeds 701/702 and 0/1 N wind. We then test the selected controller separately on seed 703 with 0.5 N wind.
+
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering
+\captionof{table}{Mean position RMSE across two selection conditions.}\label{tab:10}
+\begin{tabular}{C{0.290\dimexpr\linewidth-24pt\relax}C{0.290\dimexpr\linewidth-24pt\relax}C{0.420\dimexpr\linewidth-24pt\relax}}
+\toprule
+\textbf{Controller / checkpoint} & \textbf{Mean RMSE (m)} & \textbf{Selection outcome}\\\midrule
+baseline & 0.1056 & Baseline\\
+seed0 best & 0.1110 & Comparison\\
+seed0 final & 0.1082 & Comparison\\
+seed1 best & 0.1280 & Comparison\\
+seed1 final & 0.1784 & Comparison\\
+\textbf{seed2 best} & \textbf{0.0977} & \textbf{Selected}\\
+seed2 final & 0.1137 & Comparison\\
+\bottomrule\end{tabular}\end{minipage}\par\addvspace{8pt}
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering
+\captionof{table}{Separate complete-route comparison; one route per controller.}\label{tab:11}
+\begin{tabular}{C{0.190\dimexpr\linewidth-32pt\relax}C{0.190\dimexpr\linewidth-32pt\relax}C{0.190\dimexpr\linewidth-32pt\relax}C{0.430\dimexpr\linewidth-32pt\relax}}
+\toprule
+\textbf{Measure} & \textbf{Baseline} & \textbf{Residual} & \textbf{Interpretation}\\\midrule
+RMSE (m) & 0.1148 & 0.1038 & 9.6\% reduction\\
+Position p95 (m) & 0.1364 & 0.1233 & Within-route percentile\\
+Duration (s) & 501.02 & 501.02 & Same prescribed route\\
+Collision & None & None & MuJoCo contact log\\
+\bottomrule\end{tabular}\end{minipage}\par\addvspace{8pt}
+Seed-2 best achieves the lowest selection RMSE, 0.0977 m against the baseline's 0.1056 m. Full-route RMSE falls by 9.6\%, from 0.1148 to 0.1038 m, over 501.02 s with no contact. Figure~\ref{fig:7} shows regressions in other checkpoints, making checkpoint selection consequential. The selected full-route score remains slightly above the 0.10 m objective.
+
+\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/08_experiment.pdf}
+\captionof{figure}{Experimental evidence: all candidate scores, full-route error envelopes (1 s min/max) and a native barcode crop.}\label{fig:7}\end{minipage}\par\addvspace{8pt}
+The recorded trajectory alternates forward/reverse 80 m passes and climbs at the current endpoint. Scan/climb/return boundary clearance reaches a minimum of 0.500 m. The full-run 0.068 m minimum includes launch-surface proximity. Boundary distance and MuJoCo scene-contact detection describe different geometries; online operation queries mapped obstacles using the swept envelope.
+
+\subsection{B{\fontsize{9.2}{14}\selectfont ARCODE} {\fontsize{9.2}{14}\selectfont DECODING} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont EVIDENCE}}
+We swept label size, exposure, speed and brightness over 720 images, obtaining 439 correct decodes and no incorrect payloads across those mixed conditions. This study motivates joint sampling/exposure selection. Processing 1420 rendered side images from the scene produced 400 correct IDs and two singleton misreads. We re-decoded saved crops using original, resized and Otsu-thresholded pixels; consistency filtering rejected both extra candidates, leaving 400 correct IDs with no omissions. Ground-truth inventory enters only the final scorer.
+
+Crop filtering tests consistency within one saved image. The deployment logic in Section 3.5 instead requires separate acquisition times and local recovery when views disagree. These evaluation conditions determine how the decoding result transfers to online confirmation.
+
+\section{D{\fontsize{11.2}{14}\selectfont ISCUSSION} {\fontsize{11.2}{14}\selectfont AND} C{\fontsize{11.2}{14}\selectfont ONCLUSION}}
+Joint selection of optics, propulsion and task timing gives a 2901.6 g installation and a 0.85 m/s scanning envelope. Larger labels and higher-resolution cameras trade warehouse preparation and lens mass for continuous acquisition. Opposing heads avoid turning towards individual boxes; four endpoint yaws trade 16 s for forward navigation visibility. Immediate recovery retains completed work and limits extra travel, but its dwell still sets the feasible inventory workload.
+
+Delivered battery energy sets the remaining feasibility condition. For the two-recovery case, 73.14 Wh mission energy requires 91.43 Wh delivered before reserve. Hardware qualification comprises a loaded pack discharge at representative current and temperature, motor/pitch response measurements, and complete-label tests at the geometric limits. A subsequent unknown-layout flight would assess localisation, coverage, unresolved cargo and return reserve together. Tracking and decoding results provide initial evidence for that integration.
+
+We provide \href{../README.md}{code and build instructions}, a \href{https://youtu.be/ZQHlchVMqs8}{technical demonstration}, \href{../results/final/inference/metrics.json}{route metrics} and \href{../results/final/inference/inventory.json}{inventory records}. Calculations and figure inputs are reproducible; SHA-256 records identify the model and experiment files. Temporal min/max bands describe a single route. The code link will be updated when the repository is published.
+
+We used AI assistance for source discovery, implementation, calculation checking and drafting. Product images, algorithms and assets are attributed where used; the report has one author, Junjie Peng.
+
+AWISU connects image eligibility, spatial coverage and energy through one action-admission rule. The resulting design supports a defined label and workload envelope, while the reference experiments demonstrate continuous serpentine tracking and image-based inventory. The next step is joint hardware and unknown-layout qualification under that same rule.
+
+\renewcommand{\refname}{R{\fontsize{11.2}{14}\selectfont EFERENCES}}\begin{thebibliography}{99}\interlinepenalty=10000\renewcommand{\makelabel}[1]{\hfill#1}\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}
+\bibitem{r3} \href{https://www.corvus-robotics.com/corvus-one}{Corvus Robotics, Corvus One}.
+\bibitem{r4} \href{https://www.verity.net/}{Verity, Warehouse Intelligence}.
+\bibitem{r5} \href{https://docs.holybro.com/drone-development-kit/px4-development-kit-x500v2}{Holybro, X500 v2 development kit}.
+\bibitem{r6} \href{https://store.tmotor.com/product/mn3508-motor-navigator-type.html}{T-MOTOR, MN3508 Navigator motor}.
+\bibitem{r7} \href{https://store.tmotor.com/product/air-40a-6s-esc.html}{T-MOTOR, AIR 40A 2-6S ESC}.
+\bibitem{r8} \href{https://store.tmotor.com/product/polish-carbon-fiber-14x4_8-prop.html}{T-MOTOR, P14x4.8 carbon propeller}.
+\bibitem{r9} \href{https://www.genstattu.com/content/instock/rc_product_brochure.pdf}{Gens ace / Tattu, RC product brochure}.
+\bibitem{r10} \href{https://holybro.com/products/pixhawk-6c}{Holybro, Pixhawk 6C}.
+\bibitem{r11} \href{https://holybro.com/collections/power-modules-pdbs/products/pm02-v3-12s-power-module}{Holybro, PM02 V3 analog power module}.
+\bibitem{r12} \href{https://www.livoxtech.com/mid-360/specs}{Livox, MID-360 specifications}.
+\bibitem{r13} \href{https://docs.luxonis.com/hardware/products/OAK-D%20Lite}{Luxonis, OAK-D Lite}.
+\bibitem{r14} \href{https://developer.nvidia.com/embedded/jetson-modules}{NVIDIA, Jetson module lineup}.
+\bibitem{r15} \href{https://www.hiwonder.com/products/mini-carrier}{Hiwonder, Jetson Mini carrier}.
+\bibitem{r16} \href{https://softwareservices.flir.com/BFS-U3-51S5/latest/Model/spec.html}{Teledyne FLIR, BFS-U3-51S5 specifications}.
+\bibitem{r17} \href{https://kowa-fa-sea.com.sg/industrial-lens/jc5mc-series/}{Kowa, JC5MC lens series: LM8JC5MC and LM12JC5MC}.
+\bibitem{r18} \href{https://torqpro.com/product/mg90s-analog/}{TowerPro, MG90S Analog pitch servo}.
+\bibitem{r19} \href{https://arxiv.org/abs/2107.06829}{Wei Xu, Yixi Cai, Dongjiao He, Jiarong Lin, and Fu Zhang. FAST-LIO2: Fast Direct LiDAR-inertial Odometry. arXiv:2107.06829, 2021}.
+\bibitem{r20} \href{https://arxiv.org/abs/2007.11898}{Carlos Campos, Richard Elvira, Juan J. Gómez Rodríguez, José M. M. Montiel, and Juan D. Tardós. ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM. arXiv:2007.11898, 2021}.
+\bibitem{r21} \href{https://arxiv.org/abs/2408.14035}{Chunran Zheng et al. FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry. arXiv:2408.14035, 2024}.
+\bibitem{r22} \href{https://arxiv.org/abs/2001.04420}{Jesus Tordesillas, Brett T. Lopez, Michael Everett, and Jonathan P. How. FASTER: Fast and Safe Trajectory Planner for Navigation in Unknown Environments. arXiv:2001.04420, 2021}.
+\bibitem{r23} \href{https://docs.px4.io/main/en/ros/external_position_estimation}{PX4, external position estimation}.
+\bibitem{r24} \href{https://docs.px4.io/main/en/flight_modes/offboard}{PX4, Offboard mode}.
+\bibitem{r25} \href{https://doi.org/10.1007/s10514-012-9321-0}{Armin Hornung, Kai M. Wurm, Maren Bennewitz, Cyrill Stachniss, and Wolfram Burgard. OctoMap: An Efficient Probabilistic 3D Mapping Framework Based on Octrees. Autonomous Robots, 34:189–206, 2013}.
+\bibitem{r26} \href{https://github.com/zxing-cpp/zxing-cpp}{zxing-cpp reference implementation}.
+\bibitem{r27} \href{https://mujoco.readthedocs.io/en/stable/overview.html}{MuJoCo documentation}.
+\bibitem{r28} \href{https://arxiv.org/abs/1812.03201}{Tobias Johannink et al. Residual Reinforcement Learning for Robot Control. arXiv:1812.03201, 2018}.
+\bibitem{r29} \href{https://arxiv.org/abs/1707.06347}{John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov. Proximal Policy Optimization Algorithms. arXiv:1707.06347, 2017}.
+\bibitem{r30} \href{https://github.com/google-deepmind/mujoco_menagerie/tree/main/skydio_x2}{MuJoCo Menagerie, Skydio X2}.
+\bibitem{r31} \href{https://polyhaven.com/a/cardboard_box_01}{Poly Haven, Cardboard Box 01}.
+\bibitem{r32} \href{https://polyhaven.com/a/steel_frame_shelves_03}{Poly Haven, Steel Frame Shelves 03}.
+\bibitem{r33} \href{https://www.pololu.com/product/4095}{Pololu, D36V50F12 regulator}.
+\bibitem{r34} \href{https://lumileds.com/products/high-power-leds/luxeon-rebel/}{Lumileds LUXEON Rebel emitters; Texas Instruments TPS92512 LED driver}.
+\bibitem{r35} \href{https://softwareservices.flir.com/BFS-U3-122S6/latest/Model/spec.html}{Teledyne FLIR, BFS-U3-122S6 specifications}.
+\bibitem{r36} \href{https://www.opto-e.com/en/products/en-12rt-series/RT-V1228-MPY2}{Opto Engineering RT-V1228-MPY2 catalogue}.
+\bibitem{r37} \href{https://geprc.com/product/geprc-vtc6-18650-6s2p-6000mah-batteries/}{GEPRC VTC6 6S2P6000 pack}.
+\bibitem{r38} \href{https://www.murata.com/-/media/webrenewal/products/batteries/cylindrical/datasheet/us18650vtc6-product-datasheet.ashx}{Murata VTC6 cell datasheet}.
+\bibitem{r39} \href{https://flywoo.net/products/flywoo-explorer-molicell-p30b-18650-6s2p-6000mah-lionpack-battery}{Flywoo P30B 6S2P6000 pack}.
+\bibitem{r40} \href{https://www.math.ucsd.edu/~mleok/pdf/LeLeMc2010_quadrotor.pdf}{Taeyoung Lee, Melvin Leok, and N. Harris McClamroch. Geometric Tracking Control of a Quadrotor UAV on SE(3). IEEE Conference on Decision and Control, 2010}.
+\bibitem{r41} \href{https://arxiv.org/abs/1611.09240}{Mina Kamel, Michael Burri, and Roland Siegwart. Linear vs Nonlinear MPC for Trajectory Tracking Applied to Rotary Wing Micro Aerial Vehicles. arXiv:1611.09240, 2017}.
+\bibitem{r42} \href{https://docs.px4.io/main/en/flight_stack/controller_diagrams}{PX4 controller diagrams}.
+\bibitem{r43} \href{https://github.com/hku-mars/FAST-LIVO2}{HKU MARS, FAST-LIVO2 official implementation}.
+\bibitem{r44} \href{https://www.lumenier.com/products/lumenier-nav-6000mah-6s-21700-amprius-lithium-ion-battery-xt60}{Lumenier NAV Amprius6S6000 pack}.
+\bibitem{r45} \href{https://liberzon.csl.illinois.edu/teaching/kalman_paper.pdf}{R. E. Kalman, Contributions to the Theory of Optimal Control, Bol. Soc. Mat. Mex. 5, 102–119, 1960}.
+\end{thebibliography}
+\end{document}
