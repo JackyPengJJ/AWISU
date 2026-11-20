@@ -16,4 +16,4 @@ Microsoft Times New Roman files, course lecture PDFs, downloaded papers and refe
 
 No new software reuse license has been assigned to the author's code in this packaging step. Third-party materials retain their own licenses and ownership. Select an appropriate license before offering the original code for licensed reuse.
 
-AI assistance was used for literature search, implementation, calculation checks, drafting, figure production and video editing. The technical report contains the project-specific disclosure.
+AI assistance was used for literature search, implementation, calculation checks, drafting, figure production and video editing.
