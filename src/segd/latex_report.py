@@ -172,6 +172,9 @@ def typeset(content, sources):
                 continue
             if value.startswith("$$ "):
                 assert value.endswith(" $$"), value
+                # Keep the display in its lead-in paragraph to avoid extra parskip.
+                if out:
+                    out[-1] = out[-1].rstrip("\n")
                 out.append(r"\begin{equation}" + value[3:-3] + r"\end{equation}")
             elif re.match(r"Table \d+\.", value):
                 pending_caption = re.sub(r"^Table \d+\.\s*", "", value)

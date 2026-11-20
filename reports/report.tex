@@ -157,14 +157,12 @@ LiDAR adds 4.8 MB/s (200k points/s, 24 bytes/point); 640×400 stereo adds 15.36 
 
 \subsection{D{\fontsize{9.2}{14}\selectfont YNAMICS} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont FLIGHT} {\fontsize{9.2}{14}\selectfont CONTROL}}
 We model position $\boldsymbol p$, velocity $\boldsymbol v$, body-to-world attitude $R$, body rate $\boldsymbol\omega$, total thrust $f$ and moment $\boldsymbol\tau$ in an upward-positive local frame \cite{r40}:
-
 \begin{equation}\begin{aligned}\dot{\boldsymbol p}&=\boldsymbol v,\quad m\dot{\boldsymbol v}=Rf\boldsymbol e_3-mg\boldsymbol e_3+\boldsymbol d_f,\\ \dot R&=R[\boldsymbol\omega]_\times,\quad J\dot{\boldsymbol\omega}=\boldsymbol\tau-\boldsymbol\omega\times J\boldsymbol\omega+\boldsymbol d_\tau.\end{aligned}\end{equation}
 The controller interface converts this convention to NED/FRD. Rotor thrust and reaction torque follow $f_i=k_T\Omega_i^2$ and $q_i=k_Q\Omega_i^2$, with first-order motor lag. Our reference simulation uses 40 ms lag and 200 Hz integration. The deployment cascade tracks position, velocity and acceleration, then computes orientation and allocates moments through PX4's attitude/rate loops \cite{r42}.
 
 Position/velocity feedback generates a desired acceleration, with clamped integral correction. Reference horizontal gains 2.5 $\mathrm{s}^{-2}$/2.6 $\mathrm{s}^{-1}$ give a 1.58 rad/s natural frequency and 0.82 damping ratio; vertical gains 4.0/3.2 give 2.0 rad/s and 0.80. A 2 Hz attitude target separates the inner and outer loops. Saturation and invalid estimates freeze integration; loaded response measurements determine deployment gains.
 
 Motor/ESC/propeller groups contribute approximately 0.026 kg m² roll/pitch inertia at 0.212 m offsets. A component placement ledger and the parallel-axis theorem give $J_{xx}=0.1026$, $J_{yy}=0.0534$ and $J_{zz}=0.1330$ kg m². Lateral cameras increase roll/yaw inertia substantially. The full matrix, including products of inertia, defines the matched validation plant. The ledger records estimated installation masses and positions. Current-aware allocation takes the form of weighted wrench fitting:
-
 \begin{equation}\boldsymbol f^\star=\arg\min_{0\le f_i\le f_{max}(V)}\|W(B\boldsymbol f-\boldsymbol w_c)\|_2^2\quad\mathrm{s.t.}\quad\sum_i P_i(f_i,V)+P_{aux}\le VI_{max}.\end{equation}
 Here $B$ maps thrusts to wrench, $\boldsymbol w_c$ is the demand, and $W$ prioritises collective and roll/pitch before yaw. The matched test implements this priority with bounded scaling and checks every command against the 30 A shared limit. Its power model uses the measured 22.2 V map with explicit installation and low-voltage screening factors; the retained reference run uses inverse allocation with per-rotor clipping. At 0.85 m/s, 0.10 s latency and 0.6 m/s² braking imply 0.687 m stopping distance. A 1.5 m observed corridor includes mapping/tracking margins; a shorter corridor reduces admissible speed.
 
@@ -183,7 +181,6 @@ MID-360's −7° to +52° elevation range leaves a lower blind region \cite{r12}
 At 5 Hz, the local planner receives state/covariance, the map, coverage records and remaining energy. It inflates obstacles by the tilted envelope, finds a short path and fits a timed segment with a stopping backup \cite{r22}. Collision, speed, acceleration and reserve checks precede replacement of the current plan. A late update leaves the accepted backup executable. A blocked endpoint selects another mapped transition column; otherwise we return with a blocked-region record.
 
 Each cargo record uses side, bay/band and spatial track as its key, with payload, observation times, covariance and confirmation state as attributes. This preserves distinct instances of repeated SKUs. An action is admitted when:
-
 \begin{equation}\mathcal A(a)=\mathcal L\land\mathcal F(a)\land\mathcal O(a)\land\left[E_{rem}\ge E_a+E_{unfinished}+E_{return}+0.20E_{del}\right].\end{equation}
 $\mathcal L$ checks current localisation; $\mathcal F$ checks the swept volume and backup; $\mathcal O$ checks image eligibility whenever a surface is marked inspected. Remaining workload $E_{unfinished}$ updates when cargo or blocked space is discovered. A surface becomes complete after eligible image evidence covers its inspected boundary.
 
@@ -202,17 +199,14 @@ Each failed item receives at most two settled attempts. Completion requires both
 The selected optics give $f_x=12/0.00345=3478$ pixels and approximately 61.0° horizontal/46.7° vertical field. The primary validation retains the original 100×44 mm labels. W0000 uses 79 encoded modules plus two 10-module quiet zones: $N_m=99$ and $X=100/99=1.010$ mm. A 12-character Code128-B example has 187 modules, so the same outer width provides only 0.535 mm modules. Readability therefore depends on both outer width and encoded module count. The selected case uses the existing reference labels.
 
 Visibility is evaluated at all four label corners against the image frustum. For corner rays $q_k$, inward unit normals $n_j$, camera-orientation uncertainty $\delta$ and finite-label displacement $\epsilon_l$, sufficient containment is:
-
 \begin{equation}n_j^T q_k-\|q_k\|\sin\delta-\epsilon_l(1+\sin\delta)\ge0,\quad \epsilon_l=2r_l\sin(\alpha_l/2).\end{equation}
 The admitted box includes 0.80–0.95 m range, ±50 mm vertical error, ±10 mm longitudinal error, 2° acquisition orientation error, 5° label rotation and a 24-pixel image border. Vertex checks include half a 1 mm height cell. The separate 12° envelope applies to collision checking; scanning resumes after attitude settles into the optical cone.
 
 The three poses cover a complete 1.6 m band. After erosion by the 100×44 mm label and errors, the minimum usable travel interval is 0.701 m. Each 0.20 s slot reserves 0.14 s for pitch motion/settling and exposes at 0.14/0.19 s. Across cycles, alternating gaps are 0.05/0.55 s. Within constant-speed acquisition, any phase contains two eligible observations when:
-
 \begin{equation}v(T+2j)\le W_{safe},\qquad 0.85(0.60+2\times0.002)=0.5134\ \mathrm{m}.\end{equation}
 The minimum pair separation is 46 ms. The pair supplies temporal corroboration; shared glare or occlusion can correlate its errors. Persistent glare, occlusion or disagreement requests a changed view. The 140 ms settling and 100 ms processing allocations are implementation deadlines; a missed deadline pauses coverage and consumes explicit dwell energy.
 
 For sampling, optical depth must correspond to the chosen pitch. If $q_c=(X_c,Y_c,Z_c)$ and $a$ is a unit module direction in the camera frame, horizontal projection satisfies $du/ds=f_x(a_x-(X_c/Z_c)a_z)/Z_c$. Let $\gamma=7°$, $Z_{max}$ bound depth and $t_x$ bound $|X_c/Z_c|$ over the admitted ray box. Then:
-
 \begin{equation}s_{min}=\frac{f_x(\cos\gamma-t_x\sin\gamma)}{Z_{max}},\qquad p_{module}\ge s_{min}X.\end{equation}
 Depth and ray-ratio bounds include camera rotation and label displacement. Selecting an eligible pitch per height gives at least 2.563 pixels/module for the 100 mm, 99-module case, above the 2.5 target. For 187 modules, 100 mm gives 1.357; 200 and 250 mm give 2.684 and 3.337. The dense 100 mm case requires revised optics or a closer admissible viewpoint. Local approach uses the same sampling test to select a readable geometry. A 0.20 ms exposure bounds centre-ray translational blur to 0.74 pixel at 0.80 m.
 
@@ -220,7 +214,6 @@ Depth and ray-ratio bounds include camera rotation and label displacement. Selec
 \captionof{figure}{Whole-label admission: (a) three-pitch coverage on the rack face; (b) corner containment schematic; (c) limiting travel budget.}\label{fig:4}\end{minipage}\par\addvspace{8pt}
 \subsection{P{\fontsize{9.2}{14}\selectfont ROPULSION} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont SHARED}-{\fontsize{9.2}{14}\selectfont CURRENT} {\fontsize{9.2}{14}\selectfont AUTHORITY}}
 MN3508 KV380 manufacturer tests at 22.2 V give P14×4.8 samples of 710 g/64.38 W, 1100 g/117.66 W, 1350 g/166.5 W, 1580 g/217.56 W and 1730 g/255.3 W per motor \cite{r6}. Our 725.4 g-per-rotor hover lies within the first interval. With thrusts expressed in newtons, interpolation gives 265.94 W for four rotors:
-
 \begin{equation}P_h=4\left[P_1+\frac{T_h-T_1}{T_2-T_1}(P_2-P_1)\right],\qquad T_h=mg/4.\end{equation}
 Installation power multipliers are 1.10 nominal and 1.25 adverse. Maximum thrust is screened by $(V/22.2)^2$ and a 0.85 derating. The power map and the voltage ceiling are distinct assumptions. Below the first 710 g point, its power is retained as a monotonic upper bound rather than extrapolated to zero. Applying the shared current constraint gives:
 
@@ -239,7 +232,6 @@ Torque is the single-axis bound at hover collective; simultaneous roll/pitch/yaw
 \captionof{figure}{Manufacturer power samples at 22.2 V \cite{r6} and installed-mass margin to 3 kg. The diamond marks hover interpolation.}\label{fig:5}\end{minipage}\par\addvspace{8pt}
 \subsection{M{\fontsize{9.2}{14}\selectfont ISSION} {\fontsize{9.2}{14}\selectfont DURATION} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont ENERGY}}
 Five bilateral passes require 400 m scan travel; return and launch approach add 84 m horizontally. Launch and end manoeuvres use observed-free staging volumes beyond the rack ends. Their availability is an installation condition, separate from the specified aisle dimensions. Scan speed is 0.85 m/s, vertical speed is 0.35 m/s and acceleration is 0.6 m/s². Rest-to-rest travel over distance $d$ at speed limit $v$ takes:
-
 \begin{equation}t(d)=\begin{cases}2\sqrt{d/a},&d\le v^2/a,\\ d/v+v/a,&d>v^2/a.\end{cases}\end{equation}
 Initialisation allocates 5 s to stationary alignment, 3 s to local-plane acquisition and 2 s to health/admission checks. Five turn events (including the return turn) each receive 0.5 s confirmation and 4 s yaw/reacquisition; ten boundary holds each consume one 0.60 s optical cycle. Discovery runs during the first scan. Unresolved geometry pauses the scan and consumes the remaining dwell allowance.
 
@@ -266,14 +258,12 @@ Lateral recovery & 5.2 & 0.50 & 0.57\\
 \textbf{Total} & \textbf{669.5} & \textbf{64.86} & \textbf{73.63}\\
 \bottomrule\end{tabular}\end{minipage}\par\addvspace{8pt}
 The phase-power model separates installed hover loss, horizontal tilt/drag and positive climbing work. With installation factor $k$, drag area $C_D A=0.15~\mathrm{m}^2$ and phase duration $t_j$:
-
 \begin{equation}E_j=\frac{\left[kP_h(1+(a/g)^2)^{3/4}+P_{aux}+\tfrac12\rho C_D A v^3\right]t_j+mg\max(0,\Delta z_j)/\eta_z}{3600}.\end{equation}
 Vertical phases omit horizontal terms and use $\eta_z=0.60$; the adverse vertical multiplier is 1.10. Auxiliary load is 55/60 W nominal/adverse, with no descent energy credit. Applying the small tilt increment across a horizontal segment is our modelling approximation; loaded tests identify installation and rack-interaction losses.
 
 VTC6 cell data specify 3.6 V nominal and rate-dependent loaded discharge \cite{r38}. The 12-cell nameplate is 129.6 Wh. The original 19.8 V cutoff is rejected: the digitised typical 10 A/cell curve supplies only 87.66 Wh before connection losses, below the 92.04 Wh delivered-energy requirement. The revised candidate uses an 18.0 V loaded cutoff, retaining the same pack and mass.
 
 Loaded voltage, current and delivered energy are solved together:
-
 \begin{equation}V=6v_c(q,I/2)-IR_b,\quad P=VI,\quad \dot q=I/(2\times3600),\quad E_{bus}=\int VI\,dt/3600.\end{equation}
 Recorded axis calibration digitises the 23 °C, 10/15 A curves. Voltage is interpolated between them; below 10 A/cell, the 10 A curve bounds rate loss. Cell drop is already included. Assembly resistance adds $IR_b$ drop and $I^2R_b$ loss. Screening uses 10 mΩ, a −40 mV/cell shift and 3000/3120 capacity-axis scale: explicit sensitivities rather than a guaranteed minimum-cell curve.
 
