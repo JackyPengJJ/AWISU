@@ -103,6 +103,6 @@ python scripts/verify_release.py
 
 The release verifier checks preserved data/model hashes, reported RMSE, referenced evidence files, final PDF naming and the configured video URL. The GitHub workflow runs the numerical and implementation tests. Rendering and TeX compilation are local checks, not part of CI.
 
-The local final MP4 exceeds the usual Git file limit and is excluded by `.gitignore`; use the YouTube link when publishing this repository. The source repository is https://github.com/JackyPengJJ/AWISU. It is private; access is limited to authorized GitHub accounts. The report's Code link points to this repository. The original course PDF does not prescribe filenames; the names in `submission/` were confirmed with the author.
+The local final MP4 exceeds the usual Git file limit and is excluded by `.gitignore`; use the YouTube link when publishing this repository. The source repository is https://github.com/JackyPengJJ/AWISU. It is public for submission review. The report's Code link points to this repository. The original course PDF does not prescribe filenames; the names in `submission/` were confirmed with the author.
 
 See [NOTICE.md](NOTICE.md) for asset, font, narration and AI-assistance attribution. Select a software license before offering the original code for licensed reuse.

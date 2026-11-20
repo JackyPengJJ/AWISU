@@ -23,7 +23,7 @@
   "original_training_or_inference_rerun": false,
   "source_archive_excludes": "Local final MP4; hosted video is linked in README.",
   "github_repository": "https://github.com/JackyPengJJ/AWISU",
-  "github_visibility": "private",
+  "github_visibility": "public",
   "video_full_decode_passed": true,
   "video_audio_mean_db": -16.8,
   "video_audio_peak_db": -1.7,
