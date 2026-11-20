@@ -1,6 +1,6 @@
 {
   "tests": {
-    "passed": 19,
+    "passed": 28,
     "failed": 0
   },
   "python_format": "ruff format; undefined-name checks passed",
@@ -9,8 +9,8 @@
   "report_rebuilt_from_clean_sources": true,
   "report_pages": 20,
   "report_figures": 7,
-  "references": 43,
-  "video_url": "https://youtu.be/ZQHlchVMqs8",
+  "references": 44,
+  "video_url": "https://youtu.be/NSdeKHdK3a8",
   "retained_video_filename": "submission/EE5110_A0354063J_JunjiePeng_Video.mp4",
   "retained_video_bytes_unchanged": true,
   "video_duration_s": 136,
@@ -23,5 +23,10 @@
   "original_training_or_inference_rerun": false,
   "source_archive_excludes": "Local final MP4; hosted video is linked in README.",
   "github_repository": "https://github.com/JackyPengJJ/AWISU",
-  "github_visibility": "private"
+  "github_visibility": "private",
+  "video_full_decode_passed": true,
+  "video_audio_mean_db": -16.8,
+  "video_audio_peak_db": -1.7,
+  "youtube_link_supplied_by_author": true,
+  "youtube_playback_verified": false
 }

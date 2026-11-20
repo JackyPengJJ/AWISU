@@ -6,10 +6,12 @@
   "references": 44,
   "report_revised": true,
   "local_video_analysis_revised": true,
-  "youtube_replaced": false,
+  "youtube_replaced": true,
   "new_training": false,
   "new_known_route_test": true,
   "unknown_layout_end_to_end_validated": false,
   "physical_battery_qualification": false,
-  "records": "results/candidate18/validation.json"
+  "records": "results/candidate18/validation.json",
+  "youtube_url": "https://youtu.be/NSdeKHdK3a8",
+  "youtube_playback_verified": false
 }

@@ -63,7 +63,7 @@ def main():
         scene = json.loads((candidate / "scene_audit.json").read_text())
         assert scene["passed"] and scene["labels"] == 400
     metadata = json.loads((ROOT / "docs/report_metadata.json").read_text())
-    if metadata["video"] != "https://youtu.be/ZQHlchVMqs8":
+    if metadata["video"] != "https://youtu.be/NSdeKHdK3a8":
         raise ValueError("Unexpected video URL")
     draft_dirs = [
         "docs/review",

@@ -2,7 +2,7 @@
 
 Junjie Peng
 
-[Code](https://github.com/JackyPengJJ/AWISU) · [Video](https://youtu.be/ZQHlchVMqs8)
+[Code](https://github.com/JackyPengJJ/AWISU) · [Video](https://youtu.be/NSdeKHdK3a8)
 
 ## Abstract
 
@@ -294,7 +294,7 @@ Table 9. Design and experimental configurations.
 | Scan speed | 0.85 m/s optical limit | 1.1 m/s prescribed route |
 | Navigation | LiDAR/IMU/image estimator | Delayed/noisy position/velocity; ideal attitude |
 
-The reference run isolates tracking and decoding with a prescribed route and state proxies. The 136 s film replays its 501.02 s flight in 72 s (6.96×), using saved-pose external, side and forward views at 30 fps. The local revision updates the design-analysis card; the linked upload presents the earlier reference film.
+The reference run isolates tracking and decoding with a prescribed route and state proxies. The 136 s film replays its 501.02 s flight in 72 s (6.96×), using saved-pose external, side and forward views at 30 fps. The revised film updates the design-analysis card for the 100 mm labels and 18 V cutoff.
 
 ### 5.2. Controller selection and complete-route tracking
 

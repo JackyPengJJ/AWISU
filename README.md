@@ -3,7 +3,7 @@
 **Autonomous Warehouse Inventory with a Small UAV**  
 Junjie Peng · EE5110 Technical Report
 
-[Code](https://github.com/JackyPengJJ/AWISU) · [Report](submission/EE5110_A0354063J_JunjiePeng_Report.pdf) · [Video](https://youtu.be/ZQHlchVMqs8)
+[Code](https://github.com/JackyPengJJ/AWISU) · [Report](submission/EE5110_A0354063J_JunjiePeng_Report.pdf) · [Video](https://youtu.be/NSdeKHdK3a8)
 
 AWISU is a small-UAV design for barcode inventory in an unknown, GPS-denied warehouse aisle. The report compares hardware, navigation and control alternatives, derives imaging and mission-resource budgets, and evaluates a reference controller and barcode pipeline in MuJoCo.
 
@@ -15,7 +15,7 @@ The proposed system uses bilateral global-shutter cameras, LiDAR–inertial–vi
 
 The preserved experiment uses a separate 2.65 kg reference plant, fixed side cameras and a prescribed route. The selected residual controller reduced full-route position RMSE from 0.1148 m to 0.1038 m. Saved-image consistency checks retained 400 correct IDs from 1420 processed images. These records evaluate tracking and decoding; the report separately develops the proposed unknown-environment navigation and hardware design.
 
-The film introduces the hardware and method, then replays the reference flight with external, bilateral and forward views. The local submission updates its 48–56 s design-analysis card to match this revision. English narration and subtitles are preserved. The existing YouTube upload is the earlier presentation of the same reference run; its replacement is pending author review/upload.
+The film introduces the hardware and method, then replays the reference flight with external, bilateral and forward views. The final video updates its 48–56 s design-analysis card to match this revision and preserves English narration and subtitles. The linked upload is the revised video supplied by the author.
 
 ## Repository layout
 

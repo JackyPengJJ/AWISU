@@ -1,6 +1,6 @@
 # Technical video
 
-Public link: https://youtu.be/ZQHlchVMqs8
+Public link: https://youtu.be/NSdeKHdK3a8
 
 Local final file: `../../submission/EE5110_A0354063J_JunjiePeng_Video.mp4`.
 
