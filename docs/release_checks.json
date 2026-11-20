@@ -21,6 +21,7 @@
   ],
   "video_audio": "AAC LC, 48 kHz, English",
   "original_training_or_inference_rerun": false,
-  "github_upload_performed": false,
-  "source_archive_excludes": "Local final MP4; hosted video is linked in README."
+  "source_archive_excludes": "Local final MP4; hosted video is linked in README.",
+  "github_repository": "https://github.com/JackyPengJJ/AWISU",
+  "github_visibility": "private"
 }

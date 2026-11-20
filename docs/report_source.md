@@ -2,7 +2,7 @@
 
 Junjie Peng
 
-[Code](https://example.com/segd/code) · [Video](https://youtu.be/ZQHlchVMqs8)
+[Code](https://github.com/JackyPengJJ/AWISU) · [Video](https://youtu.be/ZQHlchVMqs8)
 
 ## Abstract
 
@@ -290,7 +290,7 @@ Joint selection of optics, propulsion and task timing gives a {{mass_g:.1f}} g i
 
 Delivered battery energy sets the remaining feasibility condition. For the two-recovery case, {{adverse_energy_wh:.2f}} Wh mission energy requires {{required_delivered_wh:.2f}} Wh delivered before reserve. Hardware qualification comprises a loaded pack discharge at representative current and temperature, motor/pitch response measurements, and complete-label tests at the geometric limits. A subsequent unknown-layout flight would assess localisation, coverage, unresolved cargo and return reserve together. Tracking and decoding results provide initial evidence for that integration.
 
-We provide [code and build instructions](../README.md), a [technical demonstration](https://youtu.be/ZQHlchVMqs8), [route metrics](../results/final/inference/metrics.json) and [inventory records](../results/final/inference/inventory.json). Calculations and figure inputs are reproducible; SHA-256 records identify the model and experiment files. Temporal min/max bands describe a single route. The code link will be updated when the repository is published.
+We provide [code and build instructions](../README.md), a [technical demonstration](https://youtu.be/ZQHlchVMqs8), [route metrics](../results/final/inference/metrics.json) and [inventory records](../results/final/inference/inventory.json). Calculations and figure inputs are reproducible; SHA-256 records identify the model and experiment files. Temporal min/max bands describe a single route. The code and video links are provided on the title page.
 
 We used AI assistance for source discovery, implementation, calculation checking and drafting. Product images, algorithms and assets are attributed where used; the report has one author, Junjie Peng.
 

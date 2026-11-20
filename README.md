@@ -3,7 +3,7 @@
 **Autonomous Warehouse Inventory with a Small UAV**  
 Junjie Peng · EE5110 Technical Report
 
-[Report](submission/EE5110_A0354063J_JunjiePeng_Report.pdf) · [Video](https://youtu.be/ZQHlchVMqs8)
+[Code](https://github.com/JackyPengJJ/AWISU) · [Report](submission/EE5110_A0354063J_JunjiePeng_Report.pdf) · [Video](https://youtu.be/ZQHlchVMqs8)
 
 AWISU is a small-UAV design for barcode inventory in an unknown, GPS-denied warehouse aisle. The report compares hardware, navigation and control alternatives, derives imaging and mission-resource budgets, and evaluates a reference controller and barcode pipeline in MuJoCo.
 
@@ -100,6 +100,6 @@ python scripts/verify_release.py
 
 The release verifier checks preserved data/model hashes, reported RMSE, referenced evidence files, final PDF naming and the configured video URL. The GitHub workflow runs the numerical and implementation tests. Rendering and TeX compilation are local checks, not part of CI.
 
-The local final MP4 exceeds the usual Git file limit and is excluded by `.gitignore`; use the YouTube link when publishing this repository. No repository has been created or uploaded. The report's Code link remains an explicit placeholder until a real repository URL is available. The original course PDF does not prescribe filenames; the names in `submission/` were confirmed with the author.
+The local final MP4 exceeds the usual Git file limit and is excluded by `.gitignore`; use the YouTube link when publishing this repository. The source repository is https://github.com/JackyPengJJ/AWISU. It is private; access is limited to authorized GitHub accounts. The report's Code link points to this repository. The original course PDF does not prescribe filenames; the names in `submission/` were confirmed with the author.
 
 See [NOTICE.md](NOTICE.md) for asset, font, narration and AI-assistance attribution. Select a software license before offering the original code for licensed reuse.
