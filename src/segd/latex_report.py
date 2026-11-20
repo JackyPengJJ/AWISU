@@ -184,15 +184,16 @@ def typeset(content, sources):
             title, path = block[1:]
             number = re.match(r"Figure (\d+)\.", title)[1]
             caption = re.sub(r"^Figure \d+\.\s*", "", title)
+            # The surrounding paragraph contributes 6 pt; add 2 pt for an 8 pt gap.
             out.append(
-                r"\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{"
+                r"\par\addvspace{2pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{"
                 + path
                 + "}\n"
                 + r"\captionof{figure}{"
                 + prose(caption)
                 + r"}\label{fig:"
                 + number
-                + r"}\end{minipage}\par\addvspace{8pt}"
+                + r"}\end{minipage}\par\addvspace{2pt}"
             )
         else:
             rows = block[1]

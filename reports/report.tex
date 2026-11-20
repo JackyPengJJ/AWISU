@@ -46,8 +46,8 @@ The assignment specifies an 80×2.5×8 m aisle, five equally spaced cargo levels
 
 AWISU combines bilateral pitch heads, a continuous five-level snake and immediate local recovery. Figure~\ref{fig:1} connects complete-label visibility, motion admission and an action-based energy budget. The worked scenario retains 400 cargo units and the reference scene’s 100×44 mm short-code labels; neither quantity nor label size is prescribed by the assignment. The aisle is static and access-controlled. Label density, connection loss and recovery workload are varied; battery calculations use 23 °C source curves.
 
-\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/framework.pdf}
-\captionof{figure}{AWISU overview. Recorded images show acquisition; coverage states and recovery illustrate the proposed task logic. Solid and dashed paths denote covered and planned travel.}\label{fig:1}\end{minipage}\par\addvspace{8pt}
+\par\addvspace{2pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/framework.pdf}
+\captionof{figure}{AWISU overview. Recorded images show acquisition; coverage states and recovery illustrate the proposed task logic. Solid and dashed paths denote covered and planned travel.}\label{fig:1}\end{minipage}\par\addvspace{2pt}
 \section{R{\fontsize{11.2}{14}\selectfont ELATED} W{\fontsize{11.2}{14}\selectfont ORK} {\fontsize{11.2}{14}\selectfont AND} D{\fontsize{11.2}{14}\selectfont ESIGN} C{\fontsize{11.2}{14}\selectfont HOICES}}
 \subsection{I{\fontsize{9.2}{14}\selectfont NVENTORY} {\fontsize{9.2}{14}\selectfont WORKFLOW} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont AIRCRAFT} {\fontsize{9.2}{14}\selectfont PLATFORM}}
 Corvus One \cite{r3} and Verity \cite{r4} organise inventory around repeated observations, location association and warehouse records. AWISU adopts this organisation: each confirmed item retains image evidence and a spatial identity, while failed reads enter a recovery queue. Component specifications and mission calculations determine aircraft sizing.
@@ -97,8 +97,8 @@ We select four T-MOTOR MN3508 KV380 motors, P14×4.8 carbon propellers and AIR40
 
 Each side head uses a BFS-U3-122S6M-C: 4096×3000 pixels, 3.45 μm pitch, global shutter, 36 g and 3 W maximum \cite{r35}. A 12 mm RT-V1228-MPY2 lens covers the 1.1-inch sensor \cite{r36}. Its 110 g installed allocation covers the 97 g catalogue lens, mounting and variation. Two pitch assemblies receive 70 g for servos, balance and supports \cite{r18}. Figure~\ref{fig:2} links a reference mesh to these component roles; opposing cameras observe both racks during translation.
 
-\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/hardware.pdf}
-\captionof{figure}{Reference aircraft and selected components. Render: Skydio X2 \cite{r30}; product photos: T-MOTOR \cite{r6}, Holybro \cite{r10}, Opto Engineering \cite{r36}. Callouts identify proposed component roles.}\label{fig:2}\end{minipage}\par\addvspace{8pt}
+\par\addvspace{2pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/hardware.pdf}
+\captionof{figure}{Reference aircraft and selected components. Render: Skydio X2 \cite{r30}; product photos: T-MOTOR \cite{r6}, Holybro \cite{r10}, Opto Engineering \cite{r36}. Callouts identify proposed component roles.}\label{fig:2}\end{minipage}\par\addvspace{2pt}
 We reject the 5 MP/8 mm option because its 55 g lenses reduce mass but require approximately 1.61 mm barcode modules under the baseline uncertainty envelope \cite{r16,r17}. Our 12.3 MP installation adds 130 g in lenses/supports for improved sampling. With these optics, the 755 g 5 Ah LiPo exceeds the mass limit \cite{r9}. Flywoo's 596.2 g P30B pack saves 10.8 g, but its published 35 A description leaves continuous pack current unspecified \cite{r39}. We accept the GEPRC mass penalty for its documented continuous rating. Amprius's 465 g option supplies 12 A continuous, below the approximately 20 A low-voltage mission demand \cite{r44}. A same-mass 20 MP BFS-U3-200S6 offers 2.4 μm pixels but uses rolling shutter with global reset \cite{r46}; it requires a different exposure model. The global-shutter head is retained for the analysed moving acquisition.
 
 \reportneedspace{8\baselineskip}\begin{longtable}{C{0.440\dimexpr\linewidth-24pt\relax}C{0.130\dimexpr\linewidth-24pt\relax}C{0.430\dimexpr\linewidth-24pt\relax}}
@@ -175,8 +175,8 @@ Initial geometry thresholds are RANSAC residual ≤max(0.03 m, 3σ\_range), five
 
 MID-360's −7° to +52° elevation range leaves a lower blind region \cite{r12}. We mount forward stereo approximately 15° downward and yaw 180° at each endpoint so it faces the next pass. Four inter-level turns plus a fifth before return cost 20 s. Keeping heading would save this time but require rear sensing or stricter LiDAR-only admission. Climb/descent requires recently observed free columns and ceiling clearance at the highest band. Figure~\ref{fig:3} quantifies clearance and nominal ray limits; installed geometry supplies additional body/rotor occlusion checks.
 
-\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/04_observability.pdf}
-\captionof{figure}{Motion limits and sensing envelope. Clearance includes tracking, localisation and map margins; the lower blind zone requires a previously mapped descent column.}\label{fig:3}\end{minipage}\par\addvspace{8pt}
+\par\addvspace{2pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/04_observability.pdf}
+\captionof{figure}{Motion limits and sensing envelope. Clearance includes tracking, localisation and map margins; the lower blind zone requires a previously mapped descent column.}\label{fig:3}\end{minipage}\par\addvspace{2pt}
 \subsection{C{\fontsize{9.2}{14}\selectfont OVERAGE}, {\fontsize{9.2}{14}\selectfont CONFIRMATION} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont LOCAL} {\fontsize{9.2}{14}\selectfont RECOVERY}}
 At 5 Hz, the local planner receives state/covariance, the map, coverage records and remaining energy. It inflates obstacles by the tilted envelope, finds a short path and fits a timed segment with a stopping backup \cite{r22}. Collision, speed, acceleration and reserve checks precede replacement of the current plan. A late update leaves the accepted backup executable. A blocked endpoint selects another mapped transition column; otherwise we return with a blocked-region record.
 
@@ -210,8 +210,8 @@ For sampling, optical depth must correspond to the chosen pitch. If $q_c=(X_c,Y_
 \begin{equation}s_{min}=\frac{f_x(\cos\gamma-t_x\sin\gamma)}{Z_{max}},\qquad p_{module}\ge s_{min}X.\end{equation}
 Depth and ray-ratio bounds include camera rotation and label displacement. Selecting an eligible pitch per height gives at least 2.563 pixels/module for the 100 mm, 99-module case, above the 2.5 target. For 187 modules, 100 mm gives 1.357; 200 and 250 mm give 2.684 and 3.337. The dense 100 mm case requires revised optics or a closer admissible viewpoint. Local approach uses the same sampling test to select a readable geometry. A 0.20 ms exposure bounds centre-ray translational blur to 0.74 pixel at 0.80 m.
 
-\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/05_imaging.pdf}
-\captionof{figure}{Whole-label admission: (a) three-pitch coverage on the rack face; (b) corner containment schematic; (c) limiting travel budget.}\label{fig:4}\end{minipage}\par\addvspace{8pt}
+\par\addvspace{2pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/05_imaging.pdf}
+\captionof{figure}{Whole-label admission: (a) three-pitch coverage on the rack face; (b) corner containment schematic; (c) limiting travel budget.}\label{fig:4}\end{minipage}\par\addvspace{2pt}
 \subsection{P{\fontsize{9.2}{14}\selectfont ROPULSION} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont SHARED}-{\fontsize{9.2}{14}\selectfont CURRENT} {\fontsize{9.2}{14}\selectfont AUTHORITY}}
 MN3508 KV380 manufacturer tests at 22.2 V give P14×4.8 samples of 710 g/64.38 W, 1100 g/117.66 W, 1350 g/166.5 W, 1580 g/217.56 W and 1730 g/255.3 W per motor \cite{r6}. Our 725.4 g-per-rotor hover lies within the first interval. With thrusts expressed in newtons, interpolation gives 265.94 W for four rotors:
 \begin{equation}P_h=4\left[P_1+\frac{T_h-T_1}{T_2-T_1}(P_2-P_1)\right],\qquad T_h=mg/4.\end{equation}
@@ -228,8 +228,8 @@ Installation power multipliers are 1.10 nominal and 1.25 adverse. Maximum thrust
 \bottomrule\end{tabular}\end{minipage}\par\addvspace{8pt}
 Torque is the single-axis bound at hover collective; simultaneous roll/pitch/yaw demands share that envelope. A 20\% rotor-pair differential supplies 1.207 N m, and steady 12° tilt fits the model at 18 V. The matched rigid-body test below checks combined manoeuvres using the same allocator. The voltage-squared ceiling supplies the engineering estimate pending a loaded low-voltage motor test.
 
-\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/02_propulsion.pdf}
-\captionof{figure}{Manufacturer power samples at 22.2 V \cite{r6} and installed-mass margin to 3 kg. The diamond marks hover interpolation.}\label{fig:5}\end{minipage}\par\addvspace{8pt}
+\par\addvspace{2pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/02_propulsion.pdf}
+\captionof{figure}{Manufacturer power samples at 22.2 V \cite{r6} and installed-mass margin to 3 kg. The diamond marks hover interpolation.}\label{fig:5}\end{minipage}\par\addvspace{2pt}
 \subsection{M{\fontsize{9.2}{14}\selectfont ISSION} {\fontsize{9.2}{14}\selectfont DURATION} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont ENERGY}}
 Five bilateral passes require 400 m scan travel; return and launch approach add 84 m horizontally. Launch and end manoeuvres use observed-free staging volumes beyond the rack ends. Their availability is an installation condition, separate from the specified aisle dimensions. Scan speed is 0.85 m/s, vertical speed is 0.35 m/s and acceleration is 0.6 m/s². Rest-to-rest travel over distance $d$ at speed limit $v$ takes:
 \begin{equation}t(d)=\begin{cases}2\sqrt{d/a},&d\le v^2/a,\\ d/v+v/a,&d>v^2/a.\end{cases}\end{equation}
@@ -269,8 +269,8 @@ Recorded axis calibration digitises the 23 °C, 10/15 A curves. Voltage is inter
 
 After the adverse mission, remaining deliverable energy is integrated at the largest phase-average load, 440.38 W. Reserve is $E_{remaining}/(E_{mission}+E_{remaining})$. The resulting delivered energy is about 100.4 Wh for the two-recovery load history. The 72-case sweep varies cutoff, connection resistance, capacity and recovery count; high-load-first/last ordering changes tested reserve by less than 0.04 percentage points.
 
-\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/07_energy.pdf}
-\captionof{figure}{Loaded-pack evidence and recovery reserve at 18 V. Curves use manufacturer cell data with stated capacity and voltage sensitivities.}\label{fig:6}\end{minipage}\par\addvspace{8pt}
+\par\addvspace{2pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/07_energy.pdf}
+\captionof{figure}{Loaded-pack evidence and recovery reserve at 18 V. Curves use manufacturer cell data with stated capacity and voltage sensitivities.}\label{fig:6}\end{minipage}\par\addvspace{2pt}
 \par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering
 \captionof{table}{Recovery workload and delivered-energy reserve; 23 °C model.}\label{tab:8}
 \begin{tabular}{C{0.200\dimexpr\linewidth-40pt\relax}C{0.200\dimexpr\linewidth-40pt\relax}C{0.200\dimexpr\linewidth-40pt\relax}C{0.200\dimexpr\linewidth-40pt\relax}C{0.200\dimexpr\linewidth-40pt\relax}}
@@ -331,8 +331,8 @@ Collision & None & None & MuJoCo contact log\\
 \bottomrule\end{tabular}\end{minipage}\par\addvspace{8pt}
 Seed-2 best achieves the lowest selection RMSE, 0.0977 m against the baseline's 0.1056 m. Full-route RMSE falls by 9.6\%, from 0.1148 to 0.1038 m, over 501.02 s with no contact. Figure~\ref{fig:7} shows the spread across checkpoints and the effect of validation-based selection. The full-route score is 0.0038 m above the 0.10 m objective.
 
-\par\addvspace{8pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/08_experiment.pdf}
-\captionof{figure}{Experimental evidence: all candidate scores, full-route error envelopes (1 s min/max) and a native barcode crop.}\label{fig:7}\end{minipage}\par\addvspace{8pt}
+\par\addvspace{2pt}\noindent\begin{minipage}{\linewidth}\centering\includegraphics[width=\textwidth]{figures/08_experiment.pdf}
+\captionof{figure}{Experimental evidence: all candidate scores, full-route error envelopes (1 s min/max) and a native barcode crop.}\label{fig:7}\end{minipage}\par\addvspace{2pt}
 The recorded trajectory alternates forward/reverse 80 m passes and climbs at the current endpoint. Scan/climb/return boundary clearance reaches a minimum of 0.500 m. The full-run 0.068 m minimum includes launch-surface proximity. Boundary distance and MuJoCo scene-contact detection describe different geometries; online operation queries mapped obstacles using the swept envelope.
 
 \subsection{B{\fontsize{9.2}{14}\selectfont ARCODE} {\fontsize{9.2}{14}\selectfont DECODING} {\fontsize{9.2}{14}\selectfont AND} {\fontsize{9.2}{14}\selectfont EVIDENCE}}
